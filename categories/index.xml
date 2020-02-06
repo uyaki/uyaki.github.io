@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on gknoone的技术博客</title>
+    <link>http://gknoone.github.io/categories/</link>
+    <description>Recent content in Categories on gknoone的技术博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 06 Feb 2020 21:56:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>blog搭建</title>
+      <link>http://gknoone.github.io/categories/blog%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/blog%E6%90%AD%E5%BB%BA/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

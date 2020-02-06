@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://gknoone.github.io/sitemap.xml
