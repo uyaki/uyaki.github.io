@@ -6,10 +6,19 @@
     <description>Recent content in Categories on gknoone的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 06 Feb 2020 21:56:02 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 20:27:36 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>食谱</title>
+      <link>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</link>
+      <pubDate>Sat, 08 Feb 2020 20:27:36 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog搭建</title>

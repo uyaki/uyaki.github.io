@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gknoone.github.io/categories/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/%E5%8D%8E%E5%A4%AB%E9%A5%BC/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/%E7%83%98%E5%9F%B9/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
+    <lastmod>2020-02-08T20:27:36+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://gknoone.github.io/tags/blog/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,20 +72,6 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/</loc>
-    <lastmod>2020-02-06T21:56:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/</loc>
-    <lastmod>2020-02-06T21:56:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://gknoone.github.io/tags/hugo/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,20 +80,6 @@
   
   <url>
     <loc>http://gknoone.github.io/post/hugo%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2020-02-06T21:56:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/post/</loc>
-    <lastmod>2020-02-06T21:56:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/tags/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
