@@ -72,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/git/</loc>
+    <loc>http://gknoone.github.io/tags/git/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/git/</loc>
+    <loc>http://gknoone.github.io/categories/git/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/iterm/</loc>
+    <loc>http://gknoone.github.io/categories/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/iterm/</loc>
+    <loc>http://gknoone.github.io/tags/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
+    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
     <lastmod>2020-02-08T20:27:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
+    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
     <lastmod>2020-02-08T20:27:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -247,14 +247,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/hugo/</loc>
+    <loc>http://gknoone.github.io/tags/hugo/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/hugo/</loc>
+    <loc>http://gknoone.github.io/categories/hugo/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
