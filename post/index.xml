@@ -6,10 +6,64 @@
     <description>Recent content in Posts on gknoone的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 09:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 11:16:29 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git删除 .DS_Store</title>
+      <link>http://gknoone.github.io/post/git%E5%88%A0%E9%99%A4.ds_store/</link>
+      <pubDate>Tue, 11 Feb 2020 11:16:29 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E5%88%A0%E9%99%A4.ds_store/</guid>
+      <description>cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &amp;gt;&amp;gt; .gitignore git push</description>
+    </item>
+    
+    <item>
+      <title>Git空提交</title>
+      <link>http://gknoone.github.io/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/</link>
+      <pubDate>Tue, 11 Feb 2020 11:12:37 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/</guid>
+      <description>1 $ git commit --allow-empty -m &amp;#34;chore: touch ops build&amp;#34;</description>
+    </item>
+    
+    <item>
+      <title>Mac使用MacVim替代vim</title>
+      <link>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
+    </item>
+    
+    <item>
+      <title>Docker切换镜像源</title>
+      <link>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <description>1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&amp;#39;EOF&amp;#39; { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://28ffkr6d.mirror.aliyuncs.com&amp;#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker</description>
+    </item>
+    
+    <item>
+      <title>Mac在iTerm中使用rz、sz从远程上传下载文件</title>
+      <link>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <description>安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat</description>
+    </item>
+    
+    <item>
+      <title>ssh使用pem文件远程登陆</title>
+      <link>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+      <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+      <description>方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1</description>
+    </item>
     
     <item>
       <title>Git加速最佳实践</title>

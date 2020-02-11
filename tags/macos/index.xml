@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on gknoone的技术博客</title>
+    <link>http://gknoone.github.io/tags/macos/</link>
+    <description>Recent content in macOS on gknoone的技术博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Feb 2020 11:06:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac使用MacVim替代vim</title>
+      <link>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
+    </item>
+    
+    <item>
+      <title>Mac在iTerm中使用rz、sz从远程上传下载文件</title>
+      <link>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <description>安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat</description>
+    </item>
+    
+  </channel>
+</rss>

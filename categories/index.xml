@@ -6,7 +6,7 @@
     <description>Recent content in Categories on gknoone的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 09:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 11:16:29 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,36 +14,45 @@
     <item>
       <title>git</title>
       <link>http://gknoone.github.io/categories/git/</link>
-      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
+      <pubDate>Tue, 11 Feb 2020 11:16:29 +0800</pubDate>
       
       <guid>http://gknoone.github.io/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>proxy</title>
-      <link>http://gknoone.github.io/categories/proxy/</link>
-      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
+      <title>vim</title>
+      <link>http://gknoone.github.io/categories/vim/</link>
+      <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/categories/proxy/</guid>
+      <guid>http://gknoone.github.io/categories/vim/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>加速</title>
-      <link>http://gknoone.github.io/categories/%E5%8A%A0%E9%80%9F/</link>
-      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
+      <title>docker</title>
+      <link>http://gknoone.github.io/categories/docker/</link>
+      <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/categories/%E5%8A%A0%E9%80%9F/</guid>
+      <guid>http://gknoone.github.io/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>工具</title>
-      <link>http://gknoone.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
+      <title>iTerm</title>
+      <link>http://gknoone.github.io/categories/iterm/</link>
+      <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/categories/%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://gknoone.github.io/categories/iterm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>http://gknoone.github.io/categories/ssh/</link>
+      <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/ssh/</guid>
       <description></description>
     </item>
     
@@ -57,11 +66,11 @@
     </item>
     
     <item>
-      <title>blog搭建</title>
-      <link>http://gknoone.github.io/categories/blog%E6%90%AD%E5%BB%BA/</link>
+      <title>Hugo</title>
+      <link>http://gknoone.github.io/categories/hugo/</link>
       <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/categories/blog%E6%90%AD%E5%BB%BA/</guid>
+      <guid>http://gknoone.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>认证 on gknoone的技术博客</title>
+    <link>http://gknoone.github.io/tags/%E8%AE%A4%E8%AF%81/</link>
+    <description>Recent content in 认证 on gknoone的技术博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Feb 2020 10:46:03 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/tags/%E8%AE%A4%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssh使用pem文件远程登陆</title>
+      <link>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+      <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+      <description>方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1</description>
+    </item>
+    
+  </channel>
+</rss>
