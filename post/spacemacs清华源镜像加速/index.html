@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Git删除 .DS_Store - gknoone的技术博客</title>
+  <title>Spacemacs清华源镜像加速 - gknoone的技术博客</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="gknoone" /><meta name="description" content="cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &amp;gt;&amp;gt; .gitignore git push" /><meta name="keywords" content="gknoone, spacemacs, java" />
+<meta name="author" content="gknoone" /><meta name="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq" /><meta name="keywords" content="gknoone, spacemacs, java" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
-<link rel="canonical" href="http://gknoone.github.io/post/git%E5%88%A0%E9%99%A4.ds_store/" />
+<link rel="canonical" href="http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,23 +38,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Git删除 .DS_Store" />
-<meta property="og:description" content="cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push" />
+<meta property="og:title" content="Spacemacs清华源镜像加速" />
+<meta property="og:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://gknoone.github.io/post/git%E5%88%A0%E9%99%A4.ds_store/" />
-<meta property="article:published_time" content="2020-02-11T11:16:29+08:00" />
-<meta property="article:modified_time" content="2020-02-11T11:16:29+08:00" />
-<meta itemprop="name" content="Git删除 .DS_Store">
-<meta itemprop="description" content="cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push">
-<meta itemprop="datePublished" content="2020-02-11T11:16:29&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-11T11:16:29&#43;08:00" />
-<meta itemprop="wordCount" content="43">
+<meta property="og:url" content="http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" />
+<meta property="article:published_time" content="2020-02-11T13:48:32+08:00" />
+<meta property="article:modified_time" content="2020-02-11T13:48:32+08:00" />
+<meta itemprop="name" content="Spacemacs清华源镜像加速">
+<meta itemprop="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq">
+<meta itemprop="datePublished" content="2020-02-11T13:48:32&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-11T13:48:32&#43;08:00" />
+<meta itemprop="wordCount" content="97">
 
 
 
-<meta itemprop="keywords" content="git," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git删除 .DS_Store"/>
-<meta name="twitter:description" content="cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push"/>
+<meta itemprop="keywords" content="镜像,加速,spacemacs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Spacemacs清华源镜像加速"/>
+<meta name="twitter:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -117,51 +117,40 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Git删除 .DS_Store</h1>
+      <h1 class="post-title">Spacemacs清华源镜像加速</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-02-11 </span>
         <div class="post-category">
-            <a href="/categories/git/"> git </a>
+            <a href="/categories/emacs/"> emacs </a>
+            <a href="/categories/spacemacs/"> spacemacs </a>
             </div>
-          <span class="more-meta"> 约 43 字 </span>
+          <span class="more-meta"> 约 97 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
 
-    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">核心配置</a></li>
+    <li><a href="#heading1">巨人肩膀</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
     <div class="post-content">
-      <ol>
-<li>
-<p>cd 到项目路径</p>
-</li>
-<li>
-<p>执行</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">$ find . -name .DS_Store -print0 <span class="p">|</span> xargs -0 git rm -f --ignore-unmatch
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>插入到.gitignore</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">echo</span> .DS_Store &gt;&gt; .gitignore
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>git  push</p>
-</li>
-</ol>
+      <h2 id="heading">核心配置</h2>
+<p>添加下面的代码到<code>.spacemacs</code>或<code>~/.spacemacs/init.el</code> 的<code>dotspacemacs/user-init()</code>下</p>
+<pre><code class="language-elpa" data-lang="elpa">(setq configuration-layer--elpa-archives
+    '((&quot;melpa-cn&quot; . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&quot;)
+      (&quot;org-cn&quot;   . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&quot;)
+      (&quot;gnu-cn&quot;   . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/&quot;)))
+</code></pre><h2 id="heading1">巨人肩膀</h2>
+<p><a href="https://mirror.tuna.tsinghua.edu.cn/help/elpa/">清华镜像源elpa使用帮助</a></p>
 
     </div>
 
@@ -199,16 +188,14 @@
   </div>
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/git/">git</a>
+          <a href="/tags/%E9%95%9C%E5%83%8F/">镜像</a>
+          <a href="/tags/%E5%8A%A0%E9%80%9F/">加速</a>
+          <a href="/tags/spacemacs/">spacemacs</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Spacemacs清华源镜像加速</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/">
-            <span class="next-text nav-default">Git空提交</span>
+        
+        <a class="next" href="/post/git%E5%88%A0%E9%99%A4.ds_store/">
+            <span class="next-text nav-default">Git删除 .DS_Store</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

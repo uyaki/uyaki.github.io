@@ -6,10 +6,28 @@
     <description>Recent content in Categories on gknoone的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 11:16:29 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 13:48:32 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs</title>
+      <link>http://gknoone.github.io/categories/emacs/</link>
+      <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spacemacs</title>
+      <link>http://gknoone.github.io/categories/spacemacs/</link>
+      <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/spacemacs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>git</title>

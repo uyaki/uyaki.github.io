@@ -3,6 +3,76 @@
   
   <url>
     <loc>http://gknoone.github.io/categories/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/categories/emacs/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/categories/spacemacs/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/spacemacs/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/%E5%8A%A0%E9%80%9F/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/%E9%95%9C%E5%83%8F/</loc>
+    <lastmod>2020-02-11T13:48:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/categories/git/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -16,35 +86,7 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/git/</loc>
-    <lastmod>2020-02-11T11:16:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://gknoone.github.io/post/git%E5%88%A0%E9%99%A4.ds_store/</loc>
-    <lastmod>2020-02-11T11:16:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/</loc>
-    <lastmod>2020-02-11T11:16:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/post/</loc>
-    <lastmod>2020-02-11T11:16:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/tags/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -86,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/docker/</loc>
-    <lastmod>2020-02-11T10:57:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://gknoone.github.io/tags/docker/</loc>
     <lastmod>2020-02-11T10:57:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -100,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+    <loc>http://gknoone.github.io/categories/docker/</loc>
     <lastmod>2020-02-11T10:57:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/%E5%8A%A0%E9%80%9F/</loc>
+    <loc>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
     <lastmod>2020-02-11T10:57:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
