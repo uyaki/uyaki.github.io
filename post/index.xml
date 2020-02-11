@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gknoone的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Feb 2020 20:27:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 09:25:55 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git加速最佳实践</title>
+      <link>http://gknoone.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</guid>
+      <description>Git支持的协议 https协议，https://协议需要配置git的http.proxy参数 ssh协议，ssh://协议需要配置ssh的Pr</description>
+    </item>
     
     <item>
       <title>华夫饼</title>
