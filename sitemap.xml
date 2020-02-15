@@ -3,28 +3,56 @@
   
   <url>
     <loc>http://gknoone.github.io/categories/</loc>
-    <lastmod>2020-02-13T14:14:53+08:00</lastmod>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/</loc>
-    <lastmod>2020-02-13T14:14:53+08:00</lastmod>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/categories/java/</loc>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/java8/</loc>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/post/</loc>
-    <lastmod>2020-02-13T14:14:53+08:00</lastmod>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/tags/</loc>
-    <lastmod>2020-02-13T14:14:53+08:00</lastmod>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2020-02-15T15:58:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -37,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
+    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
     <lastmod>2020-02-13T14:14:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
+    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
     <lastmod>2020-02-13T14:14:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -72,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>http://gknoone.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2020-02-12T01:02:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>http://gknoone.github.io/categories/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2020-02-12T01:02:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -128,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/git/</loc>
+    <loc>http://gknoone.github.io/tags/git/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/git/</loc>
+    <loc>http://gknoone.github.io/categories/git/</loc>
     <lastmod>2020-02-11T11:16:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -170,13 +198,6 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/vim/</loc>
-    <lastmod>2020-02-11T11:06:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://gknoone.github.io/tags/vim/</loc>
     <lastmod>2020-02-11T11:06:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -184,14 +205,21 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/docker/</loc>
-    <lastmod>2020-02-11T10:57:01+08:00</lastmod>
+    <loc>http://gknoone.github.io/categories/vim/</loc>
+    <lastmod>2020-02-11T11:06:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/categories/docker/</loc>
+    <lastmod>2020-02-11T10:57:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/docker/</loc>
     <lastmod>2020-02-11T10:57:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -205,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/iterm/</loc>
+    <loc>http://gknoone.github.io/categories/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/iterm/</loc>
+    <loc>http://gknoone.github.io/tags/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -226,14 +254,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/ssh/</loc>
+    <loc>http://gknoone.github.io/categories/ssh/</loc>
     <lastmod>2020-02-11T10:46:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/ssh/</loc>
+    <loc>http://gknoone.github.io/tags/ssh/</loc>
     <lastmod>2020-02-11T10:46:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -282,14 +310,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/hugo/</loc>
+    <loc>http://gknoone.github.io/categories/hugo/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/hugo/</loc>
+    <loc>http://gknoone.github.io/tags/hugo/</loc>
     <lastmod>2020-02-06T21:56:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

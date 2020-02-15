@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JAVA on gknoone的博客</title>
+    <link>http://gknoone.github.io/categories/java/</link>
+    <description>Recent content in JAVA on gknoone的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 15 Feb 2020 15:58:54 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java8的18个时间处理实践</title>
+      <link>http://gknoone.github.io/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Sat, 15 Feb 2020 15:58:54 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</guid>
+      <description>java8 关于时间、日期处理 Java 8 推出了全新的日期时间 API。 Java 处理日期、日历和时间的方式一直为社区所诟病，将 java.util.Date 设定为可变类型，以及 SimpleDateFormat 的非线程安全使其</description>
+    </item>
+    
+  </channel>
+</rss>
