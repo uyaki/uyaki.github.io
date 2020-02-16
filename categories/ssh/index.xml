@@ -17,7 +17,7 @@
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
-      <description>方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1</description>
+      <description>方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       <pubDate>Sun, 16 Feb 2020 18:58:37 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/</guid>
-      <description>工具 锅 食材 腊肠 1~2根 荷兰豆 200g 盐 适量 耗油 1小勺 蒜粒 1瓣 花生油 适量 开水 少许 步骤 准备 荷兰豆掐头去筋，清洗 腊肠斜刀切片 蒜粒去衣切碎 制作 起锅，加入适</description>
+      <description>工具 锅 食材 腊肠 1~2根 荷兰豆 200g 盐 适量 耗油 1小勺 蒜粒 1瓣 花生油 适量 开水 少许 步骤 准备 荷兰豆掐头去筋，清洗； 腊肠斜刀切片； 蒜粒去衣切碎； 制作 起锅，</description>
     </item>
     
     <item>
@@ -107,7 +107,7 @@
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
-      <description>方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1</description>
+      <description>方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem</description>
     </item>
     
     <item>

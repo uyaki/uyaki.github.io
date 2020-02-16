@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="gknoone" /><meta name="description" content="方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1" /><meta name="keywords" content="gknoone, spacemacs, java, blog" />
+<meta name="author" content="gknoone" /><meta name="description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem" /><meta name="keywords" content="gknoone, spacemacs, java, blog" />
 
 
 
@@ -39,22 +39,22 @@
 
 
 <meta property="og:title" content="ssh使用pem文件远程登陆" />
-<meta property="og:description" content="方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1" />
+<meta property="og:description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/" />
 <meta property="article:published_time" content="2020-02-11T10:46:03+08:00" />
 <meta property="article:modified_time" content="2020-02-11T10:46:03+08:00" />
 <meta itemprop="name" content="ssh使用pem文件远程登陆">
-<meta itemprop="description" content="方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1">
+<meta itemprop="description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem">
 <meta itemprop="datePublished" content="2020-02-11T10:46:03&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T10:46:03&#43;08:00" />
-<meta itemprop="wordCount" content="77">
+<meta itemprop="wordCount" content="81">
 
 
 
 <meta itemprop="keywords" content="ssh,认证," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ssh使用pem文件远程登陆"/>
-<meta name="twitter:description" content="方式一： 修改pem权限 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件 1 ssh-add -k key.pem 登陆 1"/>
+<meta name="twitter:description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -124,7 +124,7 @@
         <div class="post-category">
             <a href="/categories/ssh/"> ssh </a>
             </div>
-          <span class="more-meta"> 约 77 字 </span>
+          <span class="more-meta"> 约 81 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -145,7 +145,7 @@
       <h2 id="heading">方式一：</h2>
 <ol>
 <li>
-<p>修改pem权限</p>
+<p>修改pem权限；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -156,7 +156,7 @@
 </div>
 </div></li>
 <li>
-<p>Mac OS 连接服务器使用 PEM 文件</p>
+<p>Mac OS 连接服务器使用 PEM 文件；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -170,7 +170,7 @@
 <h2 id="mac">方式二（Mac重启后失效）：</h2>
 <ol>
 <li>
-<p>使用ssh-add添加key文件</p>
+<p>使用ssh-add添加key文件；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -181,7 +181,7 @@
 </div>
 </div></li>
 <li>
-<p>登陆</p>
+<p>登陆；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
