@@ -6,26 +6,35 @@
     <description>Recent content in macOS on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 11:06:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 14:10:15 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Mac使用MacVim替代vim</title>
-      <link>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <title>Mac系统下修改docker的vm参数</title>
+      <link>http://gknoone.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 17 Feb 2020 14:10:15 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</guid>
+      <description>screen 1 screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty 会出现如下界面 键入回车，出现如下界面 像正常linux系统一样设置 1 sysctl -w vm.max_map_count=262144 按control+a，再按control+\ ，左下角出现退出</description>
+    </item>
+    
+    <item>
+      <title>MacOS使用MacVim替代vim</title>
+      <link>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <guid>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
     </item>
     
     <item>
-      <title>Mac在iTerm中使用rz、sz从远程上传下载文件</title>
-      <link>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <title>MacOS在iTerm中使用rz、sz从远程上传下载文件</title>
+      <link>http://gknoone.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
       <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/mac%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://gknoone.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
       <description>安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat</description>
     </item>
     

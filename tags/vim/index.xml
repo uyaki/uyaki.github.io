@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Mac使用MacVim替代vim</title>
-      <link>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <title>MacOS使用MacVim替代vim</title>
+      <link>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/mac%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <guid>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
     </item>
     

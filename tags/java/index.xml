@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on gknoone的博客</title>
+    <link>http://gknoone.github.io/tags/java/</link>
+    <description>Recent content in java on gknoone的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 17 Feb 2020 15:03:09 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jpa Id自增策略</title>
+      <link>http://gknoone.github.io/post/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Mon, 17 Feb 2020 15:03:09 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</guid>
+      <description>TABLE：使用一个特定的数据库表格来保存主键。 SEQUENCE：根据底层数据库的序列来生成主键，条件是数据库支持序列。 IDENTITY：主</description>
+    </item>
+    
+    <item>
+      <title>使用ResponseBodyAdvice的beforeBodyWrite处理String导致cast问题</title>
+      <link>http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 17 Feb 2020 15:02:02 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</guid>
+      <description>问题 配置全局返回时 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 @Configuration public class GlobalReturnConfig { @RestControllerAdvice(basePackages = &amp;#34;com.benyuan&amp;#34;) static class ResultResponseAdvice implements ResponseBodyAdvice&amp;lt;Object&amp;gt; { @Override public boolean supports(MethodParameter methodParameter, Class&amp;lt;? extends HttpMessageConverter&amp;lt;?&amp;gt;&amp;gt; aClass) { return true; } @Override public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class&amp;lt;? extends HttpMessageConverter&amp;lt;?&amp;gt;&amp;gt; aClass, ServerHttpRequest serverHttpRequest,</description>
+    </item>
+    
+  </channel>
+</rss>

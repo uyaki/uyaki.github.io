@@ -20,5 +20,14 @@
       <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq</description>
     </item>
     
+    <item>
+      <title>Docker切换镜像源</title>
+      <link>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <description>1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&amp;#39;EOF&amp;#39; { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://28ffkr6d.mirror.aliyuncs.com&amp;#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker</description>
+    </item>
+    
   </channel>
 </rss>

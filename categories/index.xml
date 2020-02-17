@@ -6,17 +6,44 @@
     <description>Recent content in Categories on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Feb 2020 13:59:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 15:03:09 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>es</title>
-      <link>http://gknoone.github.io/categories/es/</link>
+      <title>Java</title>
+      <link>http://gknoone.github.io/categories/java/</link>
+      <pubDate>Mon, 17 Feb 2020 15:03:09 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://gknoone.github.io/categories/git/</link>
+      <pubDate>Mon, 17 Feb 2020 14:48:59 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://gknoone.github.io/categories/docker/</link>
+      <pubDate>Mon, 17 Feb 2020 14:10:15 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>http://gknoone.github.io/categories/elasticsearch/</link>
       <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/categories/es/</guid>
+      <guid>http://gknoone.github.io/categories/elasticsearch/</guid>
       <description></description>
     </item>
     
@@ -30,15 +57,6 @@
     </item>
     
     <item>
-      <title>JAVA</title>
-      <link>http://gknoone.github.io/categories/java/</link>
-      <pubDate>Sat, 15 Feb 2020 15:58:54 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>图床</title>
       <link>http://gknoone.github.io/categories/%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
@@ -48,7 +66,7 @@
     </item>
     
     <item>
-      <title>emacs</title>
+      <title>Emacs</title>
       <link>http://gknoone.github.io/categories/emacs/</link>
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
@@ -57,7 +75,7 @@
     </item>
     
     <item>
-      <title>spacemacs</title>
+      <title>Spacemacs</title>
       <link>http://gknoone.github.io/categories/spacemacs/</link>
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
@@ -66,29 +84,11 @@
     </item>
     
     <item>
-      <title>git</title>
-      <link>http://gknoone.github.io/categories/git/</link>
-      <pubDate>Tue, 11 Feb 2020 11:16:29 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
+      <title>Vim</title>
       <link>http://gknoone.github.io/categories/vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
       <guid>http://gknoone.github.io/categories/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>http://gknoone.github.io/categories/docker/</link>
-      <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/docker/</guid>
       <description></description>
     </item>
     
@@ -102,7 +102,7 @@
     </item>
     
     <item>
-      <title>ssh</title>
+      <title>SSH</title>
       <link>http://gknoone.github.io/categories/ssh/</link>
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
