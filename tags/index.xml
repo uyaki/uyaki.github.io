@@ -6,7 +6,7 @@
     <description>Recent content in Tags on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Feb 2020 09:00:55 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 09:44:59 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>git</title>
       <link>http://gknoone.github.io/tags/git/</link>
-      <pubDate>Wed, 19 Feb 2020 09:00:55 +0800</pubDate>
+      <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
       
       <guid>http://gknoone.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orphan</title>
+      <link>http://gknoone.github.io/tags/orphan/</link>
+      <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/tags/orphan/</guid>
       <description></description>
     </item>
     

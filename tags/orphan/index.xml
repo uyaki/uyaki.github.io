@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>orphan on gknoone的博客</title>
+    <link>http://gknoone.github.io/tags/orphan/</link>
+    <description>Recent content in orphan on gknoone的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 19 Feb 2020 09:44:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/tags/orphan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git利用orphan分支功能清空所有历史记录</title>
+      <link>http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/</guid>
+      <description>目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm</description>
+    </item>
+    
+  </channel>
+</rss>
