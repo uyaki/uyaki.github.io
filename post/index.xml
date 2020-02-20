@@ -116,7 +116,7 @@
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
-      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq</description>
+      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1</description>
     </item>
     
     <item>
