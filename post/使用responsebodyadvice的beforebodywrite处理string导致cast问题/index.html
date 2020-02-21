@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/" />
@@ -135,14 +135,14 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#问题">问题</a></li>
-    <li><a href="#解决">解决</a></li>
+    <li><a href="#heading">问题</a></li>
+    <li><a href="#heading1">解决</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="问题">问题</h2>
+      <h2 id="heading">问题</h2>
 <p>配置全局返回时</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -189,7 +189,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>beforeBodyWrite方法在处理String类型返回值的时候，会造成ResponseDTO can not be cast to String的BUG</p>
-<h2 id="解决">解决</h2>
+<h2 id="heading1">解决</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1

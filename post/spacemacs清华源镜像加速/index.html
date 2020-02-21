@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="gknoone" /><meta name="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1" /><meta name="keywords" content="镜像, 加速, Spacemacs" />
+<meta name="author" content="gknoone" /><meta name="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq" /><meta name="keywords" content="镜像, 加速, Spacemacs" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" />
@@ -39,22 +39,22 @@
 
 
 <meta property="og:title" content="Spacemacs清华源镜像加速" />
-<meta property="og:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1" />
+<meta property="og:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" />
 <meta property="article:published_time" content="2020-02-11T13:48:32+08:00" />
 <meta property="article:modified_time" content="2020-02-11T13:48:32+08:00" />
 <meta itemprop="name" content="Spacemacs清华源镜像加速">
-<meta itemprop="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1">
+<meta itemprop="description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq">
 <meta itemprop="datePublished" content="2020-02-11T13:48:32&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T13:48:32&#43;08:00" />
-<meta itemprop="wordCount" content="101">
+<meta itemprop="wordCount" content="97">
 
 
 
 <meta itemprop="keywords" content="镜像,加速,Spacemacs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Spacemacs清华源镜像加速"/>
-<meta name="twitter:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1"/>
+<meta name="twitter:description" content="核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -125,7 +125,7 @@
             <a href="/categories/emacs/"> Emacs </a>
             <a href="/categories/spacemacs/"> Spacemacs </a>
             </div>
-          <span class="more-meta"> 约 101 字 </span>
+          <span class="more-meta"> 约 97 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -136,30 +136,20 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#核心配置">核心配置</a></li>
-    <li><a href="#巨人肩膀">巨人肩膀</a></li>
+    <li><a href="#heading">核心配置</a></li>
+    <li><a href="#heading1">巨人肩膀</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="核心配置">核心配置</h2>
+      <h2 id="heading">核心配置</h2>
 <p>添加下面的代码到<code>.spacemacs</code>或<code>~/.spacemacs/init.el</code> 的<code>dotspacemacs/user-init()</code>下</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">(setq configuration-layer-elpa-archives
-    &#39;((&#34;melpa-cn&#34; . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&#34;)
-      (&#34;org-cn&#34;   . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&#34;)
-      (&#34;gnu-cn&#34;   . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/&#34;)))
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="巨人肩膀">巨人肩膀</h2>
+<pre><code class="language-elpa" data-lang="elpa">(setq configuration-layer-elpa-archives
+    '((&quot;melpa-cn&quot; . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&quot;)
+      (&quot;org-cn&quot;   . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&quot;)
+      (&quot;gnu-cn&quot;   . &quot;http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/&quot;)))
+</code></pre><h2 id="heading1">巨人肩膀</h2>
 <p><a href="https://mirror.tuna.tsinghua.edu.cn/help/elpa/">清华镜像源elpa使用帮助</a></p>
 
     </div>

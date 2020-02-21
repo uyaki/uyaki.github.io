@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/hugo%E6%90%AD%E5%BB%BA/" />
@@ -48,7 +48,7 @@
 <meta itemprop="description" content="使用 Hugo 搭建博客 hugo 安装 依赖： Git Mercurial Go Mac 下直接使用 Homebrew 安装： 1 $ brew install hugo github仓库准备 create new repositories =&gt; blog ，用来存放网站内容和源文件； create new repositories =&gt; &lt;username&gt;.github.io ，用于存放">
 <meta itemprop="datePublished" content="2020-02-06T21:56:02&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-06T21:56:02&#43;08:00" />
-<meta itemprop="wordCount" content="1034">
+<meta itemprop="wordCount" content="996">
 
 
 
@@ -124,8 +124,8 @@
         <div class="post-category">
             <a href="/categories/hugo/"> Hugo </a>
             </div>
-          <span class="more-meta"> 约 1034 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+          <span class="more-meta"> 约 996 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -135,24 +135,24 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#hugo-安装">hugo 安装</a></li>
-    <li><a href="#github仓库准备">github仓库准备</a></li>
-    <li><a href="#生成站点">生成站点</a></li>
-    <li><a href="#添加主题">添加主题</a></li>
-    <li><a href="#启动hugo服务">启动hugo服务</a></li>
-    <li><a href="#创建-public-子模块">创建 public 子模块</a></li>
-    <li><a href="#生成最终发布的网站内容">生成最终发布的网站内容</a></li>
-    <li><a href="#推送到远程usernamegithubio">推送到远程.github.io</a></li>
-    <li><a href="#推送到远程blog">推送到远程blog</a></li>
-    <li><a href="#自动部署脚本">自动部署脚本</a></li>
-    <li><a href="#支持评论">支持评论</a></li>
+    <li><a href="#hugo-">hugo 安装</a></li>
+    <li><a href="#github">github仓库准备</a></li>
+    <li><a href="#heading">生成站点</a></li>
+    <li><a href="#heading1">添加主题</a></li>
+    <li><a href="#hugo">启动hugo服务</a></li>
+    <li><a href="#-public-">创建 public 子模块</a></li>
+    <li><a href="#heading2">生成最终发布的网站内容</a></li>
+    <li><a href="#usernamegithubio">推送到远程.github.io</a></li>
+    <li><a href="#blog">推送到远程blog</a></li>
+    <li><a href="#heading3">自动部署脚本</a></li>
+    <li><a href="#heading4">支持评论</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h1 id="使用-hugo-搭建博客">使用 Hugo 搭建博客</h1>
-<h2 id="hugo-安装">hugo 安装</h2>
+      <h1 id="-hugo-">使用 Hugo 搭建博客</h1>
+<h2 id="hugo-">hugo 安装</h2>
 <p>依赖：</p>
 <ul>
 <li>Git</li>
@@ -168,12 +168,12 @@
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ brew install hugo
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="github仓库准备">github仓库准备</h2>
+</div><h2 id="github">github仓库准备</h2>
 <ol>
 <li>create new repositories =&gt; <code>blog</code> ，用来存放网站内容和源文件；</li>
 <li>create new repositories =&gt; <code>&lt;username&gt;.github.io</code> ，用于存放最终发布的网站内容；</li>
 </ol>
-<h2 id="生成站点">生成站点</h2>
+<h2 id="heading">生成站点</h2>
 <p>使用 Hugo 快速生成站点</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -223,7 +223,7 @@ $ tree -d -L <span class="m">1</span>
 <li>themes 存放主题</li>
 <li>config.toml 配置文件</li>
 </ul>
-<h2 id="添加主题">添加主题</h2>
+<h2 id="heading1">添加主题</h2>
 <p>到<a href="https://github.com/olOwOlo/hugo-theme-even.git">hugo-theme-even</a>下fork项目</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -242,7 +242,7 @@ $ git submodule add https://github.com/gknoone/hugo-theme-even.git themes/even
 </code></pre></td></tr></table>
 </div>
 </div><p>下载完后，找到主题目录 <code>/themes/even/exampleSite</code> 下的配置文件 <code>config.toml</code>，将该文件复制到根目录下，替换根目录的 <code>config.toml</code>，根据需求更改配置文件即可。</p>
-<h2 id="启动hugo服务">启动hugo服务</h2>
+<h2 id="hugo">启动hugo服务</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -251,7 +251,7 @@ $ git submodule add https://github.com/gknoone/hugo-theme-even.git themes/even
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ hugo server -D
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="创建-public-子模块">创建 public 子模块</h2>
+</div><h2 id="-public-">创建 public 子模块</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -260,7 +260,7 @@ $ git submodule add https://github.com/gknoone/hugo-theme-even.git themes/even
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ git submodule add -f git@github.com:gknoone/gknoone.github.io.git public
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="生成最终发布的网站内容">生成最终发布的网站内容</h2>
+</div><h2 id="heading2">生成最终发布的网站内容</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -269,7 +269,7 @@ $ git submodule add https://github.com/gknoone/hugo-theme-even.git themes/even
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ hugo
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="推送到远程usernamegithubio">推送到远程<!-- raw HTML omitted -->.github.io</h2>
+</div><h2 id="usernamegithubio">推送到远程<!-- raw HTML omitted -->.github.io</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -286,7 +286,7 @@ $ git commit -m <span class="s2">&#34;first commit&#34;</span>
 $ git push -u orgin master
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="推送到远程blog">推送到远程blog</h2>
+</div><h2 id="blog">推送到远程blog</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -298,49 +298,7 @@ $ vim .gitignore
 </code></pre></td></tr></table>
 </div>
 </div><p>添加如下内容</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># Created by .ignore support plugin (hsz.mobi)
+<pre><code class="language-.gitignore" data-lang=".gitignore"># Created by .ignore support plugin (hsz.mobi)
 ### macOS template
 # General
 .DS_Store
@@ -378,9 +336,7 @@ Temporary Items
 hugo.exe
 hugo.darwin
 hugo.linux
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="自动部署脚本">自动部署脚本</h2>
+</code></pre><h2 id="heading3">自动部署脚本</h2>
 <p>将以上步骤添加到自动执行脚本中 deploy.sh，脚本 commit 提交信息会使用执行时的时间，将脚本放到网站项目路径下，写完博客后，双击运行即可自动部署发布</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -436,7 +392,7 @@ git push origin master
 <span class="nb">cd</span> ..
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="支持评论">支持评论</h2>
+</div><h2 id="heading4">支持评论</h2>
 <p>Hugo 支持 Disqus 评论，只需要在配置文件 config.toml 中设置 disqusShortname = &ldquo;disqusShortname&rdquo;，如果没有 disqusShortname，需要到 <a href="https://disqus.com/">Disqus 官网</a>注册一个账号，注册后添加一个网站，添加时会让填一个 shortname，Disqus 会生成一个 shortname.disqus.com 的网址，另外还需要把 config.toml 中的 baseURL 地址，也就是公网访问地址添加到 Diqus 的信任网址中，类似于互相添加信任</p>
 
     </div>
