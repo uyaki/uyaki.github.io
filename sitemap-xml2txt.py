@@ -1,5 +1,5 @@
-# ！usr/bin/python
 # -*- coding: utf-8 -*-
+# ! usr/bin/python
 # ==========================
 import xml.etree.ElementTree as ET
 # 读取当前目录下到sitemap.xml文件
