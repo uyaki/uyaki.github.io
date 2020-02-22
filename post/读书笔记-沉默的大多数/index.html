@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Git利用orphan分支功能清空所有历史记录 - gknoone的博客</title>
+  <title>读书笔记 《沉默的大多数》 - gknoone的博客</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="gknoone" /><meta name="description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm" /><meta name="keywords" content="git, orphan, 历史记录" />
+<meta name="author" content="gknoone" /><meta name="description" content="人要永远做小孩子虽办不到，但想要保持沉默是能办到的。 其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友" /><meta name="keywords" content="沉默的大多数, 摘抄" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.63.2 with theme even" />
 
 
-<link rel="canonical" href="http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="http://gknoone.github.io/post/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,23 +38,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Git利用orphan分支功能清空所有历史记录" />
-<meta property="og:description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm" />
+<meta property="og:title" content="读书笔记 《沉默的大多数》" />
+<meta property="og:description" content="人要永远做小孩子虽办不到，但想要保持沉默是能办到的。 其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/" />
-<meta property="article:published_time" content="2020-02-19T09:44:59+08:00" />
-<meta property="article:modified_time" content="2020-02-19T09:44:59+08:00" />
-<meta itemprop="name" content="Git利用orphan分支功能清空所有历史记录">
-<meta itemprop="description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm">
-<meta itemprop="datePublished" content="2020-02-19T09:44:59&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-19T09:44:59&#43;08:00" />
-<meta itemprop="wordCount" content="293">
+<meta property="og:url" content="http://gknoone.github.io/post/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0/" />
+<meta property="article:published_time" content="2020-02-23T01:49:18+08:00" />
+<meta property="article:modified_time" content="2020-02-23T01:49:18+08:00" />
+<meta itemprop="name" content="读书笔记 《沉默的大多数》">
+<meta itemprop="description" content="人要永远做小孩子虽办不到，但想要保持沉默是能办到的。 其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友">
+<meta itemprop="datePublished" content="2020-02-23T01:49:18&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-23T01:49:18&#43;08:00" />
+<meta itemprop="wordCount" content="640">
 
 
 
-<meta itemprop="keywords" content="git,orphan," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git利用orphan分支功能清空所有历史记录"/>
-<meta name="twitter:description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm"/>
+<meta itemprop="keywords" content="读书笔记," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="读书笔记 《沉默的大多数》"/>
+<meta name="twitter:description" content="人要永远做小孩子虽办不到，但想要保持沉默是能办到的。 其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -117,15 +117,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Git利用orphan分支功能清空所有历史记录</h1>
+      <h1 class="post-title">读书笔记 《沉默的大多数》</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-02-19 </span>
+        <span class="post-time"> 2020-02-23 </span>
         <div class="post-category">
-            <a href="/categories/git/"> git </a>
+            <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"> 读书笔记 </a>
             </div>
-          <span class="more-meta"> 约 293 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 640 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -133,75 +133,22 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#目的">目的</a></li>
-    <li><a href="#实现">实现</a></li>
-    <li><a href="#tips">tips📌</a>
-      <ul>
-        <li><a href="#git-push--f无权限问题">git push -f无权限问题</a></li>
-        <li><a href="#--orphan其他用途">&ndash;orphan其他用途</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="目的">目的</h2>
-<p>清空git项目，获得一个没有历史记录的空项目</p>
-<h2 id="实现">实现</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1">## 创建一个orphan分支</span>
-$ git checkout --orphan tmp_branch
-<span class="c1">## 给爷爬~~~~</span>
-$ git rm -rf .
-<span class="c1">## TODO 加一些文件</span>
-$ ... 
-<span class="c1">## 提交</span>
-$ git add .
-$ git commit -am <span class="s2">&#34;commit message&#34;</span>
-<span class="c1">## 删除master分支</span>
-$ git branch -D master
-<span class="c1">## 重命名当前分支为master</span>
-$ git branch -m master
-<span class="c1">## 强制推送到远程</span>
-$ git push -f origin master
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="tips">tips📌</h2>
-<h3 id="git-push--f无权限问题">git push -f无权限问题</h3>
-<p>可能会出现无法强制推送的BUG：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">You are not allowed to force push code to a protected branch on this project
-</code></pre></td></tr></table>
-</div>
-</div><p>配置下Git远程（在 Settings 的 Repository 设置项的 Protected Branches)</p>
-<p>展示移除保护，之后恢复就行。</p>
-<h3 id="--orphan其他用途">&ndash;orphan其他用途</h3>
-<p>可以用于创建一个跟master无关的分支，使一个git管理不同的项目，找个时间再单独开个贴写吧，哈哈哈哈哈</p>
+      <ol>
+<li><strong>人要永远做小孩子虽办不到，但想要保持沉默是能办到的。</strong></li>
+<li>其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友看了这一段就不笑，他以为这样吐痰动作不美，境界不高，思想也不好。<strong>这使我不敢与他争辩——再争辩就要涉入某些话语的范畴，而这些话语，就是阴阳两界的分界线。</strong></li>
+<li>要给人讲“五讲四美”，最好是戴上个红箍。根据我对事实的了解，红箍还不大够用，最好穿上一身警服。<strong>“五讲四美”虽然是些好话，讲的时候最好有实力或者说是身份作为保证。</strong></li>
+<li>从那些话里我还知道了一亩地可以产三十万斤粮，然后我们就饿得要死。总而言之，<strong>从小我对讲出来的话就不大相信，越是声色俱厉，嗓门高亢，我越是不信，这种怀疑态度起源于我饥饿的肚肠。和任何话语相比，饥饿都是更大的真理。</strong></li>
+<li><strong>饥饿可以把小孩子变成白蚁。</strong></li>
+<li>我们这一代，生于一个神圣的时代，多么幸福；而且肩负着解放天下三分之二受苦人的神圣使命，等等。<strong>同年龄的人听了都很振奋，很爱听，但我总有点疑问，这么多美事怎么都叫我赶上了。</strong></li>
+<li><strong>假如我们真遇上了这么多美事，不把它说出来会不会更好。</strong></li>
+<li><strong>与其大呼小叫说要去解放他们，让人家苦等，倒不如一声不吭，忽然有一天把他们解放，给他们一个意外惊喜。</strong></li>
+<li>话语教给我们很多，但善恶还是可以自明。话语想要教给我们，人与人生来就不平等。在人间，尊卑有序是永恒的真理，<strong>但你也可以不听。</strong></li>
+<li>我把一个咬人的大学生称为人性的教师，肯定要把一些人气得发狂。但我有自己的道理：<strong>一个脾气暴躁、动辄使用牙齿的人，尚且不肯吞下别人的肉体，这一课看起来更有力量。</strong></li>
+</ol>
 
     </div>
 
@@ -213,7 +160,7 @@ $ git push -f origin master
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-02-19
+        2020-02-23
         
     </span>
   </p>
@@ -239,17 +186,12 @@ $ git push -f origin master
   </div>
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/git/">git</a>
-          <a href="/tags/orphan/">orphan</a>
+          <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Java配置允许跨域访问</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/git%E4%BD%BF%E7%94%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E5%8A%9F%E8%83%BD%E6%90%AD%E5%BB%BA%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E5%85%B3%E8%81%94idea%E9%A1%B9%E7%9B%AE/">
-            <span class="next-text nav-default">Git使用子模块功能搭建多模块无关联IDEA项目</span>
+        
+        <a class="next" href="/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">
+            <span class="next-text nav-default">Homebrew实用命令总结</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Git利用orphan分支功能清空所有历史记录 - gknoone的博客</title>
+  <title>Homebrew实用命令总结 - gknoone的博客</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="gknoone" /><meta name="description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm" /><meta name="keywords" content="git, orphan, 历史记录" />
+<meta name="author" content="gknoone" /><meta name="description" content="更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新" /><meta name="keywords" content="macOS, homebrew, brew" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.63.2 with theme even" />
 
 
-<link rel="canonical" href="http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/" />
+<link rel="canonical" href="http://gknoone.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,23 +38,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Git利用orphan分支功能清空所有历史记录" />
-<meta property="og:description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm" />
+<meta property="og:title" content="Homebrew实用命令总结" />
+<meta property="og:description" content="更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://gknoone.github.io/post/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/" />
-<meta property="article:published_time" content="2020-02-19T09:44:59+08:00" />
-<meta property="article:modified_time" content="2020-02-19T09:44:59+08:00" />
-<meta itemprop="name" content="Git利用orphan分支功能清空所有历史记录">
-<meta itemprop="description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm">
-<meta itemprop="datePublished" content="2020-02-19T09:44:59&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-19T09:44:59&#43;08:00" />
-<meta itemprop="wordCount" content="293">
+<meta property="og:url" content="http://gknoone.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/" />
+<meta property="article:published_time" content="2020-02-23T01:23:11+08:00" />
+<meta property="article:modified_time" content="2020-02-23T01:23:11+08:00" />
+<meta itemprop="name" content="Homebrew实用命令总结">
+<meta itemprop="description" content="更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新">
+<meta itemprop="datePublished" content="2020-02-23T01:23:11&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-23T01:23:11&#43;08:00" />
+<meta itemprop="wordCount" content="368">
 
 
 
-<meta itemprop="keywords" content="git,orphan," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Git利用orphan分支功能清空所有历史记录"/>
-<meta name="twitter:description" content="目的 清空git项目，获得一个没有历史记录的空项目 实现 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 创建一个orphan分支 $ git checkout --orphan tmp_branch ## 给爷爬~~~~ $ git rm"/>
+<meta itemprop="keywords" content="macOS,homebrew," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Homebrew实用命令总结"/>
+<meta name="twitter:description" content="更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -117,14 +117,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Git利用orphan分支功能清空所有历史记录</h1>
+      <h1 class="post-title">Homebrew实用命令总结</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-02-19 </span>
+        <span class="post-time"> 2020-02-23 </span>
         <div class="post-category">
-            <a href="/categories/git/"> git </a>
+            <a href="/categories/homebrew/"> homebrew </a>
             </div>
-          <span class="more-meta"> 约 293 字 </span>
+          <span class="more-meta"> 约 368 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -135,74 +135,101 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#目的">目的</a></li>
-    <li><a href="#实现">实现</a></li>
-    <li><a href="#tips">tips📌</a>
-      <ul>
-        <li><a href="#git-push--f无权限问题">git push -f无权限问题</a></li>
-        <li><a href="#--orphan其他用途">&ndash;orphan其他用途</a></li>
-      </ul>
-    </li>
+    <li><a href="#更新homebrew">更新Homebrew</a></li>
+    <li><a href="#查看哪些包可以更新">查看哪些包可以更新</a></li>
+    <li><a href="#更新包-formula">更新包 (formula)</a></li>
+    <li><a href="#清理旧版本">清理旧版本</a></li>
+    <li><a href="#锁定不想更新的包">锁定不想更新的包</a></li>
+    <li><a href="#查看包的相关信息">查看包的相关信息</a></li>
+    <li><a href="#显示包的依赖关系">显示包的依赖关系</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="目的">目的</h2>
-<p>清空git项目，获得一个没有历史记录的空项目</p>
-<h2 id="实现">实现</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1">## 创建一个orphan分支</span>
-$ git checkout --orphan tmp_branch
-<span class="c1">## 给爷爬~~~~</span>
-$ git rm -rf .
-<span class="c1">## TODO 加一些文件</span>
-$ ... 
-<span class="c1">## 提交</span>
-$ git add .
-$ git commit -am <span class="s2">&#34;commit message&#34;</span>
-<span class="c1">## 删除master分支</span>
-$ git branch -D master
-<span class="c1">## 重命名当前分支为master</span>
-$ git branch -m master
-<span class="c1">## 强制推送到远程</span>
-$ git push -f origin master
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="tips">tips📌</h2>
-<h3 id="git-push--f无权限问题">git push -f无权限问题</h3>
-<p>可能会出现无法强制推送的BUG：</p>
+      <h2 id="更新homebrew">更新Homebrew</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">You are not allowed to force push code to a protected branch on this project
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew update
 </code></pre></td></tr></table>
 </div>
-</div><p>配置下Git远程（在 Settings 的 Repository 设置项的 Protected Branches)</p>
-<p>展示移除保护，之后恢复就行。</p>
-<h3 id="--orphan其他用途">&ndash;orphan其他用途</h3>
-<p>可以用于创建一个跟master无关的分支，使一个git管理不同的项目，找个时间再单独开个贴写吧，哈哈哈哈哈</p>
-
+</div><h2 id="查看哪些包可以更新">查看哪些包可以更新</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew outdated
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="更新包-formula">更新包 (formula)</h2>
+<blockquote>
+<p>Homebrew 会安装新版本的包，但旧版本仍然会保留。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew upgrade             <span class="c1"># 更新所有的包</span>
+$ brew upgrade <span class="nv">$FORMULA</span>    <span class="c1"># 更新指定的包</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="清理旧版本">清理旧版本</h2>
+<blockquote>
+<p>Homebrew 只会清除比当前安装的包更老的版本，所以不用担心有些包没更新但被删了。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew cleanup             <span class="c1"># 清理所有包的旧版本</span>
+$ brew cleanup <span class="nv">$FORMULA</span>    <span class="c1"># 清理指定包的旧版本</span>
+$ brew cleanup -n          <span class="c1"># 查看可清理的旧版本包，不执行实际操作</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="锁定不想更新的包">锁定不想更新的包</h2>
+<blockquote>
+<p>但我们有时候会担心自动升级把一些不希望更新的包更新了。数据库就属于这一类，尤其是 PostgreSQL 跨 minor 版本升级都要迁移数据库的。我们更希望找个时间单独处理它。这时可用 brew pin 去锁定这个包，然后 brew update 就会略过它了。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew pin <span class="nv">$FORMULA</span>      <span class="c1"># 锁定某个包</span>
+$ brew unpin <span class="nv">$FORMULA</span>    <span class="c1"># 取消锁定</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="查看包的相关信息">查看包的相关信息</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew info <span class="nv">$FORMULA</span>    <span class="c1"># 显示某个包的信息</span>
+$ brew info             <span class="c1"># 显示安装了包数量，文件数量，和总占用空间</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="显示包的依赖关系">显示包的依赖关系</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ brew deps --installed --tree <span class="c1"># 查看已安装的包的依赖，树形显示</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -213,7 +240,7 @@ $ git push -f origin master
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-02-19
+        2020-02-23
         
     </span>
   </p>
@@ -239,17 +266,17 @@ $ git push -f origin master
   </div>
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/git/">git</a>
-          <a href="/tags/orphan/">orphan</a>
+          <a href="/tags/macos/">macOS</a>
+          <a href="/tags/homebrew/">homebrew</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/">
+        <a class="prev" href="/post/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Java配置允许跨域访问</span>
+            <span class="prev-text nav-default">读书笔记 《沉默的大多数》</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/git%E4%BD%BF%E7%94%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E5%8A%9F%E8%83%BD%E6%90%AD%E5%BB%BA%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E5%85%B3%E8%81%94idea%E9%A1%B9%E7%9B%AE/">
-            <span class="next-text nav-default">Git使用子模块功能搭建多模块无关联IDEA项目</span>
+        <a class="next" href="/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/">
+            <span class="next-text nav-default">SpringBoot设置项目热启动</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
