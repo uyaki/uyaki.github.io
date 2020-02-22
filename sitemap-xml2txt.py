@@ -9,12 +9,10 @@ tree = ET.ElementTree(file='sitemap.xml')
 root = tree.getroot()
 # 写入到sitemap.txt
 print('    🤪write into sitemap.txt...')
-url_no = 0;
 f = open('./sitemap.txt', 'w')
 for url in root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url'):
     loc = url.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
-    url_no = url_no + 1
-    print('    find url : ', url_no)
     f.write(loc.text + "\n")
 f.close()
 print('  🥳successful!!!')
+
