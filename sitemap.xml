@@ -3,28 +3,35 @@
   
   <url>
     <loc>http://gknoone.github.io/categories/</loc>
-    <lastmod>2020-02-23T16:26:44+08:00</lastmod>
+    <lastmod>2020-02-23T20:03:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/</loc>
-    <lastmod>2020-02-23T16:26:44+08:00</lastmod>
+    <lastmod>2020-02-23T20:03:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/post/</loc>
-    <lastmod>2020-02-23T16:26:44+08:00</lastmod>
+    <lastmod>2020-02-23T20:03:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/tags/</loc>
-    <lastmod>2020-02-23T16:26:44+08:00</lastmod>
+    <lastmod>2020-02-23T20:03:51+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</loc>
+    <lastmod>2020-02-23T20:03:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

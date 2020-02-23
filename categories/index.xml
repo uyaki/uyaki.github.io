@@ -6,7 +6,7 @@
     <description>Recent content in Categories on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 16:26:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 20:03:51 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>http://gknoone.github.io/categories/git/</link>
       <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
       
