@@ -6,15 +6,24 @@
     <description>Recent content in Categories on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 20:03:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 22:05:37 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Git</title>
+      <link>http://gknoone.github.io/categories/git/</link>
+      <pubDate>Sun, 23 Feb 2020 22:05:37 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>食谱</title>
       <link>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</link>
-      <pubDate>Sun, 23 Feb 2020 16:26:44 +0800</pubDate>
+      <pubDate>Sun, 23 Feb 2020 20:03:51 +0800</pubDate>
       
       <guid>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</guid>
       <description></description>
@@ -44,15 +53,6 @@
       <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
       
       <guid>http://gknoone.github.io/categories/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>http://gknoone.github.io/categories/git/</link>
-      <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/git/</guid>
       <description></description>
     </item>
     
