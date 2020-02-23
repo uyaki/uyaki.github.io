@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>菜谱</title>
-      <link>http://gknoone.github.io/categories/%E8%8F%9C%E8%B0%B1/</link>
-      <pubDate>Sun, 23 Feb 2020 15:57:22 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/%E8%8F%9C%E8%B0%B1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>读书笔记</title>
       <link>http://gknoone.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 23 Feb 2020 01:49:18 +0800</pubDate>
@@ -48,7 +39,7 @@
     </item>
     
     <item>
-      <title>Java</title>
+      <title>java</title>
       <link>http://gknoone.github.io/categories/java/</link>
       <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
       
