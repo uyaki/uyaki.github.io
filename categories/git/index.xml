@@ -6,10 +6,19 @@
     <description>Recent content in Git on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 22:05:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git标准Fork &amp; Pull Request流程</title>
+      <link>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
+      <description>创建一个分叉 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新 1 2 3 4 5 # Add &amp;#39;upstream&amp;#39; repo to list of remotes $ git</description>
+    </item>
     
     <item>
       <title>Git中文乱码解决</title>

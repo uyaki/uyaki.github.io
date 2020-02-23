@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Git标准Fork &amp; Pull Request流程 - gknoone的博客</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="gknoone" /><meta name="description" content="创建一个分叉 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新 1 2 3 4 5 # Add &amp;#39;upstream&amp;#39; repo to list of remotes $ git" /><meta name="keywords" content="git, fork, Pull Request" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.63.2 with theme even" />
+
+
+<link rel="canonical" href="http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Git标准Fork &amp; Pull Request流程" />
+<meta property="og:description" content="创建一个分叉 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新 1 2 3 4 5 # Add &#39;upstream&#39; repo to list of remotes $ git" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" />
+<meta property="article:published_time" content="2020-02-23T22:53:46+08:00" />
+<meta property="article:modified_time" content="2020-02-23T22:53:46+08:00" />
+<meta itemprop="name" content="Git标准Fork &amp; Pull Request流程">
+<meta itemprop="description" content="创建一个分叉 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新 1 2 3 4 5 # Add &#39;upstream&#39; repo to list of remotes $ git">
+<meta itemprop="datePublished" content="2020-02-23T22:53:46&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-23T22:53:46&#43;08:00" />
+<meta itemprop="wordCount" content="1299">
+
+
+
+<meta itemprop="keywords" content="git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git标准Fork &amp; Pull Request流程"/>
+<meta name="twitter:description" content="创建一个分叉 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新 1 2 3 4 5 # Add &#39;upstream&#39; repo to list of remotes $ git"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">gknoone</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">文章</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">gknoone</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">文章</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Git标准Fork &amp; Pull Request流程</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-23 </span>
+        <div class="post-category">
+            <a href="/categories/git/"> Git </a>
+            </div>
+          <span class="more-meta"> 约 1299 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#创建一个分叉">创建一个分叉</a></li>
+    <li><a href="#让你的fork保持最新">让你的fork保持最新</a></li>
+    <li><a href="#开发">开发</a></li>
+    <li><a href="#提交一个pull-request">提交一个Pull Request</a>
+      <ul>
+        <li><a href="#清理你的工作">清理你的工作</a></li>
+        <li><a href="#提交">提交</a></li>
+      </ul>
+    </li>
+    <li><a href="#接受和合并拉请求">接受和合并拉请求</a>
+      <ul>
+        <li><a href="#检查和测试拉请求">检查和测试拉请求</a></li>
+        <li><a href="#自动合并拉请求">自动合并拉请求</a></li>
+        <li><a href="#手动合并拉请求">手动合并拉请求</a></li>
+      </ul>
+    </li>
+    <li><a href="#巨人的肩膀">巨人的肩膀</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="创建一个分叉">创建一个分叉</h2>
+<p>直接进入 GitHub 页面，点击<code>Fork</code>按钮。 就是这么简单。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Clone your fork to your local machine</span>
+$ git clone git@github.com:USERNAME/FORKED-PROJECT.git
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="让你的fork保持最新">让你的fork保持最新</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
+$ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+
+<span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
+$ git remote -v
+</code></pre></td></tr></table>
+</div>
+</div><p>获取上游 repo 的分支和最新的提交来将它们放入你的存储库</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Fetch from upstream remote</span>
+$ git fetch upstream
+
+<span class="c1"># View all branches, including those from upstream</span>
+$ git branch -va
+</code></pre></td></tr></table>
+</div>
+</div><p>检查你自己的 master 分支、合并上游的 master 分支</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Checkout your master branch and merge upstream</span>
+git checkout master
+git merge upstream/master
+</code></pre></td></tr></table>
+</div>
+</div><p>现在，您的本地主分支是最新的一切修改上游。</p>
+<blockquote>
+<p>如果在本地 master 分支上没有唯一的提交，git 将简单地执行快进操作。 然而，如果您一直在 master 上进行更改(在绝大多数情况下，您可能不应该这样做——请参阅下一部分，您可能必须处理冲突。 在这样做的时候，要注意尊重上游所做的更改。</p>
+</blockquote>
+<h2 id="开发">开发</h2>
+<p>无论何时开始处理一个新特性或修复错误，创建一个新分支都是很重要的。 它不仅是正确的 git 工作流，而且还可以使您的更改与主分支保持组织和分离，这样您就可以轻松地为您完成的每个任务提交和管理多个拉请求。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Checkout the master branch - you want your new branch to come from master</span>
+$ git checkout master
+
+<span class="c1"># Create a new branch named newfeature (give your branch its own simple informative name),Switch to your new branch</span>
+$ git branch -b newfeature
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>开始折腾吧</p>
+</blockquote>
+<h2 id="提交一个pull-request">提交一个Pull Request</h2>
+<h3 id="清理你的工作">清理你的工作</h3>
+<p>在提交您的拉请求之前，您可能需要做一些事情来清理您的分支，并使其尽可能简单，以便原来的 repo 的维护人员测试、接受和合并您的工作。</p>
+<p>如果已经向上游主分支提交了任何提交，那么您应该重新设置开发分支的基础，以便合并它将是一个简单的快进操作，不需要任何冲突解决工作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master
+
+<span class="c1"># If there were any new commits, rebase your development branch</span>
+$ git checkout newfeature
+$ git rebase master
+</code></pre></td></tr></table>
+</div>
+</div><p>现在，可能需要将一些较小的提交压缩成较大的、更具凝聚力的提交。 你可以通过一个交互式 rebase 来实现:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Rebase all commits on your development branch</span>
+$ git checkout 
+$ git rebase -i master
+</code></pre></td></tr></table>
+</div>
+</div><p>这将打开一个文本编辑器，您可以在其中指定哪些提交要压制。</p>
+<h3 id="提交">提交</h3>
+<p>一旦你把所有的修改都提交到 GitHub，在 GitHub 上进入你的 fork 页面，选择你的开发分支，然后点击 pull request 按钮。 如果你需要对你的 pull 请求做任何调整，只需将更新推送到 GitHub 即可。 您的拉请求将自动跟踪开发分支上的更改并进行更新。</p>
+<h2 id="接受和合并拉请求">接受和合并拉请求</h2>
+<p>请注意，前面的部分是从创建 fork 并生成 pull 请求的人的角度编写的，而本节是从处理传入 pull 请求的原始存储库所有者的角度编写的。 因此，当“ forker”将原始存储库称为上游存储库时，我们现在将其视为原始存储库的所有者和标准的远程起源。</p>
+<h3 id="检查和测试拉请求">检查和测试拉请求</h3>
+<p>打开。 <code>.git/config</code> 文件，并在<code>[ remote &quot;origin&quot;]</code>下添加一个新行:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">fetch</span> <span class="o">=</span> +refs/pull/*/head:refs/pull/origin/*
+</code></pre></td></tr></table>
+</div>
+</div><p>现在，您可以获取和检出任何拉请求，以便您可以测试它们:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Fetch all pull request branches</span>
+$ git fetch origin
+
+<span class="c1"># Checkout out a given pull request branch based on its number</span>
+$ git checkout -b <span class="m">999</span> pull/origin/999
+</code></pre></td></tr></table>
+</div>
+</div><p>请记住，这些分支是只读的，您不能推送任何更改。</p>
+<h3 id="自动合并拉请求">自动合并拉请求</h3>
+<p>如果合并是一个简单的<code>fast-forward</code>，你可以通过点击 GitHub 上的 pull request 页面上的按钮来自动完成合并。</p>
+<h3 id="手动合并拉请求">手动合并拉请求</h3>
+<p>要手动执行合并，您需要在源代码报告中签出目标分支，直接从分支中拉出，然后合并并推出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Checkout the branch you&#39;re merging to in the target repo</span>
+$ git checkout master
+
+<span class="c1"># Pull the development branch from the fork repo where the pull request development was done.</span>
+$ git pull https://github.com/forkuser/forkedrepo.git newfeature
+
+<span class="c1"># Merge the development branch</span>
+$ git merge newfeature
+
+<span class="c1"># Push master with the new feature merged into it</span>
+$ git push origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>现在您已经完成了开发分支，可以自由地删除它了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">$ git branch -d newfeature
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="巨人的肩膀">巨人的肩膀</h2>
+<p><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">https://gist.github.com/Chaser324/ce0505fbed06b947d962</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">gknoone</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-23
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/wechat-qr-code.png">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/alipay-qr-code.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/git/">git</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/">
+            <span class="next-text nav-default">Git中文乱码解决</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'gknoone-github-io';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="gknoone/https://github.com/gknoone"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:737376326@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/9768099/gknoone" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://github.com/gknoone" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/2204270944/profile?topnav=1&amp;wvr=6" class="iconfont icon-weibo" title="weibo"></a>
+  <a href="http://gknoone.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">gknoone</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
