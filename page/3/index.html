@@ -44,7 +44,7 @@
 <meta property="og:description" content="gknoone的博客，welcome." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://gknoone.github.io/" />
-<meta property="og:updated_time" content="2020-02-19T09:44:59+08:00" />
+<meta property="og:updated_time" content="2020-02-23T22:53:46+08:00" />
 <meta itemprop="name" content="gknoone的博客">
 <meta itemprop="description" content="gknoone的博客，welcome."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="gknoone的博客"/>
@@ -111,23 +111,236 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/hugo%E6%90%AD%E5%BB%BA/">Hugo搭建</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/">使用GitHub和PicGo搭建个人图床</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-02-06 </span>
+      <span class="post-time"> 2020-02-12 </span>
       <div class="post-category">
-          <a href="/categories/hugo/"> Hugo </a>
+          <a href="/categories/%E5%9B%BE%E5%BA%8A/"> 图床 </a>
           </div>
+<<<<<<< HEAD
         <span class="more-meta"> 约 996 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
+=======
+        <span class="more-meta"> 约 324 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+>>>>>>> 426e4726e3210f5a49b245162ff5bd7689ce1966
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      使用 Hugo 搭建博客 hugo 安装 依赖： Git Mercurial Go Mac 下直接使用 Homebrew 安装： 1 $ brew install hugo github仓库准备 create new repositories =&gt; blog ，用来存放网站内容和源文件； create new repositories =&gt; &lt;username&gt;.github.io ，用于存放
+      Github操作 新建repository作为图床地址 创建token 访问 https://github.com/settings/tokens，
     </div>
     <div class="read-more">
-      <a href="/post/hugo%E6%90%AD%E5%BB%BA/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/">Spacemacs清华源镜像加速</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/emacs/"> Emacs </a>
+          <a href="/categories/spacemacs/"> Spacemacs </a>
+          </div>
+        <span class="more-meta"> 约 101 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1
+    </div>
+    <div class="read-more">
+      <a href="/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git%E5%88%A0%E9%99%A4.ds_store/">Git删除 .DS_Store</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/git/"> Git </a>
+          </div>
+        <span class="more-meta"> 约 43 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push
+    </div>
+    <div class="read-more">
+      <a href="/post/git%E5%88%A0%E9%99%A4.ds_store/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/">Git空提交</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/git/"> Git </a>
+          </div>
+        <span class="more-meta"> 约 10 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      1 $ git commit --allow-empty -m &#34;chore: touch ops build&#34;
+    </div>
+    <div class="read-more">
+      <a href="/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/">MacOS使用MacVim替代vim</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/vim/"> Vim </a>
+          </div>
+        <span class="more-meta"> 约 49 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&#39;/usr/local/bin/mvim -v&#39; ## 生效 source ~/.zshrc
+    </div>
+    <div class="read-more">
+      <a href="/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/">Docker切换镜像源</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/docker/"> Docker </a>
+          </div>
+        <span class="more-meta"> 约 36 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &lt;&lt;-&#39;EOF&#39; { &#34;registry-mirrors&#34;: [&#34;https://28ffkr6d.mirror.aliyuncs.com&#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker
+    </div>
+    <div class="read-more">
+      <a href="/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/">MacOS在iTerm中使用rz、sz从远程上传下载文件</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/iterm/"> iTerm </a>
+          </div>
+        <span class="more-meta"> 约 273 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat
+    </div>
+    <div class="read-more">
+      <a href="/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/">SSH使用pem文件远程登陆</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/ssh/"> SSH </a>
+          </div>
+        <span class="more-meta"> 约 81 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem
+    </div>
+    <div class="read-more">
+      <a href="/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">Git加速最佳实践</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-11 </span>
+      <div class="post-category">
+          <a href="/categories/git/"> Git </a>
+          </div>
+        <span class="more-meta"> 约 444 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Git支持的协议 https协议，https://协议需要配置git的http.proxy参数 ssh协议，ssh://协议需要配置ssh的Pr
+    </div>
+    <div class="read-more">
+      <a href="/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%8D%8E%E5%A4%AB%E9%A5%BC/">华夫饼</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-08 </span>
+      <div class="post-category">
+          <a href="/categories/%E9%A3%9F%E8%B0%B1/"> 食谱 </a>
+          </div>
+        <span class="more-meta"> 约 351 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      华夫饼🧇 工具 必须 打蛋器（手动电动均可） 打蛋桶 电饼铛 电子秤 刷子 烘培夹子 非必须 面粉筛 食材 份量：大概6张华夫饼，按实际情况增减 必须 鸡蛋🥚 3个 白砂糖
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%8D%8E%E5%A4%AB%E9%A5%BC/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -139,7 +352,10 @@
         <i class="iconfont icon-left"></i>
         <span class="prev-text">上一页</span>
       </a>
-    
+    <a class="next" href="/page/4/">
+        <span class="next-text">下一页</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
         </div>
         

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cors on gknoone的博客</title>
+    <link>http://gknoone.github.io/tags/cors/</link>
+    <description>Recent content in cors on gknoone的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Feb 2020 23:57:53 +0800</lastBuildDate>
+    
+	<atom:link href="http://gknoone.github.io/tags/cors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java配置允许跨域访问</title>
+      <link>http://gknoone.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>
+      <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</guid>
+      <description>方案 H5中的新特性：Cross-Origin Resource Sharing（跨域资源共享）。通过它，我们的开发者（主要指后端开发者）可以决定资源是否能被跨</description>
+    </item>
+    
+  </channel>
+</rss>

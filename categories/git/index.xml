@@ -6,10 +6,28 @@
     <description>Recent content in git on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Feb 2020 09:44:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git标准Fork &amp; Pull Request流程</title>
+      <link>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
+      <description>fork项目 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 克隆到本地，才能开始骚操作～～ 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新</description>
+    </item>
+    
+    <item>
+      <title>Git中文乱码解决</title>
+      <link>http://gknoone.github.io/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Sun, 23 Feb 2020 22:05:37 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</guid>
+      <description>git add 显示中文乱码 使用 git add 添加要提交的文件的时候，如果文件名是中文，会显示形如\347\204\246\347\263\226\345\245</description>
+    </item>
     
     <item>
       <title>Git利用orphan分支功能清空所有历史记录</title>

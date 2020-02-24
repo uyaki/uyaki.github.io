@@ -6,10 +6,100 @@
     <description>Recent content in Posts on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Feb 2020 09:44:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git标准Fork &amp; Pull Request流程</title>
+      <link>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
+      <description>fork项目 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 克隆到本地，才能开始骚操作～～ 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新</description>
+    </item>
+    
+    <item>
+      <title>Git中文乱码解决</title>
+      <link>http://gknoone.github.io/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Sun, 23 Feb 2020 22:05:37 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</guid>
+      <description>git add 显示中文乱码 使用 git add 添加要提交的文件的时候，如果文件名是中文，会显示形如\347\204\246\347\263\226\345\245</description>
+    </item>
+    
+    <item>
+      <title>茄汁虾仁</title>
+      <link>http://gknoone.github.io/post/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</link>
+      <pubDate>Sun, 23 Feb 2020 20:03:51 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</guid>
+      <description>工具 锅 食材 虾仁 15个 蒜 2瓣 油 适量 盐 1/2茶匙 料酒 1汤匙 番茄酱 2汤匙 清水 5汤匙 步骤 准备 虾仁加入1汤匙料酒、1/4茶匙盐，腌制10分钟 蒜切成蒜末</description>
+    </item>
+    
+    <item>
+      <title>蒜香蜂蜜烤鸡翅</title>
+      <link>http://gknoone.github.io/post/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</link>
+      <pubDate>Sun, 23 Feb 2020 16:26:44 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</guid>
+      <description>工具 烤箱 锡纸 食材 鸡翅 5个 盐 料酒 1勺 生抽 1勺 老抽 1勺 蚝油 1勺 蜂蜜 2勺 黑胡椒 适量 蒜末 适量 油 适量 步骤 准备 鸡翅洗干净，双面划出刀口，方便入味； 加入料</description>
+    </item>
+    
+    <item>
+      <title>焦糖奶茶</title>
+      <link>http://gknoone.github.io/post/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</link>
+      <pubDate>Sun, 23 Feb 2020 16:16:29 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</guid>
+      <description>工具 锅 面粉筛（其他过滤也行） 食材 白糖 1/4碗 清水 1/4碗 开水 1/2 碗 茶叶适量（我用的大红袍） 纯牛奶一盒 步骤 制作 锅中倒入白糖，清水，小火煮，待糖融</description>
+    </item>
+    
+    <item>
+      <title>烤箱版鸡米花</title>
+      <link>http://gknoone.github.io/post/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</link>
+      <pubDate>Sun, 23 Feb 2020 15:57:22 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</guid>
+      <description>工具 烤箱 锡纸 食材 鸡腿肉，可以用鸡胸肉代替 盐 半勺 酱油 1勺 料酒 1勺 蚝油 1勺 鸡蛋 1个 淀粉 适量 清水 适量 面包糠，可以用薯片代替 蕃茄酱 步骤 准备 鸡腿肉（或</description>
+    </item>
+    
+    <item>
+      <title>读书笔记 《沉默的大多数》</title>
+      <link>http://gknoone.github.io/post/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0/</link>
+      <pubDate>Sun, 23 Feb 2020 01:49:18 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E6%B2%89%E9%BB%98%E7%9A%84%E5%A4%A7%E5%A4%9A%E6%95%B0/</guid>
+      <description>人要永远做小孩子虽办不到，但想要保持沉默是能办到的。 其实萧斯塔科维奇长得什么样，我也不知道。我只是想象他是这个样子，然后就哈哈大笑。我的朋友</description>
+    </item>
+    
+    <item>
+      <title>Homebrew实用命令总结</title>
+      <link>http://gknoone.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 23 Feb 2020 01:23:11 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
+      <description>更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot设置项目热启动</title>
+      <link>http://gknoone.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Sun, 23 Feb 2020 00:04:23 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
+      <description>导入jar包 1 &amp;#39;org.springframework.boot:spring-boot-devtools&amp;#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exe</description>
+    </item>
+    
+    <item>
+      <title>Java配置允许跨域访问</title>
+      <link>http://gknoone.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>
+      <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</guid>
+      <description>方案 H5中的新特性：Cross-Origin Resource Sharing（跨域资源共享）。通过它，我们的开发者（主要指后端开发者）可以决定资源是否能被跨</description>
+    </item>
     
     <item>
       <title>Git利用orphan分支功能清空所有历史记录</title>
