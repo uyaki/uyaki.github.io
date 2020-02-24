@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://gknoone.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-02-23T01:49:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://gknoone.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-02-23T01:49:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -184,23 +184,14 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>http://gknoone.github.io/categories/java/</loc>
-    <lastmod>2020-02-17T15:03:09+08:00</lastmod>
-=======
-    <loc>http://gknoone.github.io/tags/java/</loc>
     <lastmod>2020-02-22T23:57:53+08:00</lastmod>
->>>>>>> 426e4726e3210f5a49b245162ff5bd7689ce1966
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>http://gknoone.github.io/tags/java/</loc>
-    <lastmod>2020-02-17T15:03:09+08:00</lastmod>
-=======
-    <loc>http://gknoone.github.io/categories/java/</loc>
     <lastmod>2020-02-22T23:57:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -251,7 +242,6 @@
   <url>
     <loc>http://gknoone.github.io/tags/submodule/</loc>
     <lastmod>2020-02-19T09:00:55+08:00</lastmod>
->>>>>>> 426e4726e3210f5a49b245162ff5bd7689ce1966
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -355,23 +345,6 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>http://gknoone.github.io/tags/%E9%A3%9F%E8%B0%B1/</loc>
-    <lastmod>2020-02-16T18:58:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/categories/%E9%A3%9F%E8%B0%B1/</loc>
-    <lastmod>2020-02-16T18:58:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-=======
->>>>>>> 426e4726e3210f5a49b245162ff5bd7689ce1966
     <loc>http://gknoone.github.io/tags/java8/</loc>
     <lastmod>2020-02-15T15:58:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -435,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/spacemacs/</loc>
+    <loc>http://gknoone.github.io/categories/spacemacs/</loc>
     <lastmod>2020-02-11T13:48:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/spacemacs/</loc>
+    <loc>http://gknoone.github.io/tags/spacemacs/</loc>
     <lastmod>2020-02-11T13:48:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -512,14 +485,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/iterm/</loc>
+    <loc>http://gknoone.github.io/categories/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/iterm/</loc>
+    <loc>http://gknoone.github.io/tags/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
