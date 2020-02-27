@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Feb 2020 10:25:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 20:12:29 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Postman全局环境设置技巧</title>
+      <link>http://gknoone.github.io/post/postman%E5%85%A8%E5%B1%80%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 27 Feb 2020 20:12:29 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/postman%E5%85%A8%E5%B1%80%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE%E6%8A%80%E5%B7%A7/</guid>
+      <description>TODO</description>
+    </item>
     
     <item>
       <title>Mysql修改Auto_increment</title>
