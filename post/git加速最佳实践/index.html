@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.63.2 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" />
@@ -135,34 +135,34 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#git">Git支持的协议</a></li>
-    <li><a href="#https">针对HTTPS协议配置代理</a>
+    <li><a href="#git支持的协议">Git支持的协议</a></li>
+    <li><a href="#针对https协议配置代理">针对HTTPS协议配置代理</a>
       <ul>
-        <li><a href="#heading">通过命令方式</a></li>
-        <li><a href="#git1">通过编辑git配置文件的方式</a></li>
+        <li><a href="#通过命令方式">通过命令方式</a></li>
+        <li><a href="#通过编辑git配置文件的方式">通过编辑git配置文件的方式</a></li>
       </ul>
     </li>
-    <li><a href="#ssh">针对ssh协议配置代理</a></li>
+    <li><a href="#针对ssh协议配置代理">针对ssh协议配置代理</a></li>
     <li><a href="#tips">tips📌</a>
       <ul>
-        <li><a href="#heading1">取消代理</a></li>
-        <li><a href="#heading2">查看当前代理</a></li>
-        <li><a href="#git2">查看所有git全局配置</a></li>
+        <li><a href="#取消代理">取消代理</a></li>
+        <li><a href="#查看当前代理">查看当前代理</a></li>
+        <li><a href="#查看所有git全局配置">查看所有git全局配置</a></li>
       </ul>
     </li>
-    <li><a href="#heading3">巨人的肩膀</a></li>
+    <li><a href="#巨人的肩膀">巨人的肩膀</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="git">Git支持的协议</h2>
+      <h2 id="git支持的协议">Git支持的协议</h2>
 <ul>
 <li>https协议，<code>https://</code>协议需要配置<code>git</code>的<code>http.proxy</code>参数</li>
 <li>ssh协议，<code>ssh://</code>协议需要配置<code>ssh</code>的<code>ProxyCommand</code>参数</li>
 </ul>
-<h2 id="https">针对HTTPS协议配置代理</h2>
-<h3 id="heading">通过命令方式</h3>
+<h2 id="针对https协议配置代理">针对HTTPS协议配置代理</h2>
+<h3 id="通过命令方式">通过命令方式</h3>
 <ul>
 <li>针对所有git服务器设置代理（这里演示使用socks5端口）</li>
 </ul>
@@ -198,7 +198,7 @@ $ git config --global https.proxy<span class="o">=</span>socks5://127.0.0.1:1086
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="git1">通过编辑git配置文件的方式</h3>
+</div><h3 id="通过编辑git配置文件的方式">通过编辑git配置文件的方式</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -217,7 +217,7 @@ $ git config --global https.proxy<span class="o">=</span>socks5://127.0.0.1:1086
 	<span class="nv">proxy</span> <span class="o">=</span> socks5://127.0.0.1:1086
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="ssh">针对ssh协议配置代理</h2>
+</div><h2 id="针对ssh协议配置代理">针对ssh协议配置代理</h2>
 <ol>
 <li>安装<a href="https://bitbucket.org/gotoh/connect">connect</a>，connect是一个工具，用户代理的转换。</li>
 </ol>
@@ -273,7 +273,7 @@ Hi username! You ve successfully authenticated, but GitHub does not provide shel
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="tips">tips📌</h2>
-<h3 id="heading1">取消代理</h3>
+<h3 id="取消代理">取消代理</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -284,7 +284,7 @@ Hi username! You ve successfully authenticated, but GitHub does not provide shel
 $ git config --global --unset https.proxy
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="heading2">查看当前代理</h3>
+</div><h3 id="查看当前代理">查看当前代理</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -295,7 +295,7 @@ $ git config --global --unset https.proxy
 $ git config --global --get https.proxy
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="git2">查看所有git全局配置</h3>
+</div><h3 id="查看所有git全局配置">查看所有git全局配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -304,8 +304,8 @@ $ git config --global --get https.proxy
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ git config --global -l
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="heading3">巨人的肩膀</h2>
-<p><a href="https://www.hi-linux.com/posts/11850.html"><a href="https://www.hi-linux.com/posts/11850.html">https://www.hi-linux.com/posts/11850.html</a></a></p>
+</div><h2 id="巨人的肩膀">巨人的肩膀</h2>
+<p><a href="https://www.hi-linux.com/posts/11850.html">https://www.hi-linux.com/posts/11850.html</a></p>
 
     </div>
 
