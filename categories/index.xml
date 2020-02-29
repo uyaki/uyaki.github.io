@@ -6,10 +6,19 @@
     <description>Recent content in Categories on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:05:29 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 20:34:35 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>homebrew</title>
+      <link>http://gknoone.github.io/categories/homebrew/</link>
+      <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/categories/homebrew/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>食谱</title>
@@ -57,16 +66,7 @@
     </item>
     
     <item>
-      <title>homebrew</title>
-      <link>http://gknoone.github.io/categories/homebrew/</link>
-      <pubDate>Sun, 23 Feb 2020 01:23:11 +0800</pubDate>
-      
-      <guid>http://gknoone.github.io/categories/homebrew/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
+      <title>Java</title>
       <link>http://gknoone.github.io/categories/java/</link>
       <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
       

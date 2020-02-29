@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:05:29 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 20:34:35 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Homebrew安装443错误解决方案</title>
+      <link>http://gknoone.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>问题 安装 homebrew 报错 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation 方案 重启终端； 重启wifi</description>
+    </item>
     
     <item>
       <title>酸辣酱汁</title>
@@ -116,7 +125,7 @@
       <pubDate>Sun, 23 Feb 2020 00:04:23 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
-      <description>导入jar包 1 &amp;#39;org.springframework.boot:spring-boot-devtools&amp;#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exe</description>
+      <description>导入jar包 &#39;org.springframework.boot:spring-boot-devtools&#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exec</description>
     </item>
     
     <item>
@@ -233,7 +242,7 @@
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
-      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1</description>
+      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq</description>
     </item>
     
     <item>

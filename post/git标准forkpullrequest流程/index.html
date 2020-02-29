@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" />
@@ -135,29 +135,29 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#fork项目">fork项目</a></li>
-    <li><a href="#让你的fork保持最新">让你的fork保持最新</a></li>
-    <li><a href="#开发">开发</a></li>
-    <li><a href="#提交一个pull-request">提交一个Pull Request</a>
+    <li><a href="#fork">fork项目</a></li>
+    <li><a href="#fork1">让你的fork保持最新</a></li>
+    <li><a href="#heading">开发</a></li>
+    <li><a href="#pull-request">提交一个Pull Request</a>
       <ul>
-        <li><a href="#清理你的工作">清理你的工作</a></li>
-        <li><a href="#提交">提交</a></li>
+        <li><a href="#heading1">清理你的工作</a></li>
+        <li><a href="#heading2">提交</a></li>
       </ul>
     </li>
-    <li><a href="#接受和合并拉请求">接受和合并拉请求</a>
+    <li><a href="#heading3">接受和合并拉请求</a>
       <ul>
-        <li><a href="#检查和测试拉请求">检查和测试拉请求</a></li>
-        <li><a href="#自动合并拉请求">自动合并拉请求</a></li>
-        <li><a href="#手动合并拉请求">手动合并拉请求</a></li>
+        <li><a href="#heading4">检查和测试拉请求</a></li>
+        <li><a href="#heading5">自动合并拉请求</a></li>
+        <li><a href="#heading6">手动合并拉请求</a></li>
       </ul>
     </li>
-    <li><a href="#巨人的肩膀">巨人的肩膀</a></li>
+    <li><a href="#heading7">巨人的肩膀</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="fork项目">fork项目</h2>
+      <h2 id="fork">fork项目</h2>
 <p>直接进入 GitHub 页面，点击<code>Fork</code>按钮。 就是这么简单。</p>
 <p>克隆到本地，才能开始骚操作～～</p>
 <div class="highlight"><div class="chroma">
@@ -170,7 +170,7 @@
 $ git clone git@github.com:USERNAME/FORKED-PROJECT.git
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="让你的fork保持最新">让你的fork保持最新</h2>
+</div><h2 id="fork1">让你的fork保持最新</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -221,7 +221,7 @@ git merge upstream/master
 <blockquote>
 <p>如果在本地 master 分支上没有唯一的提交，git 将简单地执行快进操作。 然而，如果您一直在 master 上进行更改(在绝大多数情况下，您可能不应该这样做——请参阅下一部分，您可能必须处理冲突。 在这样做的时候，要注意尊重上游所做的更改。</p>
 </blockquote>
-<h2 id="开发">开发</h2>
+<h2 id="heading">开发</h2>
 <p>无论何时开始处理一个新特性或修复错误，创建一个新分支都是很重要的。 它不仅是正确的 git 工作流，而且还可以使您的更改与主分支保持组织和分离，这样您就可以轻松地为您完成的每个任务提交和管理多个拉请求。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -242,8 +242,8 @@ $ git branch -b newfeature
 </div><blockquote>
 <p>开始折腾吧</p>
 </blockquote>
-<h2 id="提交一个pull-request">提交一个Pull Request</h2>
-<h3 id="清理你的工作">清理你的工作</h3>
+<h2 id="pull-request">提交一个Pull Request</h2>
+<h3 id="heading1">清理你的工作</h3>
 <p>在提交您的拉请求之前，您可能需要做一些事情来清理您的分支，并使其尽可能简单，以便原来的 repo 的维护人员测试、接受和合并您的工作。</p>
 <p>如果已经向上游主分支提交了任何提交，那么您应该重新设置开发分支的基础，以便合并它将是一个简单的快进操作，不需要任何冲突解决工作。</p>
 <div class="highlight"><div class="chroma">
@@ -282,11 +282,11 @@ $ git rebase -i master
 </code></pre></td></tr></table>
 </div>
 </div><p>这将打开一个文本编辑器，您可以在其中指定哪些提交要压制。</p>
-<h3 id="提交">提交</h3>
+<h3 id="heading2">提交</h3>
 <p>一旦你把所有的修改都提交到 GitHub，在 GitHub 上进入你的 fork 页面，选择你的开发分支，然后点击 pull request 按钮。 如果你需要对你的 pull 请求做任何调整，只需将更新推送到 GitHub 即可。 您的拉请求将自动跟踪开发分支上的更改并进行更新。</p>
-<h2 id="接受和合并拉请求">接受和合并拉请求</h2>
+<h2 id="heading3">接受和合并拉请求</h2>
 <p>请注意，前面的部分是从创建 fork 并生成 pull 请求的人的角度编写的，而本节是从处理传入 pull 请求的原始存储库所有者的角度编写的。 因此，当“ forker”将原始存储库称为上游存储库时，我们现在将其视为原始存储库的所有者和标准的远程起源。</p>
-<h3 id="检查和测试拉请求">检查和测试拉请求</h3>
+<h3 id="heading4">检查和测试拉请求</h3>
 <p>打开。 <code>.git/config</code> 文件，并在<code>[ remote &quot;origin&quot;]</code>下添加一个新行:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -314,9 +314,9 @@ $ git checkout -b <span class="m">999</span> pull/origin/999
 </code></pre></td></tr></table>
 </div>
 </div><p>请记住，这些分支是只读的，您不能推送任何更改。</p>
-<h3 id="自动合并拉请求">自动合并拉请求</h3>
+<h3 id="heading5">自动合并拉请求</h3>
 <p>如果合并是一个简单的<code>fast-forward</code>，你可以通过点击 GitHub 上的 pull request 页面上的按钮来自动完成合并。</p>
-<h3 id="手动合并拉请求">手动合并拉请求</h3>
+<h3 id="heading6">手动合并拉请求</h3>
 <p>要手动执行合并，您需要在源代码报告中签出目标分支，直接从分支中拉出，然后合并并推出。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -355,8 +355,8 @@ $ git push origin master
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ git branch -d newfeature
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="巨人的肩膀">巨人的肩膀</h2>
-<p><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">https://gist.github.com/Chaser324/ce0505fbed06b947d962</a></p>
+</div><h2 id="heading7">巨人的肩膀</h2>
+<p><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962"><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">https://gist.github.com/Chaser324/ce0505fbed06b947d962</a></a></p>
 
     </div>
 
