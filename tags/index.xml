@@ -6,10 +6,19 @@
     <description>Recent content in Tags on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Mar 2020 11:29:31 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 14:44:14 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>alfred</title>
+      <link>http://gknoone.github.io/tags/alfred/</link>
+      <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/tags/alfred/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>swagger</title>
