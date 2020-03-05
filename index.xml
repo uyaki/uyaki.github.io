@@ -6,10 +6,55 @@
     <description>Recent content on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:05:29 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 19:28:53 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ELasticSearch设置ik&#43;pinyin分词器</title>
+      <link>http://gknoone.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
+      <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
+      <description>安装 假设你已经使用docker安装了es集群 1 $ cd ${docker-compose-file-dir} 安装ik插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip 安装pinyin插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip 重启docker 1 $ docker-compose restart</description>
+    </item>
+    
+    <item>
+      <title>ElasticSearch修改已经存在的index的settings</title>
+      <link>http://gknoone.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
+      <pubDate>Thu, 05 Mar 2020 16:44:08 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
+      <description>关闭索引 1 POST /index/_close 修改索引Settings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 PUT /index/_settings { &amp;#34;settings&amp;#34;: { &amp;#34;analysis&amp;#34;: { &amp;#34;analyzer&amp;#34;: { &amp;#34;ik_pinyin_analyzer&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;custom&amp;#34;, &amp;#34;tokenizer&amp;#34;: &amp;#34;ik_smart&amp;#34;, &amp;#34;filter&amp;#34;: [ &amp;#34;my_pinyin&amp;#34;, &amp;#34;word_delimiter&amp;#34; ] }</description>
+    </item>
+    
+    <item>
+      <title>Alfred设置WebSearch快速打开网页</title>
+      <link>http://gknoone.github.io/post/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</link>
+      <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</guid>
+      <description>Alfred -&amp;gt; feature -&amp;gt; Web Search -&amp;gt; Add Custom Search Search Url：输入网址 Keyword： 检索关键字</description>
+    </item>
+    
+    <item>
+      <title>Swagger出现Could not resolve pointer</title>
+      <link>http://gknoone.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
+      <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
+      <description>问题描述 原因 类上的注解 “/” 的问题 @ApiModel(不能使用“/”)</description>
+    </item>
+    
+    <item>
+      <title>Homebrew安装443错误解决方案</title>
+      <link>http://gknoone.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>问题 安装 homebrew 报错 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation 方案 重启终端； 重启wifi</description>
+    </item>
     
     <item>
       <title>酸辣酱汁</title>
