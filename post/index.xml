@@ -53,7 +53,7 @@
       <pubDate>Thu, 05 Mar 2020 16:44:08 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
-      <description>关闭索引 POST /index/_close 修改索引Settings PUT /index/_settings { &amp;quot;settings&amp;quot;: { &amp;quot;analysis&amp;quot;: { &amp;quot;analyzer&amp;quot;: { &amp;quot;ik_pinyin_analyzer&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;custom&amp;quot;, &amp;quot;tokenizer&amp;quot;: &amp;quot;ik_smart&amp;quot;, &amp;quot;filter&amp;quot;: [ &amp;quot;my_pinyin&amp;quot;, &amp;quot;word_delimiter&amp;quot; ] } }, &amp;quot;filter&amp;quot;: { &amp;quot;my_pinyin&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;pinyin&amp;quot;, &amp;quot;keep_first_letter&amp;quot;: false, &amp;quot;keep_full_pinyin&amp;quot;: true, &amp;quot;keep_none_chinese&amp;quot;: true, &amp;quot;keep_none_chinese_in_first_letter&amp;quot;: true, &amp;quot;keep_original&amp;quot;: false, &amp;quot;limit_first_letter_length&amp;quot;: 16, &amp;quot;lowercase&amp;quot;: true, &amp;quot;trim_whitespace&amp;quot;: true } } } } } 打开索</description>
+      <description>关闭索引 1 POST /index/_close 修改索引Settings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 PUT /index/_settings { &amp;#34;settings&amp;#34;: { &amp;#34;analysis&amp;#34;: { &amp;#34;analyzer&amp;#34;: { &amp;#34;ik_pinyin_analyzer&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;custom&amp;#34;, &amp;#34;tokenizer&amp;#34;: &amp;#34;ik_smart&amp;#34;, &amp;#34;filter&amp;#34;: [ &amp;#34;my_pinyin&amp;#34;, &amp;#34;word_delimiter&amp;#34; ] }</description>
     </item>
     
     <item>
@@ -188,7 +188,7 @@
       <pubDate>Sun, 23 Feb 2020 00:04:23 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
-      <description>导入jar包 &#39;org.springframework.boot:spring-boot-devtools&#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exec</description>
+      <description>导入jar包 1 &amp;#39;org.springframework.boot:spring-boot-devtools&amp;#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exe</description>
     </item>
     
     <item>
@@ -305,7 +305,7 @@
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
-      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 (setq</description>
+      <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1</description>
     </item>
     
     <item>

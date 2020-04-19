@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.63.2 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/" />
@@ -135,17 +135,17 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">安装</a>
+    <li><a href="#安装">安装</a>
       <ul>
-        <li><a href="#lrzszmac">下载安装lrzsz，创建软连接（mac）</a></li>
-        <li><a href="#automatic-zmoderm-for-iterm2">下载并安装automatic zmoderm for iTerm2</a></li>
-        <li><a href="#iterm2-trigger">添加iTerm2 trigger</a></li>
+        <li><a href="#下载安装lrzsz创建软连接mac">下载安装lrzsz，创建软连接（mac）</a></li>
+        <li><a href="#下载并安装automatic-zmoderm-for-iterm2">下载并安装automatic zmoderm for iTerm2</a></li>
+        <li><a href="#添加iterm2-trigger">添加iTerm2 trigger</a></li>
       </ul>
     </li>
-    <li><a href="#heading1">使用方法</a>
+    <li><a href="#使用方法">使用方法</a>
       <ul>
-        <li><a href="#heading2">将文件传到远端服务器</a></li>
-        <li><a href="#heading3">从远端服务器下载文件</a></li>
+        <li><a href="#将文件传到远端服务器">将文件传到远端服务器</a></li>
+        <li><a href="#从远端服务器下载文件">从远端服务器下载文件</a></li>
       </ul>
     </li>
   </ul>
@@ -153,8 +153,8 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="heading">安装</h2>
-<h3 id="lrzszmac">下载安装lrzsz，创建软连接（mac）</h3>
+      <h2 id="安装">安装</h2>
+<h3 id="下载安装lrzsz创建软连接mac">下载安装lrzsz，创建软连接（mac）</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -172,7 +172,7 @@ ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz
 </code></pre></td></tr></table>
 </div>
 </div><p>说明：lrzsz在本地和远程主机均要安装！</p>
-<h3 id="automatic-zmoderm-for-iterm2">下载并安装automatic zmoderm for iTerm2</h3>
+<h3 id="下载并安装automatic-zmoderm-for-iterm2">下载并安装automatic zmoderm for iTerm2</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -193,8 +193,8 @@ sudo wget https://raw.github.com/mmastrac/iterm2-zmodem/master/iterm2-recv-zmode
 sudo chmod <span class="m">777</span> /usr/local/bin/iterm2-*
 </code></pre></td></tr></table>
 </div>
-</div><p>脚本地址：<a href="https://github.com/mmastrac/iterm2-zmodem"><a href="https://github.com/mmastrac/iterm2-zmodem">https://github.com/mmastrac/iterm2-zmodem</a></a></p>
-<h3 id="iterm2-trigger">添加iTerm2 trigger</h3>
+</div><p>脚本地址：<a href="https://github.com/mmastrac/iterm2-zmodem">https://github.com/mmastrac/iterm2-zmodem</a></p>
+<h3 id="添加iterm2-trigger">添加iTerm2 trigger</h3>
 <blockquote>
 <p>iTerm2 &ndash;&gt; Profiles &ndash;&gt; Open Profiles &ndash;&gt; Edit Profiles &ndash;&gt; Advanced &ndash;&gt; Edit Trigger</p>
 </blockquote>
@@ -220,14 +220,14 @@ sudo chmod <span class="m">777</span> /usr/local/bin/iterm2-*
 </tr>
 </tbody>
 </table>
-<h2 id="heading1">使用方法</h2>
-<h3 id="heading2">将文件传到远端服务器</h3>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="将文件传到远端服务器">将文件传到远端服务器</h3>
 <ol>
 <li>在远端服务器上输入 <code>rz</code> ，回车；</li>
 <li>选择本地要上传的文件；</li>
 <li>等待上传；</li>
 </ol>
-<h3 id="heading3">从远端服务器下载文件</h3>
+<h3 id="从远端服务器下载文件">从远端服务器下载文件</h3>
 <ol>
 <li>在远端服务器输入<code>sz filename filename1 … filenameN</code>；</li>
 <li>选择本地的存储目录；</li>
