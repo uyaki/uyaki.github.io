@@ -44,7 +44,7 @@
 <meta property="og:description" content="gknoone的博客，welcome." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://gknoone.github.io/" />
-<meta property="og:updated_time" content="2020-03-05T19:28:53+08:00" />
+<meta property="og:updated_time" content="2020-04-19T14:21:48+08:00" />
 <meta itemprop="name" content="gknoone的博客">
 <meta itemprop="description" content="gknoone的博客，welcome."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="gknoone的博客"/>
@@ -109,6 +109,75 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/">SSH免密登录CentOS7</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-04-19 </span>
+      <div class="post-category">
+          <a href="/categories/ssh/"> ssh </a>
+          </div>
+        <span class="more-meta"> 约 154 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 4 $ cat id_rsa.pub &gt;&gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.
+    </div>
+    <div class="read-more">
+      <a href="/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">CentOS7开发环境</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-04-19 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> linux </a>
+          </div>
+        <span class="more-meta"> 约 250 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $ yum
+    </div>
+    <div class="read-more">
+      <a href="/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/datax%E6%95%99%E7%A8%8B/">DataX教程</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-03-19 </span>
+      <div class="post-category">
+          <a href="/categories//">  </a>
+          </div>
+        <span class="more-meta"> 约 60 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      安装 1 $ git clone git@github.com:alibaba/DataX.git 1 2 $ cd DataX $ vim pom.xml 注释掉不需要的reader、writer&lt;module&gt;标签 1 mvn -U clean package assembly:assembly -Dmaven.test.skip=true 使用
+    </div>
+    <div class="read-more">
+      <a href="/post/datax%E6%95%99%E7%A8%8B/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/">ELasticSearch设置ik&#43;pinyin分词器</a></h1>
@@ -268,75 +337,6 @@
     </div>
     <div class="read-more">
       <a href="/post/postman%E5%85%A8%E5%B1%80%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE%E6%8A%80%E5%B7%A7/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/mysql%E4%BF%AE%E6%94%B9auto_increment/">Mysql修改Auto_increment</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-26 </span>
-      <div class="post-category">
-          <a href="/categories/mysql/"> Mysql </a>
-          </div>
-        <span class="more-meta"> 约 47 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      查看 1 select auto_increment from information_schema.tables where table_schema=&#39;xxx_db&#39; and table_name=&#39;xxx&#39;; 修改 1 alter table xxx_db.xxx auto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效
-    </div>
-    <div class="read-more">
-      <a href="/post/mysql%E4%BF%AE%E6%94%B9auto_increment/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/">Git标准Fork &amp; Pull Request流程</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-23 </span>
-      <div class="post-category">
-          <a href="/categories/git/"> Git </a>
-          </div>
-        <span class="more-meta"> 约 1314 字 </span>
-        <span class="more-meta"> 预计阅读 3 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      fork项目 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 克隆到本地，才能开始骚操作～～ 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新
-    </div>
-    <div class="read-more">
-      <a href="/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/">Git中文乱码解决</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-23 </span>
-      <div class="post-category">
-          <a href="/categories/git/"> Git </a>
-          </div>
-        <span class="more-meta"> 约 341 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      git add 显示中文乱码 使用 git add 添加要提交的文件的时候，如果文件名是中文，会显示形如\347\204\246\347\263\226\345\245
-    </div>
-    <div class="read-more">
-      <a href="/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
