@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" />
@@ -135,15 +135,15 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#git-add-显示中文乱码">git add 显示中文乱码</a></li>
-    <li><a href="#git-log-显示提交的中文-log-乱码">git log 显示提交的中文 log 乱码</a></li>
-    <li><a href="#自带的-bash-中使用-ls-命令查看中文文件名乱码">自带的 bash 中，使用 ls 命令查看中文文件名乱码</a></li>
+    <li><a href="#git-add-">git add 显示中文乱码</a></li>
+    <li><a href="#git-log--log-">git log 显示提交的中文 log 乱码</a></li>
+    <li><a href="#-bash--ls-">自带的 bash 中，使用 ls 命令查看中文文件名乱码</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="git-add-显示中文乱码">git add 显示中文乱码</h2>
+      <h2 id="git-add-">git add 显示中文乱码</h2>
 <p>使用 git add 添加要提交的文件的时候，如果文件名是中文，会显示形如<code>\347\204\246\347\263\226\345\245\266\350\214\266.md</code>的乱码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -153,7 +153,7 @@
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ git config --global core.quotepath <span class="nb">false</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="git-log-显示提交的中文-log-乱码">git log 显示提交的中文 log 乱码</h2>
+</div><h2 id="git-log--log-">git log 显示提交的中文 log 乱码</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -176,7 +176,7 @@ git config --global i18n.logoutputencoding gbk
 <span class="nb">export</span> <span class="nv">LESSCHARSET</span><span class="o">=</span>utf-8
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="自带的-bash-中使用-ls-命令查看中文文件名乱码">自带的 bash 中，使用 ls 命令查看中文文件名乱码</h2>
+</div><h2 id="-bash--ls-">自带的 bash 中，使用 ls 命令查看中文文件名乱码</h2>
 <p>使用 <code>ls --show-control-chars</code> 命令来强制使用控制台字符编码显示文件名，即可查看中文文件名。
 为了方便使用，可以编辑 <code>/etc/git-completion.bash</code> ，新增一行 <code>alias ls=&quot;ls –show-control-chars&quot;</code></p>
 

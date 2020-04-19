@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" />
@@ -135,27 +135,27 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#什么是-head">什么是 HEAD</a></li>
-    <li><a href="#如何造成-head-的游离状态">如何造成 HEAD 的游离状态</a></li>
-    <li><a href="#head-游离状态的利弊">HEAD 游离状态的利弊</a></li>
-    <li><a href="#如何解决">如何解决</a></li>
+    <li><a href="#-head">什么是 HEAD</a></li>
+    <li><a href="#-head-">如何造成 HEAD 的游离状态</a></li>
+    <li><a href="#head-">HEAD 游离状态的利弊</a></li>
+    <li><a href="#heading">如何解决</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="什么是-head">什么是 HEAD</h2>
+      <h2 id="-head">什么是 HEAD</h2>
 <p>Git 中的 HEAD 可以理解为指针，指向当前仓库所处的分支。一般在有 Git 管理的目录下打开 Git 终端都能在当前路径的尾巴上，看到所处的分支名。</p>
 <p>还可以在命令行中输入 <code>cat .git/HEAD</code> 查看当前 HEAD 指向哪里。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/gknoone/pic-cloud/img/20200217145433.png" alt=""></p>
 <p>一般它指向当前工作目录所在分支的最新提交</p>
 <p><img src="https://cdn.jsdelivr.net/gh/gknoone/pic-cloud/img/20200217145602.png" alt=""></p>
-<h2 id="如何造成-head-的游离状态">如何造成 HEAD 的游离状态</h2>
+<h2 id="-head-">如何造成 HEAD 的游离状态</h2>
 <p>一般我们会使用命令 <code>git checkout </code> 来切换分支，HEAD 就会移动到指定的分支上</p>
 <p><img src="https://cdn.jsdelivr.net/gh/gknoone/pic-cloud/img/20200217145701.png" alt=""></p>
 <p>但是，如果我们使用的是 <code>git checkout </code> 来切换到指定的某一次提交，HEAD 就会处于「detached」状态，也就是<strong>游离状态</strong></p>
 <p><img src="https://cdn.jsdelivr.net/gh/gknoone/pic-cloud/img/20200217145740.png" alt=""></p>
-<h2 id="head-游离状态的利弊">HEAD 游离状态的利弊</h2>
+<h2 id="head-">HEAD 游离状态的利弊</h2>
 <blockquote>
 <p>好处：HEAD 处于游离状态时，开发者可以很方便地在历史版本之间互相切换，比如要回到某次提交，只需要 <code>checkout</code> 对应的 <code>commit id</code> 或者 <code>tag</code> 名即可。</p>
 </blockquote>
@@ -163,7 +163,7 @@
 <p>弊端：若在该基础上进行了提交，则会新开一个「匿名分支」；也就是说我们的提交是<strong>无法可见保存</strong>的，一旦切换到别的分支，原游离状态以后的提交就<strong>不可追溯</strong>了。</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/gknoone/pic-cloud/img/20200217145833.png" alt=""></p>
-<h2 id="如何解决">如何解决</h2>
+<h2 id="heading">如何解决</h2>
 <p>在切换到游离状态的时候应该新建一个分支，然后我们所有的操作修改和提交都会保存到该分支，HEAD 也就指向了该分支最新提交的 commit id 处，而不会再处于游离状态。</p>
 <ol>
 <li>

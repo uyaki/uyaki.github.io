@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.2 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="http://gknoone.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/" />
@@ -48,7 +48,7 @@
 <meta itemprop="description" content="安装 假设你已经使用docker安装了es集群 1 $ cd ${docker-compose-file-dir} 安装ik插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip 安装pinyin插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip 重启docker 1 $ docker-compose restart">
 <meta itemprop="datePublished" content="2020-03-05T19:28:53&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-05T19:28:53&#43;08:00" />
-<meta itemprop="wordCount" content="721">
+<meta itemprop="wordCount" content="720">
 
 
 
@@ -124,7 +124,7 @@
         <div class="post-category">
             <a href="/categories/elasticsearch/"> Elasticsearch </a>
             </div>
-          <span class="more-meta"> 约 721 字 </span>
+          <span class="more-meta"> 约 720 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -135,16 +135,16 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#使用">使用</a>
+    <li><a href="#heading">安装</a></li>
+    <li><a href="#heading1">使用</a>
       <ul>
-        <li><a href="#创建索引">创建索引</a></li>
-        <li><a href="#检查自定义的词语分析器是否生效">检查自定义的词语分析器是否生效</a></li>
-        <li><a href="#新增数据">新增数据</a></li>
-        <li><a href="#按拼音搜索">按「拼音」搜索</a></li>
-        <li><a href="#按中文名搜索">按「中文名」搜索</a></li>
-        <li><a href="#按中文名--拼音搜索">按「中文名 + 拼音」搜索</a></li>
-        <li><a href="#分析执行结果">分析执行结果</a></li>
+        <li><a href="#heading2">创建索引</a></li>
+        <li><a href="#heading3">检查自定义的词语分析器是否生效</a></li>
+        <li><a href="#heading4">新增数据</a></li>
+        <li><a href="#heading5">按「拼音」搜索</a></li>
+        <li><a href="#heading6">按「中文名」搜索</a></li>
+        <li><a href="#--">按「中文名 + 拼音」搜索</a></li>
+        <li><a href="#heading7">分析执行结果</a></li>
       </ul>
     </li>
   </ul>
@@ -152,7 +152,7 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="安装">安装</h2>
+      <h2 id="heading">安装</h2>
 <blockquote>
 <p>假设你已经使用docker安装了es集群</p>
 </blockquote>
@@ -197,8 +197,8 @@
 <pre class="chroma"><code class="language-sh" data-lang="sh">$ docker-compose restart
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="使用">使用</h2>
-<h3 id="创建索引">创建索引</h3>
+</div><h2 id="heading1">使用</h2>
+<h3 id="heading2">创建索引</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -333,7 +333,7 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="检查自定义的词语分析器是否生效">检查自定义的词语分析器是否生效</h3>
+</div><h3 id="heading3">检查自定义的词语分析器是否生效</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -432,19 +432,12 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="新增数据">新增数据</h3>
+</div><h3 id="heading4">新增数据</h3>
 <blockquote>
 <p>可以使用<a href="https://github.com/alibaba/DataX">datax</a>批量导入数据，后面再开一坑</p>
 </blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">略
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="按拼音搜索">按「拼音」搜索</h3>
+<pre><code>略
+</code></pre><h3 id="heading5">按「拼音」搜索</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -467,7 +460,7 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="按中文名搜索">按「中文名」搜索</h3>
+</div><h3 id="heading6">按「中文名」搜索</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -490,7 +483,7 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="按中文名--拼音搜索">按「中文名 + 拼音」搜索</h3>
+</div><h3 id="--">按「中文名 + 拼音」搜索</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -517,7 +510,7 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="分析执行结果">分析执行结果</h3>
+</div><h3 id="heading7">分析执行结果</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
