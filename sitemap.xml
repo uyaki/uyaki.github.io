@@ -3,27 +3,41 @@
   
   <url>
     <loc>http://gknoone.github.io/categories/</loc>
-    <lastmod>2020-04-19T14:21:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/tags/centos7/</loc>
-    <lastmod>2020-04-19T14:21:48+08:00</lastmod>
+    <lastmod>2020-04-22T10:54:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/</loc>
-    <lastmod>2020-04-19T14:21:48+08:00</lastmod>
+    <lastmod>2020-04-22T10:54:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://gknoone.github.io/post/</loc>
+    <lastmod>2020-04-22T10:54:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/</loc>
+    <lastmod>2020-04-22T10:54:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2020-04-22T10:54:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://gknoone.github.io/tags/centos7/</loc>
     <lastmod>2020-04-19T14:21:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,13 +59,6 @@
   
   <url>
     <loc>http://gknoone.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</loc>
-    <lastmod>2020-04-19T14:21:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://gknoone.github.io/tags/</loc>
     <lastmod>2020-04-19T14:21:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -135,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/alfred/</loc>
+    <loc>http://gknoone.github.io/tags/alfred/</loc>
     <lastmod>2020-03-04T14:44:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/alfred/</loc>
+    <loc>http://gknoone.github.io/categories/alfred/</loc>
     <lastmod>2020-03-04T14:44:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -282,14 +289,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/git/</loc>
+    <loc>http://gknoone.github.io/tags/git/</loc>
     <lastmod>2020-02-23T22:53:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/git/</loc>
+    <loc>http://gknoone.github.io/categories/git/</loc>
     <lastmod>2020-02-23T22:53:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -618,14 +625,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/spacemacs/</loc>
+    <loc>http://gknoone.github.io/tags/spacemacs/</loc>
     <lastmod>2020-02-11T13:48:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/spacemacs/</loc>
+    <loc>http://gknoone.github.io/categories/spacemacs/</loc>
     <lastmod>2020-02-11T13:48:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -695,14 +702,14 @@
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/tags/iterm/</loc>
+    <loc>http://gknoone.github.io/categories/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://gknoone.github.io/categories/iterm/</loc>
+    <loc>http://gknoone.github.io/tags/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

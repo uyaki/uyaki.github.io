@@ -6,10 +6,19 @@
     <description>Recent content on gknoone的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2020 10:54:52 +0800</lastBuildDate>
     
 	<atom:link href="http://gknoone.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用sftp从服务器下载文件</title>
+      <link>http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 22 Apr 2020 10:54:52 +0800</pubDate>
+      
+      <guid>http://gknoone.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <description>sftp 交互式的文件传输程序，命令的运行和使用方式与 ftp 命令相似，但是，sftp 命令对传输的所有信息使用 ssh 加密，它还支持公钥认证和压缩等功能。 语法 s</description>
+    </item>
     
     <item>
       <title>SSH免密登录CentOS7</title>
@@ -26,7 +35,7 @@
       <pubDate>Sun, 19 Apr 2020 10:16:36 +0800</pubDate>
       
       <guid>http://gknoone.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
-      <description>基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $ yum</description>
+      <description>基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $</description>
     </item>
     
     <item>
