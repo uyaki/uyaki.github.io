@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on gknoone的博客</title>
-    <link>http://gknoone.github.io/tags/blog/</link>
-    <description>Recent content in blog on gknoone的博客</description>
+    <title>blog on uyaba的博客</title>
+    <link>http://uyaba.github.io/tags/blog/</link>
+    <description>Recent content in blog on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 06 Feb 2020 21:56:02 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo搭建</title>
-      <link>http://gknoone.github.io/post/hugo%E6%90%AD%E5%BB%BA/</link>
+      <link>http://uyaba.github.io/post/hugo%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/hugo%E6%90%AD%E5%BB%BA/</guid>
+      <guid>http://uyaba.github.io/post/hugo%E6%90%AD%E5%BB%BA/</guid>
       <description>使用 Hugo 搭建博客 hugo 安装 依赖： Git Mercurial Go Mac 下直接使用 Homebrew 安装： 1 $ brew install hugo github仓库准备 create new repositories =&amp;gt; blog ，用来存放网站内容和源文件； create new repositories =&amp;gt; &amp;lt;username&amp;gt;.github.io ，用于存放</description>
     </item>
     

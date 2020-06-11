@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elasticsearch on gknoone的博客</title>
-    <link>http://gknoone.github.io/categories/elasticsearch/</link>
-    <description>Recent content in Elasticsearch on gknoone的博客</description>
+    <title>ElasticSearch on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/elasticsearch/</link>
+    <description>Recent content in ElasticSearch on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Mar 2020 19:28:53 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ELasticSearch设置ik&#43;pinyin分词器</title>
-      <link>http://gknoone.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
+      <link>http://uyaba.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
       <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
+      <guid>http://uyaba.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
       <description>安装 假设你已经使用docker安装了es集群 1 $ cd ${docker-compose-file-dir} 安装ik插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip 安装pinyin插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip 重启docker 1 $ docker-compose restart</description>
     </item>
     
     <item>
       <title>ElasticSearch修改已经存在的index的settings</title>
-      <link>http://gknoone.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
+      <link>http://uyaba.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
       <pubDate>Thu, 05 Mar 2020 16:44:08 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
+      <guid>http://uyaba.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
       <description>关闭索引 POST /index/_close 修改索引Settings PUT /index/_settings { &amp;quot;settings&amp;quot;: { &amp;quot;analysis&amp;quot;: { &amp;quot;analyzer&amp;quot;: { &amp;quot;ik_pinyin_analyzer&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;custom&amp;quot;, &amp;quot;tokenizer&amp;quot;: &amp;quot;ik_smart&amp;quot;, &amp;quot;filter&amp;quot;: [ &amp;quot;my_pinyin&amp;quot;, &amp;quot;word_delimiter&amp;quot; ] } }, &amp;quot;filter&amp;quot;: { &amp;quot;my_pinyin&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;pinyin&amp;quot;, &amp;quot;keep_first_letter&amp;quot;: false, &amp;quot;keep_full_pinyin&amp;quot;: true, &amp;quot;keep_none_chinese&amp;quot;: true, &amp;quot;keep_none_chinese_in_first_letter&amp;quot;: true, &amp;quot;keep_original&amp;quot;: false, &amp;quot;limit_first_letter_length&amp;quot;: 16, &amp;quot;lowercase&amp;quot;: true, &amp;quot;trim_whitespace&amp;quot;: true } } } } } 打开索</description>
     </item>
     
     <item>
       <title>Docker部署ES、kibana并配置ik分词</title>
-      <link>http://gknoone.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
+      <link>http://uyaba.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
       <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
+      <guid>http://uyaba.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
       <description>1. 创建数据目录 1 2 3 4 5 6 7 8 9 10 #创建数据/日志目录 这里我们部署3个节点 $ mkdir /opt/elasticsearch/data/{es01,es02,es03} -p mkdir /opt/elasticsearch/logs/{es01,es02,es03} -p cd /opt/elasticsearch #权限 chmod 0777 data/* -R &amp;amp;&amp;amp; chmod 0777 logs/* -R #防止JVM报错 echo vm.max_map_count=262144 &amp;gt;&amp;gt; /etc/sysctl.conf</description>
     </item>
     
