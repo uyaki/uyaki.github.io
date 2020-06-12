@@ -73,14 +73,14 @@
   </url>
   
   <url>
-    <loc>http://uyaba.github.io/tags/linux/</loc>
+    <loc>http://uyaba.github.io/categories/linux/</loc>
     <lastmod>2020-04-19T10:16:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://uyaba.github.io/categories/linux/</loc>
+    <loc>http://uyaba.github.io/tags/linux/</loc>
     <lastmod>2020-04-19T10:16:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -703,14 +703,14 @@
   </url>
   
   <url>
-    <loc>http://uyaba.github.io/tags/iterm/</loc>
+    <loc>http://uyaba.github.io/categories/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://uyaba.github.io/categories/iterm/</loc>
+    <loc>http://uyaba.github.io/tags/iterm/</loc>
     <lastmod>2020-02-11T10:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
