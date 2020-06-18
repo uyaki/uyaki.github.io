@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on gknoone的博客</title>
-    <link>http://gknoone.github.io/categories/vim/</link>
-    <description>Recent content in Vim on gknoone的博客</description>
+    <title>Vim on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/vim/</link>
+    <description>Recent content in Vim on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 11 Feb 2020 11:06:59 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MacOS使用MacVim替代vim</title>
-      <link>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <link>http://uyaba.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <guid>http://uyaba.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
     </item>
     

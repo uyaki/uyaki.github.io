@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iTerm on gknoone的博客</title>
-    <link>http://gknoone.github.io/categories/iterm/</link>
-    <description>Recent content in iTerm on gknoone的博客</description>
+    <title>iTerm on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/iterm/</link>
+    <description>Recent content in iTerm on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 11 Feb 2020 10:49:09 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/categories/iterm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/categories/iterm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MacOS在iTerm中使用rz、sz从远程上传下载文件</title>
-      <link>http://gknoone.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <link>http://uyaba.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
       <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://uyaba.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
       <description>安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat</description>
     </item>
     

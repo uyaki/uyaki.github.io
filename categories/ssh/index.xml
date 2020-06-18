@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SSH on gknoone的博客</title>
-    <link>http://gknoone.github.io/categories/ssh/</link>
-    <description>Recent content in SSH on gknoone的博客</description>
+    <title>SSH on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/ssh/</link>
+    <description>Recent content in SSH on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SSH免密登录CentOS7</title>
-      <link>http://gknoone.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
+      <link>http://uyaba.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
       <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
+      <guid>http://uyaba.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
       <description>本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 4 $ cat id_rsa.pub &amp;gt;&amp;gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.</description>
     </item>
     
     <item>
       <title>SSH使用pem文件远程登陆</title>
-      <link>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+      <link>http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+      <guid>http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
       <description>方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem</description>
     </item>
     

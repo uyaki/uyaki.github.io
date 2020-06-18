@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swagger on gknoone的博客</title>
-    <link>http://gknoone.github.io/categories/swagger/</link>
-    <description>Recent content in swagger on gknoone的博客</description>
+    <title>swagger on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/swagger/</link>
+    <description>Recent content in swagger on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 04 Mar 2020 11:29:31 +0800</lastBuildDate>
     
-	<atom:link href="http://gknoone.github.io/categories/swagger/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://uyaba.github.io/categories/swagger/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Swagger出现Could not resolve pointer</title>
-      <link>http://gknoone.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
+      <link>http://uyaba.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
       <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
       
-      <guid>http://gknoone.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
+      <guid>http://uyaba.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
       <description>问题描述 原因 类上的注解 “/” 的问题 @ApiModel(不能使用“/”)</description>
     </item>
     
