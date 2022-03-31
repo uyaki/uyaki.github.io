@@ -6,11 +6,7 @@
     <description>Recent content in Git on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git标准Fork &amp; Pull Request流程</title>
       <link>http://uyaba.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>

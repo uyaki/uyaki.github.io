@@ -6,11 +6,7 @@
     <description>Recent content in cors on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 23:57:53 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/tags/cors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 22 Feb 2020 23:57:53 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/cors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java配置允许跨域访问</title>
       <link>http://uyaba.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>

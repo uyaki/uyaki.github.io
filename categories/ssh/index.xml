@@ -6,18 +6,14 @@
     <description>Recent content in SSH on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH免密登录CentOS7</title>
       <link>http://uyaba.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
       <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
       
       <guid>http://uyaba.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
-      <description>本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 4 $ cat id_rsa.pub &amp;gt;&amp;gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.</description>
+      <description>本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 $ cat id_rsa.pub &amp;gt;&amp;gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.4</description>
     </item>
     
     <item>

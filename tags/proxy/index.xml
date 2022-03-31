@@ -6,11 +6,7 @@
     <description>Recent content in proxy on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 09:25:55 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Feb 2020 09:25:55 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git加速最佳实践</title>
       <link>http://uyaba.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>

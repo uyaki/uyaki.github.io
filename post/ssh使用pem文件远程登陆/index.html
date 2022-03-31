@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/" />
@@ -41,17 +41,14 @@
 <meta property="og:title" content="SSH使用pem文件远程登陆" />
 <meta property="og:description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/" />
+<meta property="og:url" content="http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-02-11T10:46:03+08:00" />
 <meta property="article:modified_time" content="2020-02-11T10:46:03+08:00" />
+
 <meta itemprop="name" content="SSH使用pem文件远程登陆">
-<meta itemprop="description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem">
-<meta itemprop="datePublished" content="2020-02-11T10:46:03&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-11T10:46:03&#43;08:00" />
+<meta itemprop="description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem"><meta itemprop="datePublished" content="2020-02-11T10:46:03+08:00" />
+<meta itemprop="dateModified" content="2020-02-11T10:46:03+08:00" />
 <meta itemprop="wordCount" content="81">
-
-
-
 <meta itemprop="keywords" content="ssh,认证," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SSH使用pem文件远程登陆"/>
 <meta name="twitter:description" content="方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem"/>
@@ -135,62 +132,62 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">方式一：</a></li>
-    <li><a href="#mac">方式二（Mac重启后失效）：</a></li>
+    <li><a href="#方式一">方式一：</a></li>
+    <li><a href="#方式二mac重启后失效">方式二（Mac重启后失效）：</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h2 id="heading">方式一：</h2>
+      <h2 id="方式一">方式一：</h2>
 <ol>
 <li>
 <p>修改pem权限；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">sudo chmod <span class="m">600</span> key.pem
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo chmod <span class="m">600</span> key.pem
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
 <p>Mac OS 连接服务器使用 PEM 文件；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">ssh -i key.pem root@IP
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ssh -i key.pem root@IP
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ol>
-<h2 id="mac">方式二（Mac重启后失效）：</h2>
+<h2 id="方式二mac重启后失效">方式二（Mac重启后失效）：</h2>
 <ol>
 <li>
 <p>使用ssh-add添加key文件；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">ssh-add -k key.pem  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ssh-add -k key.pem  
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
 <p>登陆；</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">ssh root@IP
-ssh -p xxxx root@IP
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ssh root@IP
+</span></span><span class="line"><span class="cl">ssh -p xxxx root@IP
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ol>
@@ -306,7 +303,8 @@ ssh -p xxxx root@IP
 
   <span class="copyright-year">
     &copy; 
-    2020
+    2020 - 
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

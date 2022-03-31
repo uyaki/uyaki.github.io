@@ -6,11 +6,7 @@
     <description>Recent content in 图床 on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Feb 2020 01:02:04 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/categories/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 12 Feb 2020 01:02:04 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用GitHub和PicGo搭建个人图床</title>
       <link>http://uyaba.github.io/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>

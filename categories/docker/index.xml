@@ -6,11 +6,7 @@
     <description>Recent content in Docker on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Feb 2020 14:10:15 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Feb 2020 14:10:15 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac系统下修改docker的vm参数</title>
       <link>http://uyaba.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</link>

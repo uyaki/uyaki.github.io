@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="http://uyaba.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" />
@@ -41,17 +41,14 @@
 <meta property="og:title" content="CentOS7开发环境" />
 <meta property="og:description" content="基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://uyaba.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" />
+<meta property="og:url" content="http://uyaba.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-04-19T10:16:36+08:00" />
 <meta property="article:modified_time" content="2020-04-19T10:16:36+08:00" />
+
 <meta itemprop="name" content="CentOS7开发环境">
-<meta itemprop="description" content="基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $">
-<meta itemprop="datePublished" content="2020-04-19T10:16:36&#43;08:00" />
-<meta itemprop="dateModified" content="2020-04-19T10:16:36&#43;08:00" />
-<meta itemprop="wordCount" content="257">
-
-
-
+<meta itemprop="description" content="基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $"><meta itemprop="datePublished" content="2020-04-19T10:16:36+08:00" />
+<meta itemprop="dateModified" content="2020-04-19T10:16:36+08:00" />
+<meta itemprop="wordCount" content="263">
 <meta itemprop="keywords" content="linux,centOS7," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CentOS7开发环境"/>
 <meta name="twitter:description" content="基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $"/>
@@ -124,7 +121,7 @@
         <div class="post-category">
             <a href="/categories/linux/"> linux </a>
             </div>
-          <span class="more-meta"> 约 257 字 </span>
+          <span class="more-meta"> 约 263 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -135,16 +132,16 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">基础配置</a>
+    <li><a href="#基础配置">基础配置</a>
       <ul>
-        <li><a href="#heading1">修改主机名</a></li>
+        <li><a href="#修改主机名">修改主机名</a></li>
       </ul>
     </li>
-    <li><a href="#heading2">基础工具</a></li>
-    <li><a href="#docker">docker安装</a>
+    <li><a href="#基础工具">基础工具</a></li>
+    <li><a href="#docker安装">docker安装</a>
       <ul>
-        <li><a href="#docker1">安装docker</a></li>
-        <li><a href="#dockercompose">安装docker-compose</a></li>
+        <li><a href="#安装docker">安装docker</a></li>
+        <li><a href="#安装docker-compose">安装docker-compose</a></li>
       </ul>
     </li>
   </ul>
@@ -152,49 +149,49 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="heading">基础配置</h2>
-<h3 id="heading1">修改主机名</h3>
+      <h2 id="基础配置">基础配置</h2>
+<h3 id="修改主机名">修改主机名</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看一下当前主机名的情况</span>
-$ hostnamectl
-$ hostnamectl set-hostname gakki --static
-$ hostnamectl status
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看一下当前主机名的情况</span>
+</span></span><span class="line"><span class="cl">$ hostnamectl
+</span></span><span class="line"><span class="cl">$ hostnamectl set-hostname gakki --static
+</span></span><span class="line"><span class="cl">$ hostnamectl status
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="heading2">基础工具</h2>
+</div><h2 id="基础工具">基础工具</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 解决ifconfig 不存在</span>
-$ yum -y install net-tools
-<span class="c1"># 文件传输</span>
-$ yum -y install lrzsz
-$ yum install -y unzip zip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 解决ifconfig 不存在</span>
+</span></span><span class="line"><span class="cl">$ yum -y install net-tools
+</span></span><span class="line"><span class="cl"><span class="c1"># 文件传输</span>
+</span></span><span class="line"><span class="cl">$ yum -y install lrzsz
+</span></span><span class="line"><span class="cl">$ yum install -y unzip zip
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="docker">docker安装</h2>
-<h3 id="docker1">安装docker</h3>
+</div><h2 id="docker安装">docker安装</h2>
+<h3 id="安装docker">安装docker</h3>
 <ol>
 <li>新建<code>docker_install.sh</code></li>
-<li>复制官方脚本<a href="https://get.docker.com/"><a href="https://get.docker.com/">https://get.docker.com/</a></a> 内容</li>
+<li>复制官方脚本<a href="https://get.docker.com/">https://get.docker.com/</a> 内容</li>
 <li>安装与启动</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -206,46 +203,58 @@ $ yum install -y unzip zip
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">## 授权</span>
-$ chmod docker_install.sh
-<span class="c1">## 安装</span>
-$ ./chmod docker_install.sh
-<span class="c1">## 移除脚本</span>
-$ rm docker_install.sh
-<span class="c1">## 启动</span>
-$ systemctl start docker.service
-<span class="c1">## 开机自启动</span>
-$ systemctl <span class="nb">enable</span> docker.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 授权</span>
+</span></span><span class="line"><span class="cl">$ chmod docker_install.sh
+</span></span><span class="line"><span class="cl"><span class="c1">## 安装</span>
+</span></span><span class="line"><span class="cl">$ ./chmod docker_install.sh
+</span></span><span class="line"><span class="cl"><span class="c1">## 移除脚本</span>
+</span></span><span class="line"><span class="cl">$ rm docker_install.sh
+</span></span><span class="line"><span class="cl"><span class="c1">## 启动</span>
+</span></span><span class="line"><span class="cl">$ systemctl start docker.service
+</span></span><span class="line"><span class="cl"><span class="c1">## 开机自启动</span>
+</span></span><span class="line"><span class="cl">$ systemctl <span class="nb">enable</span> docker.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>设置代理</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim /etc/docker/daemon.json
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim /etc/docker/daemon.json
+</span></span></code></pre></td></tr></table>
 </div>
-</div><pre><code>{
-  &quot;insecure-registries&quot; : [&quot;docker.server:80&quot;],
-  &quot;debug&quot; : true,
-  &quot;experimental&quot; : true,
-  &quot;registry-mirrors&quot;: [&quot;http://hub-mirror.c.163.com&quot;]
-}
-</code></pre><h3 id="dockercompose">安装docker-compose</h3>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;insecure-registries&#34; : [&#34;docker.server:80&#34;],
+</span></span><span class="line"><span class="cl">  &#34;debug&#34; : true,
+</span></span><span class="line"><span class="cl">  &#34;experimental&#34; : true,
+</span></span><span class="line"><span class="cl">  &#34;registry-mirrors&#34;: [&#34;http://hub-mirror.c.163.com&#34;]
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装docker-compose">安装docker-compose</h3>
 <p>参照<a href="https://docs.docker.com/compose/install/">官网教程</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo curl -L <span class="s2">&#34;</span><span class="s2">https://github.com/docker/compose/releases/download/1.25.5/docker-compose-</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">-</span><span class="k">$(</span>uname -m<span class="k">)</span><span class="s2">&#34;</span> -o /usr/local/bin/docker-compose
-$ sudo chmod +x /usr/local/bin/docker-compose
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo curl -L <span class="s2">&#34;https://github.com/docker/compose/releases/download/1.25.5/docker-compose-</span><span class="k">$(</span>uname -s<span class="k">)</span><span class="s2">-</span><span class="k">$(</span>uname -m<span class="k">)</span><span class="s2">&#34;</span> -o /usr/local/bin/docker-compose
+</span></span><span class="line"><span class="cl">$ sudo chmod +x /usr/local/bin/docker-compose
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -359,7 +368,8 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
   <span class="copyright-year">
     &copy; 
-    2020
+    2020 - 
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

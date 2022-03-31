@@ -6,11 +6,7 @@
     <description>Recent content in 认证 on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Feb 2020 10:46:03 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/tags/%E8%AE%A4%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Feb 2020 10:46:03 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/%E8%AE%A4%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH使用pem文件远程登陆</title>
       <link>http://uyaba.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>

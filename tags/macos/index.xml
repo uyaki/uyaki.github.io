@@ -6,11 +6,7 @@
     <description>Recent content in macOS on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 01:23:11 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Feb 2020 01:23:11 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Homebrew实用命令总结</title>
       <link>http://uyaba.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>

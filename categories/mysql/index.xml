@@ -6,18 +6,14 @@
     <description>Recent content in Mysql on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Feb 2020 10:25:52 +0800</lastBuildDate>
-    
-	<atom:link href="http://uyaba.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Feb 2020 10:25:52 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql修改Auto_increment</title>
       <link>http://uyaba.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
       <pubDate>Wed, 26 Feb 2020 10:25:52 +0800</pubDate>
       
       <guid>http://uyaba.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
-      <description>查看 1 select auto_increment from information_schema.tables where table_schema=&amp;#39;xxx_db&amp;#39; and table_name=&amp;#39;xxx&amp;#39;; 修改 1 alter table xxx_db.xxx auto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效</description>
+      <description>查看 1 selectauto_incrementfrominformation_schema.tableswheretable_schema=&amp;#39;xxx_db&amp;#39;andtable_name=&amp;#39;xxx&amp;#39;; 修改 1 altertablexxx_db.xxxauto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效</description>
     </item>
     
   </channel>
