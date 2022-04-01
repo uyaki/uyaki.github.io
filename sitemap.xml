@@ -3,20 +3,55 @@
   
   <url>
     <loc>http://uyaba.github.io/categories/</loc>
-    <lastmod>2022-04-01T01:40:49+08:00</lastmod>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://uyaba.github.io/tags/clash/</loc>
-    <lastmod>2022-04-01T01:40:49+08:00</lastmod>
+    <loc>http://uyaba.github.io/tags/parallels-desktop/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaba.github.io/categories/parallels-desktop/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://uyaba.github.io/post/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaba.github.io/tags/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaba.github.io/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2022-04-01T15:25:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaba.github.io/tags/clash/</loc>
     <lastmod>2022-04-01T01:40:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,20 +80,6 @@
   
   <url>
     <loc>http://uyaba.github.io/post/steam%E5%A6%82%E4%BD%95%E7%BB%95%E8%BF%87clash%E7%9A%84%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</loc>
-    <lastmod>2022-04-01T01:40:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaba.github.io/tags/</loc>
-    <lastmod>2022-04-01T01:40:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaba.github.io/</loc>
     <lastmod>2022-04-01T01:40:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parallels Desktop on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/parallels-desktop/</link>
+    <description>Recent content in Parallels Desktop on uyaba的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Apr 2022 15:25:29 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/parallels-desktop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决PD的bootcamp中windows无法联网的问题</title>
+      <link>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>解决无法联网的问题: 1 vim /Library/Preferences/Parallels/network.desktop.xml 1 2 &amp;lt;!-- &amp;lt;UseKextless&amp;gt;-1&amp;lt;/UseKextless&amp;gt;改为 1--&amp;gt; &amp;lt;UseKextless&amp;gt;0&amp;lt;/UseKextless&amp;gt; 解决USB无法识别</description>
+    </item>
+    
+  </channel>
+</rss>

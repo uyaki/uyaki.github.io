@@ -6,7 +6,16 @@
     <description>Recent content on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Apr 2022 01:40:49 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 15:25:29 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决PD的bootcamp中windows无法联网的问题</title>
+      <link>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>解决无法联网的问题: 1 vim /Library/Preferences/Parallels/network.desktop.xml 1 2 &amp;lt;!-- &amp;lt;UseKextless&amp;gt;-1&amp;lt;/UseKextless&amp;gt;改为 1--&amp;gt; &amp;lt;UseKextless&amp;gt;0&amp;lt;/UseKextless&amp;gt; 解决USB无法识别</description>
+    </item>
+    
     <item>
       <title>Steam如何绕过clash的全局代理</title>
       <link>http://uyaba.github.io/post/steam%E5%A6%82%E4%BD%95%E7%BB%95%E8%BF%87clash%E7%9A%84%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
