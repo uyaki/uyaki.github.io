@@ -6,22 +6,22 @@
     <description>Recent content in Tags on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Apr 2022 15:25:29 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Parallels Desktop</title>
-      <link>http://uyaba.github.io/tags/parallels-desktop/</link>
-      <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
+      <title>Windows</title>
+      <link>http://uyaba.github.io/tags/windows/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/parallels-desktop/</guid>
+      <guid>http://uyaba.github.io/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>clash</title>
-      <link>http://uyaba.github.io/tags/clash/</link>
-      <pubDate>Fri, 01 Apr 2022 01:40:49 +0800</pubDate>
+      <title>软件</title>
+      <link>http://uyaba.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/clash/</guid>
+      <guid>http://uyaba.github.io/tags/%E8%BD%AF%E4%BB%B6/</guid>
       <description></description>
     </item>
     
@@ -35,20 +35,11 @@
     </item>
     
     <item>
-      <title>steam</title>
-      <link>http://uyaba.github.io/tags/steam/</link>
-      <pubDate>Fri, 01 Apr 2022 01:40:49 +0800</pubDate>
+      <title>服务器</title>
+      <link>http://uyaba.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Wed, 22 Apr 2020 10:54:52 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/steam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>centOS7</title>
-      <link>http://uyaba.github.io/tags/centos7/</link>
-      <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/centos7/</guid>
+      <guid>http://uyaba.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description></description>
     </item>
     
@@ -62,6 +53,15 @@
     </item>
     
     <item>
+      <title>开发</title>
+      <link>http://uyaba.github.io/tags/%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/tags/%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>http://uyaba.github.io/tags/linux/</link>
       <pubDate>Sun, 19 Apr 2020 10:16:36 +0800</pubDate>
@@ -71,92 +71,20 @@
     </item>
     
     <item>
-      <title>elasticsearch</title>
-      <link>http://uyaba.github.io/tags/elasticsearch/</link>
-      <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/elasticsearch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ik</title>
-      <link>http://uyaba.github.io/tags/ik/</link>
-      <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/ik/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pinyin</title>
-      <link>http://uyaba.github.io/tags/pinyin/</link>
-      <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/pinyin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>es</title>
-      <link>http://uyaba.github.io/tags/es/</link>
-      <pubDate>Thu, 05 Mar 2020 16:44:08 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/es/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>alfred</title>
-      <link>http://uyaba.github.io/tags/alfred/</link>
-      <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/alfred/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>swagger</title>
-      <link>http://uyaba.github.io/tags/swagger/</link>
-      <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/swagger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>homebrew</title>
-      <link>http://uyaba.github.io/tags/homebrew/</link>
+      <title>macOS</title>
+      <link>http://uyaba.github.io/tags/macos/</link>
       <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/homebrew/</guid>
+      <guid>http://uyaba.github.io/tags/macos/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>调料</title>
-      <link>http://uyaba.github.io/tags/%E8%B0%83%E6%96%99/</link>
+      <title>做饭</title>
+      <link>http://uyaba.github.io/tags/%E5%81%9A%E9%A5%AD/</link>
       <pubDate>Fri, 28 Feb 2020 00:05:29 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/%E8%B0%83%E6%96%99/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>postman</title>
-      <link>http://uyaba.github.io/tags/postman/</link>
-      <pubDate>Thu, 27 Feb 2020 20:12:29 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/postman/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>auto_increment</title>
-      <link>http://uyaba.github.io/tags/auto_increment/</link>
-      <pubDate>Wed, 26 Feb 2020 10:25:52 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/auto_increment/</guid>
+      <guid>http://uyaba.github.io/tags/%E5%81%9A%E9%A5%AD/</guid>
       <description></description>
     </item>
     
@@ -179,38 +107,11 @@
     </item>
     
     <item>
-      <title>家常菜</title>
-      <link>http://uyaba.github.io/tags/%E5%AE%B6%E5%B8%B8%E8%8F%9C/</link>
-      <pubDate>Sun, 23 Feb 2020 20:03:51 +0800</pubDate>
+      <title>规范</title>
+      <link>http://uyaba.github.io/tags/%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/%E5%AE%B6%E5%B8%B8%E8%8F%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>食谱</title>
-      <link>http://uyaba.github.io/tags/%E9%A3%9F%E8%B0%B1/</link>
-      <pubDate>Sun, 23 Feb 2020 20:03:51 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E9%A3%9F%E8%B0%B1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>烤箱</title>
-      <link>http://uyaba.github.io/tags/%E7%83%A4%E7%AE%B1/</link>
-      <pubDate>Sun, 23 Feb 2020 16:26:44 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E7%83%A4%E7%AE%B1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>饮品</title>
-      <link>http://uyaba.github.io/tags/%E9%A5%AE%E5%93%81/</link>
-      <pubDate>Sun, 23 Feb 2020 16:16:29 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E9%A5%AE%E5%93%81/</guid>
+      <guid>http://uyaba.github.io/tags/%E8%A7%84%E8%8C%83/</guid>
       <description></description>
     </item>
     
@@ -224,24 +125,6 @@
     </item>
     
     <item>
-      <title>macOS</title>
-      <link>http://uyaba.github.io/tags/macos/</link>
-      <pubDate>Sun, 23 Feb 2020 01:23:11 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cors</title>
-      <link>http://uyaba.github.io/tags/cors/</link>
-      <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/cors/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>java</title>
       <link>http://uyaba.github.io/tags/java/</link>
       <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
@@ -251,47 +134,11 @@
     </item>
     
     <item>
-      <title>orphan</title>
-      <link>http://uyaba.github.io/tags/orphan/</link>
-      <pubDate>Wed, 19 Feb 2020 09:44:59 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/orphan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>idea</title>
-      <link>http://uyaba.github.io/tags/idea/</link>
-      <pubDate>Wed, 19 Feb 2020 09:00:55 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/idea/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>submodule</title>
-      <link>http://uyaba.github.io/tags/submodule/</link>
-      <pubDate>Wed, 19 Feb 2020 09:00:55 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/submodule/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jpa</title>
-      <link>http://uyaba.github.io/tags/jpa/</link>
-      <pubDate>Mon, 17 Feb 2020 15:03:09 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/jpa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spring boot</title>
-      <link>http://uyaba.github.io/tags/spring-boot/</link>
+      <title>bug</title>
+      <link>http://uyaba.github.io/tags/bug/</link>
       <pubDate>Mon, 17 Feb 2020 15:02:02 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/spring-boot/</guid>
+      <guid>http://uyaba.github.io/tags/bug/</guid>
       <description></description>
     </item>
     
@@ -305,56 +152,20 @@
     </item>
     
     <item>
-      <title>ik分词</title>
-      <link>http://uyaba.github.io/tags/ik%E5%88%86%E8%AF%8D/</link>
+      <title>部署</title>
+      <link>http://uyaba.github.io/tags/%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/ik%E5%88%86%E8%AF%8D/</guid>
+      <guid>http://uyaba.github.io/tags/%E9%83%A8%E7%BD%B2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>kibana</title>
-      <link>http://uyaba.github.io/tags/kibana/</link>
-      <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/kibana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java8</title>
-      <link>http://uyaba.github.io/tags/java8/</link>
-      <pubDate>Sat, 15 Feb 2020 15:58:54 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/java8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>时间处理</title>
-      <link>http://uyaba.github.io/tags/%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/</link>
-      <pubDate>Sat, 15 Feb 2020 15:58:54 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>http://uyaba.github.io/tags/github/</link>
+      <title>blog</title>
+      <link>http://uyaba.github.io/tags/blog/</link>
       <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>picgo</title>
-      <link>http://uyaba.github.io/tags/picgo/</link>
-      <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/picgo/</guid>
+      <guid>http://uyaba.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
@@ -377,15 +188,6 @@
     </item>
     
     <item>
-      <title>镜像</title>
-      <link>http://uyaba.github.io/tags/%E9%95%9C%E5%83%8F/</link>
-      <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E9%95%9C%E5%83%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>vim</title>
       <link>http://uyaba.github.io/tags/vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
@@ -395,56 +197,11 @@
     </item>
     
     <item>
-      <title>iTerm</title>
-      <link>http://uyaba.github.io/tags/iterm/</link>
-      <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/iterm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>认证</title>
-      <link>http://uyaba.github.io/tags/%E8%AE%A4%E8%AF%81/</link>
-      <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E8%AE%A4%E8%AF%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>烘培</title>
-      <link>http://uyaba.github.io/tags/%E7%83%98%E5%9F%B9/</link>
-      <pubDate>Sat, 08 Feb 2020 20:27:36 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/%E7%83%98%E5%9F%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>http://uyaba.github.io/tags/blog/</link>
-      <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>http://uyaba.github.io/tags/hugo/</link>
       <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
       
       <guid>http://uyaba.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>install</title>
-      <link>http://uyaba.github.io/tags/install/</link>
-      <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/tags/install/</guid>
       <description></description>
     </item>
     

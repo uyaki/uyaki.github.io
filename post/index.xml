@@ -6,7 +6,16 @@
     <description>Recent content in Posts on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Apr 2022 15:25:29 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows资源管理器优化神器QTTabBar</title>
+      <link>http://uyaba.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
+      <description>官网 QTTabBar 安装 按流程指引直接下一步 启动 新打开一个「资源管理器」，也就是随意打开一个文件夹。 点击顶栏的「查看」 点击最右边的「选项」 选择「QTTab</description>
+    </item>
+    
     <item>
       <title>解决PD的bootcamp中windows无法联网的问题</title>
       <link>http://uyaba.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
@@ -113,15 +122,6 @@
       
       <guid>http://uyaba.github.io/post/%E9%85%B8%E8%BE%A3%E9%85%B1%E6%B1%81/</guid>
       <description>用途 做各种酸辣口的面，粉丝，河粉 比例 1勺生抽 1勺陈醋 1勺白糖 1勺老干妈(喜欢辣点可以多加) 1/3勺盐 1勺番茄酱（推荐亨氏，酸甜口感更浓厚，喜</description>
-    </item>
-    
-    <item>
-      <title>Postman全局环境设置技巧</title>
-      <link>http://uyaba.github.io/post/postman%E5%85%A8%E5%B1%80%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Thu, 27 Feb 2020 20:12:29 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/post/postman%E5%85%A8%E5%B1%80%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE%E6%8A%80%E5%B7%A7/</guid>
-      <description>TODO</description>
     </item>
     
     <item>

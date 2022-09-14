@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服务器 on uyaba的博客</title>
+    <link>http://uyaba.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in 服务器 on uyaba的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Apr 2020 10:54:52 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用sftp从服务器下载文件</title>
+      <link>http://uyaba.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Wed, 22 Apr 2020 10:54:52 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <description>sftp 交互式的文件传输程序，命令的运行和使用方式与 ftp 命令相似，但是，sftp 命令对传输的所有信息使用 ssh 加密，它还支持公钥认证和压缩等功能。 语法 1</description>
+    </item>
+    
+  </channel>
+</rss>

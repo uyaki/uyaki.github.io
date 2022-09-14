@@ -16,14 +16,5 @@
       <description>设置bypass Clash -&amp;gt; Settings -&amp;gt; System Proxy -&amp;gt; Bypass Domain/IPNet 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 bypass:- localhost- 127.*- 10.*- 172.16.*- 172.17.*- 172.18.*- 172.19.*-</description>
     </item>
     
-    <item>
-      <title>Git加速最佳实践</title>
-      <link>http://uyaba.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Tue, 11 Feb 2020 09:25:55 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/post/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</guid>
-      <description>Git支持的协议 https协议，https://协议需要配置git的http.proxy参数 ssh协议，ssh://协议需要配置ssh的Pr</description>
-    </item>
-    
   </channel>
 </rss>

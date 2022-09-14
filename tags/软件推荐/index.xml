@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件推荐 on uyaba的博客</title>
+    <link>http://uyaba.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+    <description>Recent content in 软件推荐 on uyaba的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows资源管理器优化神器QTTabBar</title>
+      <link>http://uyaba.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
+      <description>官网 QTTabBar 安装 按流程指引直接下一步 启动 新打开一个「资源管理器」，也就是随意打开一个文件夹。 点击顶栏的「查看」 点击最右边的「选项」 选择「QTTab</description>
+    </item>
+    
+  </channel>
+</rss>

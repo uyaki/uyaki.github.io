@@ -6,13 +6,22 @@
     <description>Recent content in Categories on uyaba的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Apr 2022 15:25:29 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Parallels Desktop</title>
-      <link>http://uyaba.github.io/categories/parallels-desktop/</link>
-      <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
+      <title>Windows</title>
+      <link>http://uyaba.github.io/categories/windows/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/parallels-desktop/</guid>
+      <guid>http://uyaba.github.io/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件</title>
+      <link>http://uyaba.github.io/categories/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/categories/%E8%BD%AF%E4%BB%B6/</guid>
       <description></description>
     </item>
     
@@ -26,11 +35,29 @@
     </item>
     
     <item>
-      <title>SSH</title>
+      <title>服务器</title>
+      <link>http://uyaba.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Wed, 22 Apr 2020 10:54:52 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
       <link>http://uyaba.github.io/categories/ssh/</link>
       <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
       
       <guid>http://uyaba.github.io/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开发</title>
+      <link>http://uyaba.github.io/categories/%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/categories/%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     
@@ -44,79 +71,25 @@
     </item>
     
     <item>
-      <title>Elasticsearch</title>
-      <link>http://uyaba.github.io/categories/elasticsearch/</link>
-      <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/elasticsearch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>alfred</title>
-      <link>http://uyaba.github.io/categories/alfred/</link>
-      <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/alfred/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tools</title>
-      <link>http://uyaba.github.io/categories/tools/</link>
-      <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>http://uyaba.github.io/categories/java/</link>
-      <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>swagger</title>
-      <link>http://uyaba.github.io/categories/swagger/</link>
-      <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/swagger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>homebrew</title>
-      <link>http://uyaba.github.io/categories/homebrew/</link>
+      <title>macOS</title>
+      <link>http://uyaba.github.io/categories/macos/</link>
       <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/homebrew/</guid>
+      <guid>http://uyaba.github.io/categories/macos/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>食谱</title>
-      <link>http://uyaba.github.io/categories/%E9%A3%9F%E8%B0%B1/</link>
+      <title>做饭</title>
+      <link>http://uyaba.github.io/categories/%E5%81%9A%E9%A5%AD/</link>
       <pubDate>Fri, 28 Feb 2020 00:05:29 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/%E9%A3%9F%E8%B0%B1/</guid>
+      <guid>http://uyaba.github.io/categories/%E5%81%9A%E9%A5%AD/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tool</title>
-      <link>http://uyaba.github.io/categories/tool/</link>
-      <pubDate>Thu, 27 Feb 2020 20:12:29 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
+      <title>mysql</title>
       <link>http://uyaba.github.io/categories/mysql/</link>
       <pubDate>Wed, 26 Feb 2020 10:25:52 +0800</pubDate>
       
@@ -125,11 +98,20 @@
     </item>
     
     <item>
-      <title>Git</title>
+      <title>git</title>
       <link>http://uyaba.github.io/categories/git/</link>
       <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
       
       <guid>http://uyaba.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>规范</title>
+      <link>http://uyaba.github.io/categories/%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/categories/%E8%A7%84%E8%8C%83/</guid>
       <description></description>
     </item>
     
@@ -143,16 +125,16 @@
     </item>
     
     <item>
-      <title>IDEA</title>
-      <link>http://uyaba.github.io/categories/idea/</link>
-      <pubDate>Wed, 19 Feb 2020 09:00:55 +0800</pubDate>
+      <title>java</title>
+      <link>http://uyaba.github.io/categories/java/</link>
+      <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/idea/</guid>
+      <guid>http://uyaba.github.io/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Docker</title>
+      <title>docker</title>
       <link>http://uyaba.github.io/categories/docker/</link>
       <pubDate>Mon, 17 Feb 2020 14:10:15 +0800</pubDate>
       
@@ -161,20 +143,20 @@
     </item>
     
     <item>
-      <title>图床</title>
-      <link>http://uyaba.github.io/categories/%E5%9B%BE%E5%BA%8A/</link>
-      <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
+      <title>部署</title>
+      <link>http://uyaba.github.io/categories/%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/%E5%9B%BE%E5%BA%8A/</guid>
+      <guid>http://uyaba.github.io/categories/%E9%83%A8%E7%BD%B2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Emacs</title>
-      <link>http://uyaba.github.io/categories/emacs/</link>
-      <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
+      <title>blog</title>
+      <link>http://uyaba.github.io/categories/blog/</link>
+      <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/categories/emacs/</guid>
+      <guid>http://uyaba.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
@@ -188,7 +170,16 @@
     </item>
     
     <item>
-      <title>Vim</title>
+      <title>加速</title>
+      <link>http://uyaba.github.io/categories/%E5%8A%A0%E9%80%9F/</link>
+      <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
+      
+      <guid>http://uyaba.github.io/categories/%E5%8A%A0%E9%80%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
       <link>http://uyaba.github.io/categories/vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
@@ -197,16 +188,7 @@
     </item>
     
     <item>
-      <title>iTerm</title>
-      <link>http://uyaba.github.io/categories/iterm/</link>
-      <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
-      
-      <guid>http://uyaba.github.io/categories/iterm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>http://uyaba.github.io/categories/hugo/</link>
       <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
       
