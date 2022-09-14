@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mysql on uyaba的博客</title>
-    <link>http://uyaba.github.io/tags/mysql/</link>
-    <description>Recent content in mysql on uyaba的博客</description>
+    <title>mysql on uyaki的博客</title>
+    <link>http://uyaki.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Feb 2020 10:25:52 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Feb 2020 10:25:52 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql修改Auto_increment</title>
-      <link>http://uyaba.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
+      <link>http://uyaki.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
       <pubDate>Wed, 26 Feb 2020 10:25:52 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
+      <guid>http://uyaki.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
       <description>查看 1 selectauto_incrementfrominformation_schema.tableswheretable_schema=&amp;#39;xxx_db&amp;#39;andtable_name=&amp;#39;xxx&amp;#39;; 修改 1 altertablexxx_db.xxxauto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效</description>
     </item>
     

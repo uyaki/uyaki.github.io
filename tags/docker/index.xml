@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on uyaba的博客</title>
-    <link>http://uyaba.github.io/tags/docker/</link>
-    <description>Recent content in docker on uyaba的博客</description>
+    <title>docker on uyaki的博客</title>
+    <link>http://uyaki.github.io/tags/docker/</link>
+    <description>Recent content in docker on uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Feb 2020 14:10:15 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Feb 2020 14:10:15 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac系统下修改docker的vm参数</title>
-      <link>http://uyaba.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</link>
+      <link>http://uyaki.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</link>
       <pubDate>Mon, 17 Feb 2020 14:10:15 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</guid>
+      <guid>http://uyaki.github.io/post/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/</guid>
       <description>screen 1 screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty 会出现如下界面 键入回车，出现如下界面 像正常linux系统一样设置 1 sysctl -w vm.max_map_count=262144 按control+a，再按control+\ ，左下角出现退出</description>
     </item>
     
     <item>
       <title>Docker部署ES、kibana并配置ik分词</title>
-      <link>http://uyaba.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
+      <link>http://uyaki.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
       <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
+      <guid>http://uyaki.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
       <description>1. 创建数据目录 1 2 3 4 5 6 7 8 9 10 #创建数据/日志目录 这里我们部署3个节点 $ mkdir /opt/elasticsearch/data/{es01,es02,es03} -p mkdir /opt/elasticsearch/logs/{es01,es02,es03} -p cd /opt/elasticsearch #权限 chmod 0777 data/* -R &amp;amp;&amp;amp; chmod 0777 logs/* -R #防止JVM报错 echo vm.max_map_count=262144 &amp;gt;&amp;gt; /etc/sysctl.conf</description>
     </item>
     
     <item>
       <title>Docker切换镜像源</title>
-      <link>http://uyaba.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <link>http://uyaki.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
       <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <guid>http://uyaki.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
       <description>1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&amp;#39;EOF&amp;#39; { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://28ffkr6d.mirror.aliyuncs.com&amp;#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker</description>
     </item>
     

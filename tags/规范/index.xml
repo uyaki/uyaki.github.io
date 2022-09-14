@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>规范 on uyaba的博客</title>
-    <link>http://uyaba.github.io/tags/%E8%A7%84%E8%8C%83/</link>
-    <description>Recent content in 规范 on uyaba的博客</description>
+    <title>规范 on uyaki的博客</title>
+    <link>http://uyaki.github.io/tags/%E8%A7%84%E8%8C%83/</link>
+    <description>Recent content in 规范 on uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate><atom:link href="http://uyaba.github.io/tags/%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Feb 2020 22:53:46 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git标准Fork &amp; Pull Request流程</title>
-      <link>http://uyaba.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
+      <link>http://uyaki.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sun, 23 Feb 2020 22:53:46 +0800</pubDate>
       
-      <guid>http://uyaba.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
+      <guid>http://uyaki.github.io/post/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
       <description>fork项目 直接进入 GitHub 页面，点击Fork按钮。 就是这么简单。 克隆到本地，才能开始骚操作～～ 1 2 # Clone your fork to your local machine $ git clone git@github.com:USERNAME/FORKED-PROJECT.git 让你的fork保持最新</description>
     </item>
     
