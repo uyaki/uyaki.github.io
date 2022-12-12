@@ -8,7 +8,7 @@
     <language>zh-cn</language>
     <lastBuildDate>Mon, 12 Dec 2022 20:04:46 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mac下permission_denied</title>
+      <title>Mac下go访问时出现permission_denied</title>
       <link>http://uyaki.github.io/post/go/mac%E4%B8%8Bpermission_denied/</link>
       <pubDate>Mon, 12 Dec 2022 20:04:46 +0800</pubDate>
       
