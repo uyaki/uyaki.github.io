@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows on uyaki的博客</title>
+    <title>windows on uyaki的博客</title>
     <link>http://uyaki.github.io/tags/windows/</link>
-    <description>Recent content in Windows on uyaki的博客</description>
+    <description>Recent content in windows on uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows资源管理器优化神器QTTabBar</title>
-      <link>http://uyaki.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
+      <link>http://uyaki.github.io/post/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
       <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
+      <guid>http://uyaki.github.io/post/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
       <description>官网 QTTabBar 安装 按流程指引直接下一步 启动 新打开一个「资源管理器」，也就是随意打开一个文件夹。 点击顶栏的「查看」 点击最右边的「选项」 选择「QTTab</description>
     </item>
     
     <item>
       <title>解决PD的bootcamp中windows无法联网的问题</title>
-      <link>http://uyaki.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>http://uyaki.github.io/post/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://uyaki.github.io/post/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>解决无法联网的问题: 1 vim /Library/Preferences/Parallels/network.desktop.xml 1 2 &amp;lt;!-- &amp;lt;UseKextless&amp;gt;-1&amp;lt;/UseKextless&amp;gt;改为 1--&amp;gt; &amp;lt;UseKextless&amp;gt;0&amp;lt;/UseKextless&amp;gt; 解决USB无法识别</description>
     </item>
     

@@ -9,37 +9,37 @@
     <lastBuildDate>Sat, 22 Feb 2020 23:57:53 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java配置允许跨域访问</title>
-      <link>http://uyaki.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>
+      <link>http://uyaki.github.io/post/java/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>
       <pubDate>Sat, 22 Feb 2020 23:57:53 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</guid>
+      <guid>http://uyaki.github.io/post/java/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</guid>
       <description>方案 H5中的新特性：Cross-Origin Resource Sharing（跨域资源共享）。通过它，我们的开发者（主要指后端开发者）可以决定资源是否能被跨</description>
     </item>
     
     <item>
       <title>Jpa Id自增策略</title>
-      <link>http://uyaki.github.io/post/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</link>
+      <link>http://uyaki.github.io/post/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</link>
       <pubDate>Mon, 17 Feb 2020 15:03:09 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</guid>
+      <guid>http://uyaki.github.io/post/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</guid>
       <description>TABLE：使用一个特定的数据库表格来保存主键。 SEQUENCE：根据底层数据库的序列来生成主键，条件是数据库支持序列。 IDENTITY：主</description>
     </item>
     
     <item>
       <title>使用ResponseBodyAdvice的beforeBodyWrite处理String导致cast问题</title>
-      <link>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</link>
+      <link>http://uyaki.github.io/post/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 17 Feb 2020 15:02:02 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://uyaki.github.io/post/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</guid>
       <description>问题 配置全局返回时 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 @Configuration public class GlobalReturnConfig { @RestControllerAdvice(basePackages = &amp;#34;com.benyuan&amp;#34;) static class ResultResponseAdvice implements ResponseBodyAdvice&amp;lt;Object&amp;gt; { @Override public boolean supports(MethodParameter methodParameter, Class&amp;lt;? extends HttpMessageConverter&amp;lt;?&amp;gt;&amp;gt; aClass) { return true; } @Override public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class&amp;lt;? extends HttpMessageConverter&amp;lt;?&amp;gt;&amp;gt; aClass, ServerHttpRequest serverHttpRequest,</description>
     </item>
     
     <item>
       <title>Java8的18个时间处理实践</title>
-      <link>http://uyaki.github.io/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</link>
+      <link>http://uyaki.github.io/post/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Sat, 15 Feb 2020 15:58:54 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>http://uyaki.github.io/post/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</guid>
       <description>java8 关于时间、日期处理 Java 8 推出了全新的日期时间 API。 Java 处理日期、日历和时间的方式一直为社区所诟病，将 java.util.Date 设定为可变类型，以及 SimpleDateFormat 的非线程安全使其</description>
     </item>
     

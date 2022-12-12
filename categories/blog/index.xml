@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 12 Feb 2020 01:02:04 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用GitHub和PicGo搭建个人图床</title>
-      <link>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>
+      <link>http://uyaki.github.io/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <guid>http://uyaki.github.io/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</guid>
       <description>Github操作 新建repository作为图床地址 创建token 访问 https://github.com/settings/tokens，</description>
     </item>
     
     <item>
       <title>Hugo搭建</title>
-      <link>http://uyaki.github.io/post/hugo%E6%90%AD%E5%BB%BA/</link>
+      <link>http://uyaki.github.io/post/blog/hugo%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 06 Feb 2020 21:56:02 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/hugo%E6%90%AD%E5%BB%BA/</guid>
+      <guid>http://uyaki.github.io/post/blog/hugo%E6%90%AD%E5%BB%BA/</guid>
       <description>使用 Hugo 搭建博客 hugo 安装 依赖： Git Mercurial Go Mac 下直接使用 Homebrew 安装： 1 $ brew install hugo github仓库准备 create new repositories =&amp;gt; blog ，用来存放网站内容和源文件； create new repositories =&amp;gt; &amp;lt;username&amp;gt;.github.io ，用于存放</description>
     </item>
     

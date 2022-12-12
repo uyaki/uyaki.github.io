@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.96.0 with theme even" />
+<meta name="generator" content="Hugo 0.104.3 with theme even" />
 
 
 <link rel="canonical" href="http://uyaki.github.io/" />
@@ -111,7 +111,54 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/">Docker部署ES、kibana并配置ik分词</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/git/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Git中HEAD游离的原因与解决方法</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-17 </span>
+      <div class="post-category">
+          <a href="/categories/git/"> git </a>
+          </div>
+        <span class="more-meta"> 约 659 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      什么是 HEAD Git 中的 HEAD 可以理解为指针，指向当前仓库所处的分支。一般在有 Git 管理的目录下打开 Git 终端都能在当前路径的尾巴上，看到所处的分支名。 还可以在命
+    </div>
+    <div class="read-more">
+      <a href="/post/git/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/docker/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/">Mac系统下修改docker的vm参数</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-17 </span>
+      <div class="post-category">
+          <a href="/categories/docker/"> docker </a>
+          <a href="/categories/macos/"> macOS </a>
+          </div>
+        <span class="more-meta"> 约 80 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      screen 1 screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty 会出现如下界面 键入回车，出现如下界面 像正常linux系统一样设置 1 sysctl -w vm.max_map_count=262144 按control+a，再按control+\ ，左下角出现退出
+    </div>
+    <div class="read-more">
+      <a href="/post/docker/mac%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BF%AE%E6%94%B9docker%E7%9A%84vm%E5%8F%82%E6%95%B0/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/docker/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/">Docker部署ES、kibana并配置ik分词</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-17 </span>
       <div class="post-category">
@@ -119,7 +166,7 @@
           <a href="/categories/%E5%BC%80%E5%8F%91/"> 开发 </a>
           <a href="/categories/%E9%83%A8%E7%BD%B2/"> 部署 </a>
           </div>
-        <span class="more-meta"> 约 1154 字 </span>
+        <span class="more-meta"> 约 1086 字 </span>
         <span class="more-meta"> 预计阅读 3 分钟 </span>
     </div>
   </header>
@@ -129,14 +176,14 @@
       1. 创建数据目录 1 2 3 4 5 6 7 8 9 10 #创建数据/日志目录 这里我们部署3个节点 $ mkdir /opt/elasticsearch/data/{es01,es02,es03} -p mkdir /opt/elasticsearch/logs/{es01,es02,es03} -p cd /opt/elasticsearch #权限 chmod 0777 data/* -R &amp;&amp; chmod 0777 logs/* -R #防止JVM报错 echo vm.max_map_count=262144 &gt;&gt; /etc/sysctl.conf
     </div>
     <div class="read-more">
-      <a href="/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/" class="read-more-link">阅读更多</a>
+      <a href="/post/docker/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/">腊肠炒荷兰豆</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/">腊肠炒荷兰豆</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-16 </span>
       <div class="post-category">
@@ -152,14 +199,14 @@
       工具 锅 食材 腊肠 1~2根 荷兰豆 200g 盐 适量 耗油 1小勺 蒜粒 1瓣 花生油 适量 开水 少许 步骤 准备 荷兰豆掐头去筋，清洗； 腊肠斜刀切片； 蒜粒去衣切碎； 制作 起锅，
     </div>
     <div class="read-more">
-      <a href="/post/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/" class="read-more-link">阅读更多</a>
+      <a href="/post/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/">Java8的18个时间处理实践</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/">Java8的18个时间处理实践</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-15 </span>
       <div class="post-category">
@@ -175,14 +222,14 @@
       java8 关于时间、日期处理 Java 8 推出了全新的日期时间 API。 Java 处理日期、日历和时间的方式一直为社区所诟病，将 java.util.Date 设定为可变类型，以及 SimpleDateFormat 的非线程安全使其
     </div>
     <div class="read-more">
-      <a href="/post/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/" class="read-more-link">阅读更多</a>
+      <a href="/post/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/">香煎脆皮鸡排</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/">香煎脆皮鸡排</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-13 </span>
       <div class="post-category">
@@ -198,14 +245,14 @@
       工具 平底锅； 锡纸； 铁盆； 肉夹子（可用筷子🥢代替）； 食材 鸡腿 1~2个；🍗 盐🧂 1小勺； 酱油 1小勺； 料酒 1小勺； 步骤 准备 鸡腿去骨 沿着骨头🦴竖直方向
     </div>
     <div class="read-more">
-      <a href="/post/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/" class="read-more-link">阅读更多</a>
+      <a href="/post/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/">使用GitHub和PicGo搭建个人图床</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/">使用GitHub和PicGo搭建个人图床</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-12 </span>
       <div class="post-category">
@@ -222,14 +269,14 @@
       Github操作 新建repository作为图床地址 创建token 访问 https://github.com/settings/tokens，
     </div>
     <div class="read-more">
-      <a href="/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" class="read-more-link">阅读更多</a>
+      <a href="/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/">Spacemacs清华源镜像加速</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/other/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/">Spacemacs清华源镜像加速</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-11 </span>
       <div class="post-category">
@@ -247,14 +294,14 @@
       核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1
     </div>
     <div class="read-more">
-      <a href="/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" class="read-more-link">阅读更多</a>
+      <a href="/post/other/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E5%88%A0%E9%99%A4.ds_store/">Git删除 .DS_Store</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/git/git%E5%88%A0%E9%99%A4.ds_store/">Git删除 .DS_Store</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-11 </span>
       <div class="post-category">
@@ -270,14 +317,14 @@
       cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push
     </div>
     <div class="read-more">
-      <a href="/post/git%E5%88%A0%E9%99%A4.ds_store/" class="read-more-link">阅读更多</a>
+      <a href="/post/git/git%E5%88%A0%E9%99%A4.ds_store/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/">Git空提交</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/">Git空提交</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-11 </span>
       <div class="post-category">
@@ -293,57 +340,7 @@
       1 $ git commit --allow-empty -m &#34;chore: touch ops build&#34;
     </div>
     <div class="read-more">
-      <a href="/post/git%E7%A9%BA%E6%8F%90%E4%BA%A4/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/">MacOS使用MacVim替代vim</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-11 </span>
-      <div class="post-category">
-          <a href="/categories/macos/"> macOS </a>
-          <a href="/categories/vim/"> vim </a>
-          <a href="/categories/%E8%BD%AF%E4%BB%B6/"> 软件 </a>
-          </div>
-        <span class="more-meta"> 约 49 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&#39;/usr/local/bin/mvim -v&#39; ## 生效 source ~/.zshrc
-    </div>
-    <div class="read-more">
-      <a href="/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/">Docker切换镜像源</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-11 </span>
-      <div class="post-category">
-          <a href="/categories/docker/"> docker </a>
-          <a href="/categories/%E5%BC%80%E5%8F%91/"> 开发 </a>
-          <a href="/categories/%E5%8A%A0%E9%80%9F/"> 加速 </a>
-          </div>
-        <span class="more-meta"> 约 36 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &lt;&lt;-&#39;EOF&#39; { &#34;registry-mirrors&#34;: [&#34;https://28ffkr6d.mirror.aliyuncs.com&#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker
-    </div>
-    <div class="read-more">
-      <a href="/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/" class="read-more-link">阅读更多</a>
+      <a href="/post/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>

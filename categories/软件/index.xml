@@ -9,91 +9,91 @@
     <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows资源管理器优化神器QTTabBar</title>
-      <link>http://uyaki.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
+      <link>http://uyaki.github.io/post/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
       <pubDate>Thu, 15 Sep 2022 01:01:51 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
+      <guid>http://uyaki.github.io/post/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
       <description>官网 QTTabBar 安装 按流程指引直接下一步 启动 新打开一个「资源管理器」，也就是随意打开一个文件夹。 点击顶栏的「查看」 点击最右边的「选项」 选择「QTTab</description>
     </item>
     
     <item>
       <title>解决PD的bootcamp中windows无法联网的问题</title>
-      <link>http://uyaki.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>http://uyaki.github.io/post/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 01 Apr 2022 15:25:29 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://uyaki.github.io/post/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>解决无法联网的问题: 1 vim /Library/Preferences/Parallels/network.desktop.xml 1 2 &amp;lt;!-- &amp;lt;UseKextless&amp;gt;-1&amp;lt;/UseKextless&amp;gt;改为 1--&amp;gt; &amp;lt;UseKextless&amp;gt;0&amp;lt;/UseKextless&amp;gt; 解决USB无法识别</description>
     </item>
     
     <item>
       <title>使用sftp从服务器下载文件</title>
-      <link>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <link>http://uyaki.github.io/post/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
       <pubDate>Wed, 22 Apr 2020 10:54:52 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://uyaki.github.io/post/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
       <description>sftp 交互式的文件传输程序，命令的运行和使用方式与 ftp 命令相似，但是，sftp 命令对传输的所有信息使用 ssh 加密，它还支持公钥认证和压缩等功能。 语法 1</description>
     </item>
     
     <item>
       <title>Alfred设置WebSearch快速打开网页</title>
-      <link>http://uyaki.github.io/post/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</link>
+      <link>http://uyaki.github.io/post/mac/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</link>
       <pubDate>Wed, 04 Mar 2020 14:44:14 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</guid>
+      <guid>http://uyaki.github.io/post/mac/alfred%E8%AE%BE%E7%BD%AEwebsearch%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E7%BD%91%E9%A1%B5/</guid>
       <description>Alfred -&amp;gt; feature -&amp;gt; Web Search -&amp;gt; Add Custom Search Search Url：输入网址 Keyword： 检索关键字</description>
     </item>
     
     <item>
       <title>Homebrew安装443错误解决方案</title>
-      <link>http://uyaki.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <link>http://uyaki.github.io/post/mac/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
       <pubDate>Sat, 29 Feb 2020 20:34:35 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <guid>http://uyaki.github.io/post/mac/homebrew%E5%AE%89%E8%A3%85443%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
       <description>问题 安装 homebrew 报错 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation 方案 重启终端； 重启wifi</description>
     </item>
     
     <item>
       <title>Homebrew实用命令总结</title>
-      <link>http://uyaki.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
+      <link>http://uyaki.github.io/post/mac/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sun, 23 Feb 2020 01:23:11 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://uyaki.github.io/post/mac/homebrew%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
       <description>更新Homebrew 1 $ brew update 查看哪些包可以更新 1 $ brew outdated 更新包 (formula) Homebrew 会安装新版本的包，但旧版本仍然会保留。 1 2 $ brew upgrade # 更新所有的包 $ brew upgrade $FORMULA # 更新</description>
     </item>
     
     <item>
       <title>使用GitHub和PicGo搭建个人图床</title>
-      <link>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>
+      <link>http://uyaki.github.io/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Wed, 12 Feb 2020 01:02:04 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <guid>http://uyaki.github.io/post/blog/%E4%BD%BF%E7%94%A8github%E5%92%8Cpicgo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</guid>
       <description>Github操作 新建repository作为图床地址 创建token 访问 https://github.com/settings/tokens，</description>
     </item>
     
     <item>
       <title>Spacemacs清华源镜像加速</title>
-      <link>http://uyaki.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</link>
+      <link>http://uyaki.github.io/post/other/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</link>
       <pubDate>Tue, 11 Feb 2020 13:48:32 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
+      <guid>http://uyaki.github.io/post/other/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
       <description>核心配置 添加下面的代码到.spacemacs或~/.spacemacs/init.el 的dotspacemacs/user-init()下 1</description>
     </item>
     
     <item>
       <title>MacOS使用MacVim替代vim</title>
-      <link>http://uyaki.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
+      <link>http://uyaki.github.io/post/mac/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</link>
       <pubDate>Tue, 11 Feb 2020 11:06:59 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
+      <guid>http://uyaki.github.io/post/mac/macos%E4%BD%BF%E7%94%A8macvim%E6%9B%BF%E4%BB%A3vim/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 ## 安装macvim brew install macvim ## 编辑配置文件 vim ~/.zshrc ## 添加 alias vi=vim alias vim=mvim alias mvim=&amp;#39;/usr/local/bin/mvim -v&amp;#39; ## 生效 source ~/.zshrc</description>
     </item>
     
     <item>
       <title>MacOS在iTerm中使用rz、sz从远程上传下载文件</title>
-      <link>http://uyaki.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+      <link>http://uyaki.github.io/post/mac/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
       <pubDate>Tue, 11 Feb 2020 10:49:09 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+      <guid>http://uyaki.github.io/post/mac/macos%E5%9C%A8iterm%E4%B8%AD%E4%BD%BF%E7%94%A8rzsz%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
       <description>安装 下载安装lrzsz，创建软连接（mac） 1 2 3 4 5 sudo brew install lrzsz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/sz ln -s /usr/local/Cellar/lrzsz/0.12.20/bin/rz 说明：lrzsz在本地和远程主机均要安装！ 下载并安装automat</description>
     </item>
     

@@ -9,91 +9,91 @@
     <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH免密登录CentOS7</title>
-      <link>http://uyaki.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
+      <link>http://uyaki.github.io/post/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
       <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
+      <guid>http://uyaki.github.io/post/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
       <description>本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 $ cat id_rsa.pub &amp;gt;&amp;gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.4</description>
     </item>
     
     <item>
       <title>DataX教程</title>
-      <link>http://uyaki.github.io/post/datax%E6%95%99%E7%A8%8B/</link>
+      <link>http://uyaki.github.io/post/other/datax%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 19 Mar 2020 09:46:31 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/datax%E6%95%99%E7%A8%8B/</guid>
+      <guid>http://uyaki.github.io/post/other/datax%E6%95%99%E7%A8%8B/</guid>
       <description>安装 1 $ git clone git@github.com:alibaba/DataX.git 1 2 $ cd DataX $ vim pom.xml 注释掉不需要的reader、writer&amp;lt;module&amp;gt;标签 1 mvn -U clean package assembly:assembly -Dmaven.test.skip=true 使用</description>
     </item>
     
     <item>
       <title>ELasticSearch设置ik&#43;pinyin分词器</title>
-      <link>http://uyaki.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
+      <link>http://uyaki.github.io/post/other/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
       <pubDate>Thu, 05 Mar 2020 19:28:53 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
+      <guid>http://uyaki.github.io/post/other/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
       <description>安装 假设你已经使用docker安装了es集群 1 $ cd ${docker-compose-file-dir} 安装ik插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip 安装pinyin插件 1 $ docker-compose exec es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip 重启docker 1 $ docker-compose restart</description>
     </item>
     
     <item>
       <title>ElasticSearch修改已经存在的index的settings</title>
-      <link>http://uyaki.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
+      <link>http://uyaki.github.io/post/other/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
       <pubDate>Thu, 05 Mar 2020 16:44:08 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
+      <guid>http://uyaki.github.io/post/other/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
       <description>关闭索引 1 POST /index/_close 修改索引Settings 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 PUT /index/_settings { &amp;#34;settings&amp;#34;: { &amp;#34;analysis&amp;#34;: { &amp;#34;analyzer&amp;#34;: { &amp;#34;ik_pinyin_analyzer&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;custom&amp;#34;, &amp;#34;tokenizer&amp;#34;: &amp;#34;ik_smart&amp;#34;, &amp;#34;filter&amp;#34;: [ &amp;#34;my_pinyin&amp;#34;, &amp;#34;word_delimiter&amp;#34; ] }</description>
     </item>
     
     <item>
       <title>Swagger出现Could not resolve pointer</title>
-      <link>http://uyaki.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
+      <link>http://uyaki.github.io/post/java/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
       <pubDate>Wed, 04 Mar 2020 11:29:31 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
+      <guid>http://uyaki.github.io/post/java/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
       <description>问题描述 原因 类上的注解 “/” 的问题 @ApiModel(不能使用“/”)</description>
     </item>
     
     <item>
       <title>Mysql修改Auto_increment</title>
-      <link>http://uyaki.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
+      <link>http://uyaki.github.io/post/java/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
       <pubDate>Wed, 26 Feb 2020 10:25:52 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
-      <description>查看 1 selectauto_incrementfrominformation_schema.tableswheretable_schema=&amp;#39;xxx_db&amp;#39;andtable_name=&amp;#39;xxx&amp;#39;; 修改 1 altertablexxx_db.xxxauto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效</description>
+      <guid>http://uyaki.github.io/post/java/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
+      <description>查看 1 select auto_increment from information_schema.tables where table_schema=&amp;#39;xxx_db&amp;#39; and table_name=&amp;#39;xxx&amp;#39;; 修改 1 alter table xxx_db.xxx auto_increment=1000; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效</description>
     </item>
     
     <item>
       <title>SpringBoot设置项目热启动</title>
-      <link>http://uyaki.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</link>
+      <link>http://uyaki.github.io/post/java/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</link>
       <pubDate>Sun, 23 Feb 2020 00:04:23 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
-      <description>导入jar包 1 &amp;#39;org.springframework.boot:spring-boot-devtools&amp;#39; 添加配置项 1 2 3 devtools:#热部署restart:enabled:true 在idea开启 如下图设置 Build，Exe</description>
+      <guid>http://uyaki.github.io/post/java/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
+      <description>导入jar包 1 &amp;#39;org.springframework.boot:spring-boot-devtools&amp;#39; 添加配置项 1 2 3 devtools: #热部署 restart: enabled: true 在idea开启 如下图设置 Build，Execution...-&amp;gt;Compiler，勾选</description>
     </item>
     
     <item>
       <title>Docker部署ES、kibana并配置ik分词</title>
-      <link>http://uyaki.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
+      <link>http://uyaki.github.io/post/docker/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</link>
       <pubDate>Mon, 17 Feb 2020 13:59:26 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
+      <guid>http://uyaki.github.io/post/docker/docker%E9%83%A8%E7%BD%B2eskibana%E5%B9%B6%E9%85%8D%E7%BD%AEik%E5%88%86%E8%AF%8D/</guid>
       <description>1. 创建数据目录 1 2 3 4 5 6 7 8 9 10 #创建数据/日志目录 这里我们部署3个节点 $ mkdir /opt/elasticsearch/data/{es01,es02,es03} -p mkdir /opt/elasticsearch/logs/{es01,es02,es03} -p cd /opt/elasticsearch #权限 chmod 0777 data/* -R &amp;amp;&amp;amp; chmod 0777 logs/* -R #防止JVM报错 echo vm.max_map_count=262144 &amp;gt;&amp;gt; /etc/sysctl.conf</description>
     </item>
     
     <item>
       <title>Docker切换镜像源</title>
-      <link>http://uyaki.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <link>http://uyaki.github.io/post/docker/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</link>
       <pubDate>Tue, 11 Feb 2020 10:57:01 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <guid>http://uyaki.github.io/post/docker/docker%E5%88%87%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
       <description>1 $ sudo mkdir -p /etc/docker 1 2 3 4 5 6 7 8 9 $ sudo tee /etc/docker/daemon.json &amp;lt;&amp;lt;-&amp;#39;EOF&amp;#39; { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://28ffkr6d.mirror.aliyuncs.com&amp;#34;] } EOF 1 $ sudo systemctl daemon-reload 1 $ sudo systemctl restart docker</description>
     </item>
     
     <item>
       <title>SSH使用pem文件远程登陆</title>
-      <link>http://uyaki.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+      <link>http://uyaki.github.io/post/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+      <guid>http://uyaki.github.io/post/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
       <description>方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem</description>
     </item>
     

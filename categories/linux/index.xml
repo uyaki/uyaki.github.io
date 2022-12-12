@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 19 Apr 2020 10:16:36 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS7开发环境</title>
-      <link>http://uyaki.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <link>http://uyaki.github.io/post/server/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 19 Apr 2020 10:16:36 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <guid>http://uyaki.github.io/post/server/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
       <description>基础配置 修改主机名 1 2 3 4 # 查看一下当前主机名的情况 $ hostnamectl $ hostnamectl set-hostname gakki --static $ hostnamectl status 基础工具 1 2 3 4 5 # 解决ifconfig 不存在 $ yum -y install net-tools # 文件传输 $</description>
     </item>
     

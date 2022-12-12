@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 19 Apr 2020 14:21:48 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH免密登录CentOS7</title>
-      <link>http://uyaki.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
+      <link>http://uyaki.github.io/post/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
       <pubDate>Sun, 19 Apr 2020 14:21:48 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
+      <guid>http://uyaki.github.io/post/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
       <description>本机传送id_rsa.pub 1 $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub 服务器 1 2 3 $ cat id_rsa.pub &amp;gt;&amp;gt; .ssh/authorized_keys $ chmod 700 .ssh $ chmod 600 .ssh/authorized_keys 服务器额外配置（centos7.4以下） 1 $ vim /etc/ssh/sshd_config 如下配置，7.4</description>
     </item>
     
     <item>
       <title>SSH使用pem文件远程登陆</title>
-      <link>http://uyaki.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+      <link>http://uyaki.github.io/post/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
       <pubDate>Tue, 11 Feb 2020 10:46:03 +0800</pubDate>
       
-      <guid>http://uyaki.github.io/post/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+      <guid>http://uyaki.github.io/post/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
       <description>方式一： 修改pem权限； 1 sudo chmod 600 key.pem Mac OS 连接服务器使用 PEM 文件； 1 ssh -i key.pem root@IP 方式二（Mac重启后失效）： 使用ssh-add添加key文件； 1 ssh-add -k key.pem</description>
     </item>
     
