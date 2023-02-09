@@ -111,6 +111,52 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/">Jpa Id自增策略</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-17 </span>
+      <div class="post-category">
+          <a href="/categories/java/"> java </a>
+          </div>
+        <span class="more-meta"> 约 102 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      TABLE：使用一个特定的数据库表格来保存主键。 SEQUENCE：根据底层数据库的序列来生成主键，条件是数据库支持序列。 IDENTITY：主
+    </div>
+    <div class="read-more">
+      <a href="/post/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/">使用ResponseBodyAdvice的beforeBodyWrite处理String导致cast问题</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-17 </span>
+      <div class="post-category">
+          <a href="/categories/java/"> Java </a>
+          </div>
+        <span class="more-meta"> 约 320 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      问题 配置全局返回时 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 @Configuration public class GlobalReturnConfig { @RestControllerAdvice(basePackages = &#34;com.benyuan&#34;) static class ResultResponseAdvice implements ResponseBodyAdvice&lt;Object&gt; { @Override public boolean supports(MethodParameter methodParameter, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass) { return true; } @Override public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass, ServerHttpRequest serverHttpRequest,
+    </div>
+    <div class="read-more">
+      <a href="/post/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/git/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Git中HEAD游离的原因与解决方法</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2020-02-17 </span>
@@ -299,52 +345,6 @@
   </div>
 </article>
 
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git/git%E5%88%A0%E9%99%A4.ds_store/">Git删除 .DS_Store</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-11 </span>
-      <div class="post-category">
-          <a href="/categories/git/"> git </a>
-          </div>
-        <span class="more-meta"> 约 43 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      cd 到项目路径 执行 1 $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch 插入到.gitignore 1 $ echo .DS_Store &gt;&gt; .gitignore git push
-    </div>
-    <div class="read-more">
-      <a href="/post/git/git%E5%88%A0%E9%99%A4.ds_store/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/">Git空提交</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-02-11 </span>
-      <div class="post-category">
-          <a href="/categories/git/"> git </a>
-          </div>
-        <span class="more-meta"> 约 10 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 $ git commit --allow-empty -m &#34;chore: touch ops build&#34;
-    </div>
-    <div class="read-more">
-      <a href="/post/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
     </section>
   
   <nav class="pagination">
@@ -391,7 +391,7 @@
   <span class="copyright-year">
     &copy; 
     2020 - 
-    2022
+    2023
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

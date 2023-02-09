@@ -3,7 +3,84 @@
   
   <url>
     <loc>http://uyaki.github.io/categories/</loc>
-    <lastmod>2022-12-12T20:47:16+08:00</lastmod>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/tags/dotfiles/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/categories/dotfiles/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/post/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/tags/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/tags/ubuntu/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/categories/ubuntu/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/post/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/</loc>
+    <lastmod>2023-02-09T17:40:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/tags/windows/</loc>
+    <lastmod>2023-02-09T17:36:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/categories/windows/</loc>
+    <lastmod>2023-02-09T17:36:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://uyaki.github.io/post/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</loc>
+    <lastmod>2023-02-09T17:36:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -37,27 +114,6 @@
   </url>
   
   <url>
-    <loc>http://uyaki.github.io/post/</loc>
-    <lastmod>2022-12-12T20:47:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaki.github.io/tags/</loc>
-    <lastmod>2022-12-12T20:47:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaki.github.io/</loc>
-    <lastmod>2022-12-12T20:47:16+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://uyaki.github.io/tags/mac/</loc>
     <lastmod>2022-12-12T20:04:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -67,20 +123,6 @@
   <url>
     <loc>http://uyaki.github.io/post/go/mac%E4%B8%8Bpermission_denied/</loc>
     <lastmod>2022-12-12T20:04:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaki.github.io/tags/windows/</loc>
-    <lastmod>2022-09-15T01:01:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://uyaki.github.io/categories/windows/</loc>
-    <lastmod>2022-09-15T01:01:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

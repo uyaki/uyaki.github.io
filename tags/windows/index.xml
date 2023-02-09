@@ -6,7 +6,16 @@
     <description>Recent content in windows on uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Sep 2022 01:01:51 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 17:36:46 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Window新机dotfile</title>
+      <link>http://uyaki.github.io/post/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</link>
+      <pubDate>Thu, 09 Feb 2023 17:36:46 +0800</pubDate>
+      
+      <guid>http://uyaki.github.io/post/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</guid>
+      <description>windows 安装说明 windows 安装说明 winget 安装 chocolatey 安装 安裝wsl 步骤1 打开windows的wsl功能。 步骤2 启用虚拟机功能 步骤3 下载 Linux 内核更新包 步骤4 选择并安装l</description>
+    </item>
+    
     <item>
       <title>Windows资源管理器优化神器QTTabBar</title>
       <link>http://uyaki.github.io/post/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
