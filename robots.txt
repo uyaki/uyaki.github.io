@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://uyaki.github.io/sitemap.xml

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>KMP算法总结 - uyaki的博客</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="uyaki的博客" /><meta name="keywords" content='algorithm' /><meta itemprop="name" content="KMP算法总结">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-04-09T18:35:04+08:00" />
+<meta itemprop="dateModified" content="2023-04-09T18:35:04+08:00" />
+<meta itemprop="wordCount" content="902"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="keywords" content="algorithm," /><meta property="og:title" content="KMP算法总结" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" /><meta property="og:image" content="http://uyaki.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-09T18:35:04+08:00" />
+<meta property="article:modified_time" content="2023-04-09T18:35:04+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://uyaki.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="KMP算法总结"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" /><link rel="prev" href="http://uyaki.github.io/posts/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/" /><link rel="next" href="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "KMP算法总结",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/uyaki.github.io\/posts\/algorithm\/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93\/"
+    },"genre": "posts","keywords": "algorithm","wordcount":  902 ,
+    "url": "http:\/\/uyaki.github.io\/posts\/algorithm\/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93\/","datePublished": "2023-04-09T18:35:04+08:00","dateModified": "2023-04-09T18:35:04+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uyaki"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="uyaki的博客" data-alt="uyaki的博客" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                title="点击查看更多文章"
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/about/"
+                title="点击查看更多分类"
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="/svg/fixit.header.min.svg" data-alt="/svg/fixit.header.min.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/about/"
+                    title="点击查看更多分类"
+                    
+                  ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>KMP算法总结</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
+          <span class="post-category">收录于 <a href="/categories/algorithm/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> algorithm</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-04-09 18:35:04"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span title="更新于 2023-04-09 18:35:04"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 902 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#示例">示例</a></li>
+    <li><a href="#kmp思路">KMP思路</a></li>
+    <li><a href="#如何获取next数组">如何获取next数组</a>
+      <ul>
+        <li><a href="#pattern为abcdabcyab时匹配度表">pattern为abcdabcyab时匹配度表</a></li>
+        <li><a href="#pattern为abcxabcabcxabcxb时匹配度表">pattern为abcxabcabcxabcxb时匹配度表</a></li>
+      </ul>
+    </li>
+    <li><a href="#kmp-完整代码">KMP 完整代码</a></li>
+    <li><a href="#解说视频">解说视频</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h1 id="通常的字符串查找">通常的字符串查找</h1>
+<p>逐个比较字符串，匹配失败重头再来。</p>
+<ul>
+<li>时间复杂度：O(m*n)</li>
+</ul>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png" srcset="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png 1.5x, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png 2x" sizes="auto" data-title="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png" data-alt="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408195957.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h1 id="kmp">KMP</h1>
+<p>解决字符串查找
+目的：匹配失败时，模式串回退，主串不用回退
+在一个字符串（S）中查找一个子串（W）出现的位置。</p>
+<ul>
+<li>时间复杂度：O(m+n)</li>
+<li>空间复杂度：O(m)。</li>
+</ul>
+<h2 id="示例">示例</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>text：   abcxabcdabxabcdabcdabcy
+</span></span><span style="display:flex;"><span>pattern: abcdabcy
+</span></span></code></pre></div><h2 id="kmp思路">KMP思路</h2>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png" srcset="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png 1.5x, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png 2x" sizes="auto" data-title="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png" data-alt="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408200307.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>这里的p_start通常情况下，被描述为next数组，它的含义是：<strong>字符串在当前位置存在前缀后缀匹配数组的长度，也可以描述为匹配度。</strong> 当出现不匹配时，只需要知道前面的字符串的匹配度，就可以知道，下一次匹配时，pattern的开始查找位置。</p>
+
+<style type="text/css">
+    .notice-icon {
+        margin: 0 0.5em 0.3em 0;
+    }
+    .notice-icon svg{
+        margin: 0 0 -0.1em 0;
+        height: 1em;
+        width: 1em;
+        fill:currentColor;
+    }
+    .notice {
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 4px;
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0;
+    }
+
+    .notice-title {
+        margin: -1em -1em 0.75em !important;
+        padding: 0.25em 1em;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+
+    [data-theme="dark"] .notice-title {
+        color: hsl(0, 0%, 75%);
+    }
+
+    .notice.notice-warning .notice-title {
+        background: hsl(0, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-warning .notice-title {
+        background: hsl(0, 25%, 35%);
+    }
+
+    .notice.notice-warning {
+        background: hsl(0, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-warning {
+        background: hsl(0, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-info .notice-title {
+        background: hsl(30, 80%, 70%);
+    }
+
+    [data-theme="dark"] .notice.notice-info .notice-title {
+        background: hsl(30, 25%, 35%);
+    }
+
+    .notice.notice-info {
+        background: hsl(30, 80%, 70%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-info {
+        background: hsl(30, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-note .notice-title {
+        background: hsl(200, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-note .notice-title {
+        background: hsl(200, 25%, 35%);
+    }
+
+    .notice.notice-note {
+        background: hsl(200, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-note {
+        background: hsl(200, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-tip .notice-title {
+        background: hsl(140, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-tip .notice-title {
+        background: hsl(140, 25%, 35%);
+    }
+
+    .notice.notice-tip {
+        background: hsl(140, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-tip {
+        background: hsl(140, 25%, 35%, 0.15);
+    }
+</style>
+<div class="notice notice-info" >
+    <p class="first notice-title"><span class="notice-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 512 512"><path d="M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z"/></svg></span>信息</p><p>如 step4时，</p>
+<ul>
+<li>p_index = 7时，pattern[7] = j 与text[18] 不匹配</li>
+<li>此时前面的匹配度 =next[p_index - 1] = 3</li>
+<li>匹配度=3，说明对于主串text，前面 t_index = 18前面的3个字符和pattern前面的3个字符一定是匹配的</li>
+<li>所以，继续查找时，d_index 还是18 不需要回退，只需要从p_index = 3开始匹配即可，如step5 所示</li>
+</ul></div>   
+
+<h2 id="如何获取next数组">如何获取next数组</h2>
+<h3 id="pattern为abcdabcyab时匹配度表">pattern为abcdabcyab时匹配度表</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">index</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">pattern</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">d</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">y</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+</tr>
+<tr>
+<td style="text-align:center">next</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png" srcset="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png 1.5x, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png 2x" sizes="auto" data-title="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png" data-alt="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202123.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">getNext</span><span style="color:#f92672">(</span>String pattern<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> next<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()];</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>j<span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>j<span style="color:#f92672">)</span> <span style="color:#f92672">!=</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>            j<span style="color:#f92672">=</span> next<span style="color:#f92672">[</span>j<span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">];</span> <span style="color:#75715e">// 在子对称里面查找是否有能复用的对称
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>j<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>            j<span style="color:#f92672">++;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>        next<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> j<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> next<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h3 id="pattern为abcxabcabcxabcxb时匹配度表">pattern为abcxabcabcxabcxb时匹配度表</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">index</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+<th style="text-align:center">11</th>
+<th style="text-align:center">12</th>
+<th style="text-align:center">13</th>
+<th style="text-align:center">14</th>
+<th style="text-align:center">15</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">pattern</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">b</td>
+</tr>
+<tr>
+<td style="text-align:center">next</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<p>index  = 14时，前面的对称度是7 。j = 7，p[14] = &lsquo;x&rsquo;  ，此时，</p>
+<ol>
+<li>如果要存在对称性，那么对称程度肯定比前面这个c 的对称程度小，如果大那么x就继承前面的对称性了。</li>
+<li>要找更小的对称，必然在对称内部还存在子对称，而且这个x必须紧接着在子对称之后。</li>
+</ol>
+<p><img loading="lazy" src="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png" srcset="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png 1.5x, https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png 2x" sizes="auto" data-title="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png" data-alt="https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20230408202523.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="kmp-完整代码">KMP 完整代码</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Soultion</span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 在文本 text 中寻找模式串 pattern，返回所有匹配的位置开头
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">search</span><span style="color:#f92672">(</span>String text<span style="color:#f92672">,</span> String pattern<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> positions <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> next<span style="color:#f92672">=</span> getNext<span style="color:#f92672">(</span>pattern<span style="color:#f92672">);</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> text<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>count<span style="color:#f92672">)</span> <span style="color:#f92672">!=</span> text<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// count 回退
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                count <span style="color:#f92672">=</span> next<span style="color:#f92672">[</span>count <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">];</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>count<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> text<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>                count<span style="color:#f92672">++;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>count <span style="color:#f92672">==</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>                positions<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>i <span style="color:#f92672">-</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">);</span> 
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">//找到一个就回退
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                count <span style="color:#f92672">=</span> next<span style="color:#f92672">[</span>count <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">];</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> positions<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">getNext</span><span style="color:#f92672">(</span>String pattern<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> next<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()];</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>j<span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>j<span style="color:#f92672">)</span> <span style="color:#f92672">!=</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>                j<span style="color:#f92672">=</span> next<span style="color:#f92672">[</span>j<span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>j<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">charAt</span><span style="color:#f92672">(</span>i<span style="color:#f92672">))</span> <span style="color:#f92672">{</span> 
+</span></span><span style="display:flex;"><span>                j<span style="color:#f92672">++;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>            next<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> j<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> next<span style="color:#f92672">;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="解说视频">解说视频</h2>
+<div class="bilibili"><iframe src="//player.bilibili.com/player.html?bvid=BV1Ys411d7yh&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-04-09 18:35:04">更新于 2023-04-09&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" data-title="KMP算法总结" data-hashtags="algorithm"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" data-hashtag="algorithm"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" data-title="KMP算法总结"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/algorithm/' class="post-tag">algorithm</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/" class="post-nav-item" rel="prev" title="Ubuntu新机dotfile"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Ubuntu新机dotfile</a>
+      <a href="/posts/blog/hugo&#43;fixit/" class="post-nav-item" rel="next" title="Hugo&#43;FixIt">Hugo&#43;FixIt<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways" data-mode="static"><div><img loading="lazy" src="/images/alipay-qr-code.png" srcset="/images/alipay-qr-code.png, /images/alipay-qr-code.png 1.5x, /images/alipay-qr-code.png 2x" sizes="auto" data-title="uyaki 支付宝" data-alt="uyaki 支付宝" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>支付宝</span>
+          </div><div><img loading="lazy" src="/images/wechat-qr-code.png" srcset="/images/wechat-qr-code.png, /images/wechat-qr-code.png 1.5x, /images/wechat-qr-code.png 2x" sizes="auto" data-title="uyaki 微信" data-alt="uyaki 微信" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>微信</span>
+          </div></div>
+  </div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

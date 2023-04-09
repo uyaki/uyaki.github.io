@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Hugo&#43;FixIt - uyaki的博客</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="uyaki的博客" /><meta name="keywords" content='' /><meta itemprop="name" content="Hugo&#43;FixIt">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-04-09T19:56:03+08:00" />
+<meta itemprop="dateModified" content="2023-04-09T19:56:03+08:00" />
+<meta itemprop="wordCount" content="251"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="keywords" content="blog,hugo," /><meta property="og:title" content="Hugo&#43;FixIt" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" /><meta property="og:image" content="http://uyaki.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-09T19:56:03+08:00" />
+<meta property="article:modified_time" content="2023-04-09T19:56:03+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://uyaki.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="Hugo&#43;FixIt"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" /><link rel="prev" href="http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hugo+FixIt",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/uyaki.github.io\/posts\/blog\/hugo\u002bfixit\/"
+    },"genre": "posts","keywords": "blog, hugo","wordcount":  251 ,
+    "url": "http:\/\/uyaki.github.io\/posts\/blog\/hugo\u002bfixit\/","datePublished": "2023-04-09T19:56:03+08:00","dateModified": "2023-04-09T19:56:03+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uyaki"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="uyaki的博客" data-alt="uyaki的博客" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                title="点击查看更多文章"
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/about/"
+                title="点击查看更多分类"
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="/svg/fixit.header.min.svg" data-alt="/svg/fixit.header.min.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/about/"
+                    title="点击查看更多分类"
+                    
+                  ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Hugo&#43;FixIt</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
+          <span class="post-category">收录于 <a href="/categories/blog/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> blog</a>&ensp;<a href="/categories/hugo/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> hugo</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2023-04-09 19:56:03"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span title="更新于 2023-04-09 19:56:03"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 251 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo安装">hugo安装</a></li>
+    <li><a href="#建站">建站</a></li>
+    <li><a href="#修改-configtoml">修改 config.toml</a></li>
+    <li><a href="#configtoml-完整配置">config.toml 完整配置</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="hugo安装">hugo安装</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># go安装</span>
+</span></span><span style="display:flex;"><span>go install github.com/gohugoio/hugo@latest
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果需要支持Sass/SCSS </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 设置go变量CGO_ENABLED=1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 执行 -tags extended </span>
+</span></span><span style="display:flex;"><span>go install -tags extended github.com/gohugoio/hugo@latest
+</span></span></code></pre></div>
+<style type="text/css">
+    .notice-icon {
+        margin: 0 0.5em 0.3em 0;
+    }
+    .notice-icon svg{
+        margin: 0 0 -0.1em 0;
+        height: 1em;
+        width: 1em;
+        fill:currentColor;
+    }
+    .notice {
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 4px;
+    }
+
+    .notice p:last-child {
+        margin-bottom: 0;
+    }
+
+    .notice-title {
+        margin: -1em -1em 0.75em !important;
+        padding: 0.25em 1em;
+        border-radius: 4px 4px 0 0;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+    }
+
+    [data-theme="dark"] .notice-title {
+        color: hsl(0, 0%, 75%);
+    }
+
+    .notice.notice-warning .notice-title {
+        background: hsl(0, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-warning .notice-title {
+        background: hsl(0, 25%, 35%);
+    }
+
+    .notice.notice-warning {
+        background: hsl(0, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-warning {
+        background: hsl(0, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-info .notice-title {
+        background: hsl(30, 80%, 70%);
+    }
+
+    [data-theme="dark"] .notice.notice-info .notice-title {
+        background: hsl(30, 25%, 35%);
+    }
+
+    .notice.notice-info {
+        background: hsl(30, 80%, 70%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-info {
+        background: hsl(30, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-note .notice-title {
+        background: hsl(200, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-note .notice-title {
+        background: hsl(200, 25%, 35%);
+    }
+
+    .notice.notice-note {
+        background: hsl(200, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-note {
+        background: hsl(200, 25%, 35%, 0.15);
+    }
+
+    .notice.notice-tip .notice-title {
+        background: hsl(140, 65%, 65%);
+    }
+
+    [data-theme="dark"] .notice.notice-tip .notice-title {
+        background: hsl(140, 25%, 35%);
+    }
+
+    .notice.notice-tip {
+        background: hsl(140, 65%, 65%, 0.15);
+    }
+
+    [data-theme="dark"] .notice.notice-tip {
+        background: hsl(140, 25%, 35%, 0.15);
+    }
+</style>
+<div class="notice notice-warning" >
+    <p class="first notice-title"><span class="notice-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon notice-icon" viewBox="0 0 576 512"><path d="M570 440c18 32-5 72-42 72H48c-37 0-60-40-42-72L246 24c19-32 65-32 84 0l240 416zm-282-86a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z"/></svg></span>警告</p><ol>
+<li>FixIt使用了Sass必须执行 <code>go install -tags extended github.com/gohugoio/hugo@latest</code>，否则会报错</li>
+<li>如果已经安装了hugo，一定要升级到新版本，旧版本有很多不兼容FixIt</li>
+</ol></div>   
+
+<h2 id="建站">建站</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site blog
+</span></span><span style="display:flex;"><span>cd blog
+</span></span><span style="display:flex;"><span>git init 
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
+</span></span><span style="display:flex;"><span>git submodule update
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 复制配置文件</span>
+</span></span><span style="display:flex;"><span>mv config.toml config.old.toml
+</span></span><span style="display:flex;"><span>cp themes/FixIt/config.toml config.toml
+</span></span></code></pre></div><h2 id="修改-configtoml">修改 config.toml</h2>
+<p>最前面添加</p>
+<pre tabindex="0"><code>title = &#34;&#34;
+baseURL = &#34;&#34;
+languageCode = &#34;zh-cn&#34;
+defaultContentLanguage = &#34;zh-cn&#34;                             # en / zh-cn / ... (This field determines which i18n file to use)
+# 是否包括中日韩文字
+hasCJKLanguage = true
+
+theme = &#34;FixIt&#34;
+</code></pre><h2 id="configtoml-完整配置">config.toml 完整配置</h2>
+<p><a href="https://fixit.lruihao.cn/zh-cn/documentation/basics/"target="_blank" rel="external nofollow noopener noreferrer">FixIt中文站<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2023-04-09 19:56:03">更新于 2023-04-09&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" data-title="Hugo&#43;FixIt" data-hashtags="blog,hugo"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" data-hashtag="blog"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://uyaki.github.io/posts/blog/hugo&#43;fixit/" data-title="Hugo&#43;FixIt"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/blog/' class="post-tag">blog</a><a href='/tags/hugo/' class="post-tag">hugo</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/" class="post-nav-item" rel="prev" title="KMP算法总结"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>KMP算法总结</a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways" data-mode="static"><div><img loading="lazy" src="/images/alipay-qr-code.png" srcset="/images/alipay-qr-code.png, /images/alipay-qr-code.png 1.5x, /images/alipay-qr-code.png 2x" sizes="auto" data-title="uyaki 支付宝" data-alt="uyaki 支付宝" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>支付宝</span>
+          </div><div><img loading="lazy" src="/images/wechat-qr-code.png" srcset="/images/wechat-qr-code.png, /images/wechat-qr-code.png 1.5x, /images/wechat-qr-code.png 2x" sizes="auto" data-title="uyaki 微信" data-alt="uyaki 微信" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>微信</span>
+          </div></div>
+  </div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

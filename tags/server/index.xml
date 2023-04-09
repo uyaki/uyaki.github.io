@@ -1,0 +1,39 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>server - 标签 - uyaki的博客</title>
+    <link>http://uyaki.github.io/tags/server/</link>
+    <description>server - 标签 - uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 22 Apr 2020 10:54:52 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/server/" rel="self" type="application/rss+xml" /><item>
+  <title>使用sftp从服务器下载文件</title>
+  <link>http://uyaki.github.io/posts/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+  <pubDate>Wed, 22 Apr 2020 10:54:52 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>SSH免密登录CentOS7</title>
+  <link>http://uyaki.github.io/posts/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</link>
+  <pubDate>Sun, 19 Apr 2020 14:21:48 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/server/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>CentOS7开发环境</title>
+  <link>http://uyaki.github.io/posts/server/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+  <pubDate>Sun, 19 Apr 2020 10:16:36 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/server/centos7%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>SSH使用pem文件远程登陆</title>
+  <link>http://uyaki.github.io/posts/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</link>
+  <pubDate>Tue, 11 Feb 2020 10:46:03 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/server/ssh%E4%BD%BF%E7%94%A8pem%E6%96%87%E4%BB%B6%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

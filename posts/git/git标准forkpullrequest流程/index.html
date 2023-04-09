@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Git标准Fork &amp; Pull Request流程 - uyaki的博客</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="uyaki的博客" /><meta name="keywords" content='git' /><meta itemprop="name" content="Git标准Fork &amp; Pull Request流程">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-02-23T22:53:46+08:00" />
+<meta itemprop="dateModified" content="2020-02-23T22:53:46+08:00" />
+<meta itemprop="wordCount" content="1265"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="keywords" content="git," /><meta property="og:title" content="Git标准Fork &amp; Pull Request流程" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" /><meta property="og:image" content="http://uyaki.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-02-23T22:53:46+08:00" />
+<meta property="article:modified_time" content="2020-02-23T22:53:46+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://uyaki.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="Git标准Fork &amp; Pull Request流程"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" /><link rel="prev" href="http://uyaki.github.io/posts/git/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" /><link rel="next" href="http://uyaki.github.io/posts/java/mysql%E4%BF%AE%E6%94%B9auto_increment/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Git标准Fork \u0026 Pull Request流程",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/uyaki.github.io\/posts\/git\/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B\/"
+    },"genre": "posts","keywords": "git","wordcount":  1265 ,
+    "url": "http:\/\/uyaki.github.io\/posts\/git\/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B\/","datePublished": "2020-02-23T22:53:46+08:00","dateModified": "2020-02-23T22:53:46+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uyaki"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="uyaki的博客" data-alt="uyaki的博客" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                title="点击查看更多文章"
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/about/"
+                title="点击查看更多分类"
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="/svg/fixit.header.min.svg" data-alt="/svg/fixit.header.min.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/about/"
+                    title="点击查看更多分类"
+                    
+                  ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Git标准Fork &amp; Pull Request流程</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
+          <span class="post-category">收录于 <a href="/categories/git/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> git</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2020-02-23 22:53:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-23">2020-02-23</time></span>&nbsp;<span title="更新于 2020-02-23 22:53:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-23">2020-02-23</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1265 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#fork项目">fork项目</a></li>
+    <li><a href="#让你的fork保持最新">让你的fork保持最新</a></li>
+    <li><a href="#开发">开发</a></li>
+    <li><a href="#提交一个pull-request">提交一个Pull Request</a>
+      <ul>
+        <li><a href="#清理你的工作">清理你的工作</a></li>
+        <li><a href="#提交">提交</a></li>
+      </ul>
+    </li>
+    <li><a href="#接受和合并拉请求">接受和合并拉请求</a>
+      <ul>
+        <li><a href="#检查和测试拉请求">检查和测试拉请求</a></li>
+        <li><a href="#自动合并拉请求">自动合并拉请求</a></li>
+        <li><a href="#手动合并拉请求">手动合并拉请求</a></li>
+      </ul>
+    </li>
+    <li><a href="#巨人的肩膀">巨人的肩膀</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="fork项目">fork项目</h2>
+<p>直接进入 GitHub 页面，点击<code>Fork</code>按钮。 就是这么简单。</p>
+<p>克隆到本地，才能开始骚操作～～</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Clone your fork to your local machine</span>
+</span></span><span style="display:flex;"><span>$ git clone git@github.com:USERNAME/FORKED-PROJECT.git
+</span></span></code></pre></div><h2 id="让你的fork保持最新">让你的fork保持最新</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Add &#39;upstream&#39; repo to list of remotes</span>
+</span></span><span style="display:flex;"><span>$ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verify the new remote named &#39;upstream&#39;</span>
+</span></span><span style="display:flex;"><span>$ git remote -v
+</span></span></code></pre></div><p>获取上游 repo 的分支和最新的提交来将它们放入你的存储库</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Fetch from upstream remote</span>
+</span></span><span style="display:flex;"><span>$ git fetch upstream
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># View all branches, including those from upstream</span>
+</span></span><span style="display:flex;"><span>$ git branch -va
+</span></span></code></pre></div><p>检查你自己的 master 分支、合并上游的 master 分支</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Checkout your master branch and merge upstream</span>
+</span></span><span style="display:flex;"><span>git checkout master
+</span></span><span style="display:flex;"><span>git merge upstream/master
+</span></span></code></pre></div><p>现在，您的本地主分支是最新的一切修改上游。</p>
+<blockquote>
+<p>如果在本地 master 分支上没有唯一的提交，git 将简单地执行快进操作。 然而，如果您一直在 master 上进行更改(在绝大多数情况下，您可能不应该这样做——请参阅下一部分，您可能必须处理冲突。 在这样做的时候，要注意尊重上游所做的更改。</p>
+</blockquote>
+<h2 id="开发">开发</h2>
+<p>无论何时开始处理一个新特性或修复错误，创建一个新分支都是很重要的。 它不仅是正确的 git 工作流，而且还可以使您的更改与主分支保持组织和分离，这样您就可以轻松地为您完成的每个任务提交和管理多个拉请求。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Checkout the master branch - you want your new branch to come from master</span>
+</span></span><span style="display:flex;"><span>$ git checkout master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a new branch named newfeature (give your branch its own simple informative name),Switch to your new branch</span>
+</span></span><span style="display:flex;"><span>$ git branch -b newfeature
+</span></span></code></pre></div><blockquote>
+<p>开始折腾吧</p>
+</blockquote>
+<h2 id="提交一个pull-request">提交一个Pull Request</h2>
+<h3 id="清理你的工作">清理你的工作</h3>
+<p>在提交您的拉请求之前，您可能需要做一些事情来清理您的分支，并使其尽可能简单，以便原来的 repo 的维护人员测试、接受和合并您的工作。</p>
+<p>如果已经向上游主分支提交了任何提交，那么您应该重新设置开发分支的基础，以便合并它将是一个简单的快进操作，不需要任何冲突解决工作。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Fetch upstream master and merge with your repo&#39;s master branch</span>
+</span></span><span style="display:flex;"><span>$ git fetch upstream
+</span></span><span style="display:flex;"><span>$ git checkout master
+</span></span><span style="display:flex;"><span>$ git merge upstream/master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If there were any new commits, rebase your development branch</span>
+</span></span><span style="display:flex;"><span>$ git checkout newfeature
+</span></span><span style="display:flex;"><span>$ git rebase master
+</span></span></code></pre></div><p>现在，可能需要将一些较小的提交压缩成较大的、更具凝聚力的提交。 你可以通过一个交互式 rebase 来实现:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Rebase all commits on your development branch</span>
+</span></span><span style="display:flex;"><span>$ git checkout 
+</span></span><span style="display:flex;"><span>$ git rebase -i master
+</span></span></code></pre></div><p>这将打开一个文本编辑器，您可以在其中指定哪些提交要压制。</p>
+<h3 id="提交">提交</h3>
+<p>一旦你把所有的修改都提交到 GitHub，在 GitHub 上进入你的 fork 页面，选择你的开发分支，然后点击 pull request 按钮。 如果你需要对你的 pull 请求做任何调整，只需将更新推送到 GitHub 即可。 您的拉请求将自动跟踪开发分支上的更改并进行更新。</p>
+<h2 id="接受和合并拉请求">接受和合并拉请求</h2>
+<p>请注意，前面的部分是从创建 fork 并生成 pull 请求的人的角度编写的，而本节是从处理传入 pull 请求的原始存储库所有者的角度编写的。 因此，当“ forker”将原始存储库称为上游存储库时，我们现在将其视为原始存储库的所有者和标准的远程起源。</p>
+<h3 id="检查和测试拉请求">检查和测试拉请求</h3>
+<p>打开。 <code>.git/config</code> 文件，并在<code>[ remote &quot;origin&quot;]</code>下添加一个新行:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>fetch <span style="color:#f92672">=</span> +refs/pull/*/head:refs/pull/origin/*
+</span></span></code></pre></div><p>现在，您可以获取和检出任何拉请求，以便您可以测试它们:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Fetch all pull request branches</span>
+</span></span><span style="display:flex;"><span>$ git fetch origin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Checkout out a given pull request branch based on its number</span>
+</span></span><span style="display:flex;"><span>$ git checkout -b <span style="color:#ae81ff">999</span> pull/origin/999
+</span></span></code></pre></div><p>请记住，这些分支是只读的，您不能推送任何更改。</p>
+<h3 id="自动合并拉请求">自动合并拉请求</h3>
+<p>如果合并是一个简单的<code>fast-forward</code>，你可以通过点击 GitHub 上的 pull request 页面上的按钮来自动完成合并。</p>
+<h3 id="手动合并拉请求">手动合并拉请求</h3>
+<p>要手动执行合并，您需要在源代码报告中签出目标分支，直接从分支中拉出，然后合并并推出。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Checkout the branch you&#39;re merging to in the target repo</span>
+</span></span><span style="display:flex;"><span>$ git checkout master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pull the development branch from the fork repo where the pull request development was done.</span>
+</span></span><span style="display:flex;"><span>$ git pull https://github.com/forkuser/forkedrepo.git newfeature
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Merge the development branch</span>
+</span></span><span style="display:flex;"><span>$ git merge newfeature
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push master with the new feature merged into it</span>
+</span></span><span style="display:flex;"><span>$ git push origin master
+</span></span></code></pre></div><p>现在您已经完成了开发分支，可以自由地删除它了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git branch -d newfeature
+</span></span></code></pre></div><h2 id="巨人的肩膀">巨人的肩膀</h2>
+<p><a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962"target="_blank" rel="external nofollow noopener noreferrer">https://gist.github.com/Chaser324/ce0505fbed06b947d962<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2020-02-23 22:53:46">更新于 2020-02-23&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" data-title="Git标准Fork &amp; Pull Request流程" data-hashtags="git"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" data-hashtag="git"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/" data-title="Git标准Fork &amp; Pull Request流程"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/git/' class="post-tag">git</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/git/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" class="post-nav-item" rel="prev" title="Git中文乱码解决"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Git中文乱码解决</a>
+      <a href="/posts/java/mysql%E4%BF%AE%E6%94%B9auto_increment/" class="post-nav-item" rel="next" title="Mysql修改Auto_increment">Mysql修改Auto_increment<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways" data-mode="static"><div><img loading="lazy" src="/images/alipay-qr-code.png" srcset="/images/alipay-qr-code.png, /images/alipay-qr-code.png 1.5x, /images/alipay-qr-code.png 2x" sizes="auto" data-title="uyaki 支付宝" data-alt="uyaki 支付宝" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>支付宝</span>
+          </div><div><img loading="lazy" src="/images/wechat-qr-code.png" srcset="/images/wechat-qr-code.png, /images/wechat-qr-code.png 1.5x, /images/wechat-qr-code.png 2x" sizes="auto" data-title="uyaki 微信" data-alt="uyaki 微信" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>微信</span>
+          </div></div>
+  </div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

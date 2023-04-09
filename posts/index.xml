@@ -1,0 +1,87 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>所有文章 - uyaki的博客</title>
+    <link>http://uyaki.github.io/posts/</link>
+    <description>所有文章 | uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 09 Apr 2023 19:56:03 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Hugo&#43;FixIt</title>
+  <link>http://uyaki.github.io/posts/blog/hugo&#43;fixit/</link>
+  <pubDate>Sun, 09 Apr 2023 19:56:03 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/blog/hugo&#43;fixit/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>KMP算法总结</title>
+  <link>http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</link>
+  <pubDate>Sun, 09 Apr 2023 18:35:04 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/algorithm/kmp%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Ubuntu新机dotfile</title>
+  <link>http://uyaki.github.io/posts/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/</link>
+  <pubDate>Thu, 09 Feb 2023 17:40:06 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Window新机dotfile</title>
+  <link>http://uyaki.github.io/posts/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</link>
+  <pubDate>Thu, 09 Feb 2023 17:36:46 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Goland在go_modules模式下无法识别本地依赖包</title>
+  <link>http://uyaki.github.io/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/</link>
+  <pubDate>Mon, 12 Dec 2022 20:47:16 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Mac下go访问时出现permission_denied</title>
+  <link>http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/</link>
+  <pubDate>Mon, 12 Dec 2022 20:04:46 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Windows资源管理器优化神器QTTabBar</title>
+  <link>http://uyaki.github.io/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
+  <pubDate>Thu, 15 Sep 2022 01:01:51 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>解决PD的bootcamp中windows无法联网的问题</title>
+  <link>http://uyaki.github.io/posts/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+  <pubDate>Fri, 01 Apr 2022 15:25:29 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/mac/%E8%A7%A3%E5%86%B3pd%E7%9A%84bootcamp%E4%B8%ADwindows%E6%97%A0%E6%B3%95%E8%81%94%E7%BD%91%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Steam如何绕过clash的全局代理</title>
+  <link>http://uyaki.github.io/posts/windows/steam%E5%A6%82%E4%BD%95%E7%BB%95%E8%BF%87clash%E7%9A%84%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</link>
+  <pubDate>Fri, 01 Apr 2022 01:40:49 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/windows/steam%E5%A6%82%E4%BD%95%E7%BB%95%E8%BF%87clash%E7%9A%84%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>使用sftp从服务器下载文件</title>
+  <link>http://uyaki.github.io/posts/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</link>
+  <pubDate>Wed, 22 Apr 2020 10:54:52 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/server/%E4%BD%BF%E7%94%A8sftp%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

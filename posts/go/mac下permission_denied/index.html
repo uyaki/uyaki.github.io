@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Mac下go访问时出现permission_denied - uyaki的博客</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="uyaki的博客" /><meta name="keywords" content='go' /><meta itemprop="name" content="Mac下go访问时出现permission_denied">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-12-12T20:04:46+08:00" />
+<meta itemprop="dateModified" content="2022-12-12T20:04:46+08:00" />
+<meta itemprop="wordCount" content="25"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="keywords" content="go," /><meta property="og:title" content="Mac下go访问时出现permission_denied" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/" /><meta property="og:image" content="http://uyaki.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-12T20:04:46+08:00" />
+<meta property="article:modified_time" content="2022-12-12T20:04:46+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://uyaki.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="Mac下go访问时出现permission_denied"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/" /><link rel="prev" href="http://uyaki.github.io/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/" /><link rel="next" href="http://uyaki.github.io/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Mac下go访问时出现permission_denied",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/uyaki.github.io\/posts\/go\/mac%E4%B8%8Bpermission_denied\/"
+    },"genre": "posts","keywords": "go","wordcount":  25 ,
+    "url": "http:\/\/uyaki.github.io\/posts\/go\/mac%E4%B8%8Bpermission_denied\/","datePublished": "2022-12-12T20:04:46+08:00","dateModified": "2022-12-12T20:04:46+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uyaki"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="uyaki的博客" data-alt="uyaki的博客" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                title="点击查看更多文章"
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/about/"
+                title="点击查看更多分类"
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="/svg/fixit.header.min.svg" data-alt="/svg/fixit.header.min.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/about/"
+                    title="点击查看更多分类"
+                    
+                  ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="toc" id="toc-auto"></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Mac下go访问时出现permission_denied</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
+          <span class="post-category">收录于 <a href="/categories/go/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> go</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2022-12-12 20:04:46"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2022-12-12">2022-12-12</time></span>&nbsp;<span title="更新于 2022-12-12 20:04:46"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2022-12-12">2022-12-12</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 25 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+    </div><div class="content" id="content"><h1 id="解决-open-usrlocalgopkgdarwin_amd64runtimecgoa-permission-denied">解决 open /usr/local/go/pkg/darwin_amd64/runtime/cgo.a: permission denied</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo chown -R <span style="color:#f92672">[</span>用户名<span style="color:#f92672">]</span> /usr/local/go/pkg/darwin_amd64/
+</span></span><span style="display:flex;"><span>$ whoami
+</span></span><span style="display:flex;"><span>uyaki
+</span></span><span style="display:flex;"><span>$ sudo chown -R uyaki /usr/local/go/pkg/darwin_amd64/
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2022-12-12 20:04:46">更新于 2022-12-12&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/" data-title="Mac下go访问时出现permission_denied" data-hashtags="go"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/" data-hashtag="go"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/" data-title="Mac下go访问时出现permission_denied"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/go/' class="post-tag">go</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/" class="post-nav-item" rel="prev" title="Windows资源管理器优化神器QTTabBar"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Windows资源管理器优化神器QTTabBar</a>
+      <a href="/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/" class="post-nav-item" rel="next" title="Goland在go_modules模式下无法识别本地依赖包">Goland在go_modules模式下无法识别本地依赖包<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways" data-mode="static"><div><img loading="lazy" src="/images/alipay-qr-code.png" srcset="/images/alipay-qr-code.png, /images/alipay-qr-code.png 1.5x, /images/alipay-qr-code.png 2x" sizes="auto" data-title="uyaki 支付宝" data-alt="uyaki 支付宝" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>支付宝</span>
+          </div><div><img loading="lazy" src="/images/wechat-qr-code.png" srcset="/images/wechat-qr-code.png, /images/wechat-qr-code.png 1.5x, /images/wechat-qr-code.png 2x" sizes="auto" data-title="uyaki 微信" data-alt="uyaki 微信" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>微信</span>
+          </div></div>
+  </div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

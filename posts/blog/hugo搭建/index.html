@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Hugo搭建 - uyaki的博客</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="uyaki的博客" /><meta name="keywords" content='hugo, blog' /><meta itemprop="name" content="Hugo搭建">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-02-06T21:56:02+08:00" />
+<meta itemprop="dateModified" content="2020-02-06T21:56:02+08:00" />
+<meta itemprop="wordCount" content="943"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="keywords" content="hugo,blog," /><meta property="og:title" content="Hugo搭建" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://uyaki.github.io/posts/blog/hugo%E6%90%AD%E5%BB%BA/" /><meta property="og:image" content="http://uyaki.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-02-06T21:56:02+08:00" />
+<meta property="article:modified_time" content="2020-02-06T21:56:02+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://uyaki.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="Hugo搭建"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/safari-pinned-tab.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://uyaki.github.io/posts/blog/hugo%E6%90%AD%E5%BB%BA/" /><link rel="next" href="http://uyaki.github.io/posts/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hugo搭建",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/uyaki.github.io\/posts\/blog\/hugo%E6%90%AD%E5%BB%BA\/"
+    },"genre": "posts","keywords": "hugo, blog","wordcount":  943 ,
+    "url": "http:\/\/uyaki.github.io\/posts\/blog\/hugo%E6%90%AD%E5%BB%BA\/","datePublished": "2020-02-06T21:56:02+08:00","dateModified": "2020-02-06T21:56:02+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uyaki"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="uyaki的博客" data-alt="uyaki的博客" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-desktop" class="typeit header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                title="点击查看更多文章"
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> 文章</a></li><li class="menu-item has-children">
+              <a
+                class="menu-link"
+                href="/about/"
+                title="点击查看更多分类"
+                
+              ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a><i class="dropdown-icon fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uyaki的博客"><img loading="lazy" src="/svg/fixit.header.min.svg" srcset="/svg/fixit.header.min.svg, /svg/fixit.header.min.svg 1.5x, /svg/fixit.header.min.svg 2x" sizes="auto" data-title="/svg/fixit.header.min.svg" data-alt="/svg/fixit.header.min.svg" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Uyaki的博客</span></a><span id="typeit-header-subtitle-mobile" class="typeit header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><span class="nested-item">
+                  <a
+                    class="menu-link"
+                    href="/about/"
+                    title="点击查看更多分类"
+                    
+                  ><i class="fa-solid fa-info-circle fa-fw fa-sm" aria-hidden="true"></i> 关于</a>
+                  <i class="dropdown-icon fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </span>
+                <ul class="sub-menu">
+                  <li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/categories/"
+                          title="点击查看更多分类"
+                          
+                        ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> 分类</a>
+                      </li><li
+                        class="menu-item"
+                      >
+                        <a
+                          class="menu-link"
+                          href="/tags/"
+                          title="点击查看更多标签"
+                          
+                        ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> 标签</a>
+                      </li></ul></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Hugo搭建</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
+          <span class="post-category">收录于 <a href="/categories/hugo/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> hugo</a>&ensp;<a href="/categories/blog/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> blog</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2020-02-06 21:56:02"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-06">2020-02-06</time></span>&nbsp;<span title="更新于 2020-02-06 21:56:02"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-06">2020-02-06</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 943 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo-安装">hugo 安装</a></li>
+    <li><a href="#github仓库准备">github仓库准备</a></li>
+    <li><a href="#生成站点">生成站点</a></li>
+    <li><a href="#添加主题">添加主题</a></li>
+    <li><a href="#启动hugo服务">启动hugo服务</a></li>
+    <li><a href="#创建-public-子模块">创建 public 子模块</a></li>
+    <li><a href="#生成最终发布的网站内容">生成最终发布的网站内容</a></li>
+    <li><a href="#推送到远程usernamegithubio">推送到远程<!-- raw HTML omitted -->.github.io</a></li>
+    <li><a href="#推送到远程blog">推送到远程blog</a></li>
+    <li><a href="#自动部署脚本">自动部署脚本</a></li>
+    <li><a href="#支持评论">支持评论</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h1 id="使用-hugo-搭建博客">使用 Hugo 搭建博客</h1>
+<h2 id="hugo-安装">hugo 安装</h2>
+<p>依赖：</p>
+<ul>
+<li>Git</li>
+<li>Mercurial</li>
+<li>Go</li>
+</ul>
+<p>Mac 下直接使用 Homebrew 安装：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ brew install hugo
+</span></span></code></pre></div><h2 id="github仓库准备">github仓库准备</h2>
+<ol>
+<li>create new repositories =&gt; <code>blog</code> ，用来存放网站内容和源文件；</li>
+<li>create new repositories =&gt; <code>&lt;username&gt;.github.io</code> ，用于存放最终发布的网站内容；</li>
+</ol>
+<h2 id="生成站点">生成站点</h2>
+<p>使用 Hugo 快速生成站点</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ hugo new site /path/to/site
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 如我的项目名叫blog</span>
+</span></span><span style="display:flex;"><span>$ hugo new site blog 
+</span></span></code></pre></div><p>cd 到 站点文件夹</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cd blog
+</span></span><span style="display:flex;"><span>$ tree -d -L <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── archetypes
+</span></span><span style="display:flex;"><span>├── content
+</span></span><span style="display:flex;"><span>├── data
+</span></span><span style="display:flex;"><span>├── layouts
+</span></span><span style="display:flex;"><span>├── resources
+</span></span><span style="display:flex;"><span>├── static
+</span></span><span style="display:flex;"><span>└── themes
+</span></span></code></pre></div><ul>
+<li>archetypes 使用 hugu new post 生成新文章的模板，可以自定义里面的值</li>
+<li>content 存放网站内容</li>
+<li>data 存储 Hugo 在生成您的网站时可以使用的配置文件</li>
+<li>layouts 以.html 文件的形式存储模板，指定如何将内容的视图呈现到静态网站中</li>
+<li>static 存储所有静态内容：图像，CSS，JavaScript 等，当 Hugo 构建您的站点时，静态目录中的所有资产都将按原样复制</li>
+<li>themes 存放主题</li>
+<li>config.toml 配置文件</li>
+</ul>
+<h2 id="添加主题">添加主题</h2>
+<p>到<a href="https://github.com/olOwOlo/hugo-theme-even.git"target="_blank" rel="external nofollow noopener noreferrer">hugo-theme-even<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>下fork项目</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">## 初始化</span>
+</span></span><span style="display:flex;"><span>$ git init
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 关联远程 blog 仓库</span>
+</span></span><span style="display:flex;"><span>$ git remote add origin git@github.com:uyaki/blog.git
+</span></span><span style="display:flex;"><span>$ git submodule add https://github.com/uyaki/hugo-theme-even.git themes/even
+</span></span></code></pre></div><p>下载完后，找到主题目录 <code>/themes/even/exampleSite</code> 下的配置文件 <code>config.toml</code>，将该文件复制到根目录下，替换根目录的 <code>config.toml</code>，根据需求更改配置文件即可。</p>
+<h2 id="启动hugo服务">启动hugo服务</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ hugo server -D
+</span></span></code></pre></div><h2 id="创建-public-子模块">创建 public 子模块</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git submodule add -f git@github.com:uyaki/uyaki.github.io.git public
+</span></span></code></pre></div><h2 id="生成最终发布的网站内容">生成最终发布的网站内容</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ hugo
+</span></span></code></pre></div><h2 id="推送到远程usernamegithubio">推送到远程<!-- raw HTML omitted -->.github.io</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cd public
+</span></span><span style="display:flex;"><span>$ git status
+</span></span><span style="display:flex;"><span>$ git add .
+</span></span><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span>$ git push -u orgin master
+</span></span></code></pre></div><h2 id="推送到远程blog">推送到远程blog</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cd ..
+</span></span><span style="display:flex;"><span>$ vim .gitignore
+</span></span></code></pre></div><p>添加如下内容</p>
+<pre tabindex="0"><code class="language-.gitignore" data-lang=".gitignore"># Created by .ignore support plugin (hsz.mobi)
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Hugo template
+# Generated files by hugo
+/public/
+/resources/_gen/
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+</code></pre><h2 id="自动部署脚本">自动部署脚本</h2>
+<p>将以上步骤添加到自动执行脚本中 deploy.sh，脚本 commit 提交信息会使用执行时的时间，将脚本放到网站项目路径下，写完博客后，双击运行即可自动部署发布</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build the project.</span>
+</span></span><span style="display:flex;"><span>hugo <span style="color:#75715e"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Go To Public folder</span>
+</span></span><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add changes to git.</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commit changes.</span>
+</span></span><span style="display:flex;"><span>msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push source and build repos.</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Come Back up to the Project Root</span>
+</span></span><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div><h2 id="支持评论">支持评论</h2>
+<p>Hugo 支持 Disqus 评论，只需要在配置文件 config.toml 中设置 disqusShortname = &ldquo;disqusShortname&rdquo;，如果没有 disqusShortname，需要到 <a href="https://disqus.com/"target="_blank" rel="external nofollow noopener noreferrer">Disqus 官网<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>注册一个账号，注册后添加一个网站，添加时会让填一个 shortname，Disqus 会生成一个 shortname.disqus.com 的网址，另外还需要把 config.toml 中的 baseURL 地址，也就是公网访问地址添加到 Diqus 的信任网址中，类似于互相添加信任</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2020-02-06 21:56:02">更新于 2020-02-06&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://uyaki.github.io/posts/blog/hugo%E6%90%AD%E5%BB%BA/" data-title="Hugo搭建" data-hashtags="hugo,blog"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://uyaki.github.io/posts/blog/hugo%E6%90%AD%E5%BB%BA/" data-hashtag="hugo"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://uyaki.github.io/posts/blog/hugo%E6%90%AD%E5%BB%BA/" data-title="Hugo搭建"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/hugo/' class="post-tag">hugo</a><a href='/tags/blog/' class="post-tag">blog</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav">
+      <a href="/posts/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/" class="post-nav-item" rel="next" title="华夫饼">华夫饼<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">赞赏</label>
+    <div class="reward-ways" data-mode="static"><div><img loading="lazy" src="/images/alipay-qr-code.png" srcset="/images/alipay-qr-code.png, /images/alipay-qr-code.png 1.5x, /images/alipay-qr-code.png 2x" sizes="auto" data-title="uyaki 支付宝" data-alt="uyaki 支付宝" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>支付宝</span>
+          </div><div><img loading="lazy" src="/images/wechat-qr-code.png" srcset="/images/wechat-qr-code.png, /images/wechat-qr-code.png 1.5x, /images/wechat-qr-code.png 2x" sizes="auto" data-title="uyaki 微信" data-alt="uyaki 微信" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span>微信</span>
+          </div></div>
+  </div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2020 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
