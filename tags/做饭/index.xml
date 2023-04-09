@@ -1,83 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>做饭 on uyaki的博客</title>
+    <title>做饭 - 标签 - uyaki的博客</title>
     <link>http://uyaki.github.io/tags/%E5%81%9A%E9%A5%AD/</link>
-    <description>Recent content in 做饭 on uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Feb 2020 00:05:29 +0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/%E5%81%9A%E9%A5%AD/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>酸辣酱汁</title>
-      <link>http://uyaki.github.io/post/cook/%E9%85%B8%E8%BE%A3%E9%85%B1%E6%B1%81/</link>
-      <pubDate>Fri, 28 Feb 2020 00:05:29 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E9%85%B8%E8%BE%A3%E9%85%B1%E6%B1%81/</guid>
-      <description>用途 做各种酸辣口的面，粉丝，河粉 比例 1勺生抽 1勺陈醋 1勺白糖 1勺老干妈(喜欢辣点可以多加) 1/3勺盐 1勺番茄酱（推荐亨氏，酸甜口感更浓厚，喜</description>
-    </item>
-    
-    <item>
-      <title>茄汁虾仁</title>
-      <link>http://uyaki.github.io/post/cook/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</link>
-      <pubDate>Sun, 23 Feb 2020 20:03:51 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</guid>
-      <description>工具 锅 食材 虾仁 15个 蒜 2瓣 油 适量 盐 1/2茶匙 料酒 1汤匙 番茄酱 2汤匙 清水 5汤匙 步骤 准备 虾仁加入1汤匙料酒、1/4茶匙盐，腌制10分钟 蒜切成蒜末</description>
-    </item>
-    
-    <item>
-      <title>蒜香蜂蜜烤鸡翅</title>
-      <link>http://uyaki.github.io/post/cook/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</link>
-      <pubDate>Sun, 23 Feb 2020 16:26:44 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</guid>
-      <description>工具 烤箱 锡纸 食材 鸡翅 5个 盐 小半勺 料酒 1勺 生抽 1勺 老抽 1勺 蚝油 1勺 蜂蜜 2勺 黑胡椒 适量 蒜末 适量 油 适量 步骤 准备 鸡翅洗干净，双面划出刀口，方便入味；</description>
-    </item>
-    
-    <item>
-      <title>焦糖奶茶</title>
-      <link>http://uyaki.github.io/post/cook/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</link>
-      <pubDate>Sun, 23 Feb 2020 16:16:29 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</guid>
-      <description>工具 锅 面粉筛（其他过滤也行） 食材 白糖 1/4碗 清水 1/4碗 开水 1/2 碗 茶叶适量（我用的大红袍） 纯牛奶一盒 步骤 制作 锅中倒入白糖，清水，小火煮，待糖融</description>
-    </item>
-    
-    <item>
-      <title>烤箱版鸡米花</title>
-      <link>http://uyaki.github.io/post/cook/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</link>
-      <pubDate>Sun, 23 Feb 2020 15:57:22 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</guid>
-      <description>工具 烤箱 锡纸 食材 鸡腿肉，可以用鸡胸肉代替 盐 半勺 酱油 1勺 料酒 1勺 蚝油 1勺 鸡蛋 1个 淀粉 适量 清水 适量 面包糠，可以用薯片代替 蕃茄酱 步骤 准备 鸡腿肉（或</description>
-    </item>
-    
-    <item>
-      <title>腊肠炒荷兰豆</title>
-      <link>http://uyaki.github.io/post/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/</link>
-      <pubDate>Sun, 16 Feb 2020 18:58:37 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/</guid>
-      <description>工具 锅 食材 腊肠 1~2根 荷兰豆 200g 盐 适量 耗油 1小勺 蒜粒 1瓣 花生油 适量 开水 少许 步骤 准备 荷兰豆掐头去筋，清洗； 腊肠斜刀切片； 蒜粒去衣切碎； 制作 起锅，</description>
-    </item>
-    
-    <item>
-      <title>香煎脆皮鸡排</title>
-      <link>http://uyaki.github.io/post/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/</link>
-      <pubDate>Thu, 13 Feb 2020 14:14:53 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/</guid>
-      <description>工具 平底锅； 锡纸； 铁盆； 肉夹子（可用筷子🥢代替）； 食材 鸡腿 1~2个；🍗 盐🧂 1小勺； 酱油 1小勺； 料酒 1小勺； 步骤 准备 鸡腿去骨 沿着骨头🦴竖直方向</description>
-    </item>
-    
-    <item>
-      <title>华夫饼</title>
-      <link>http://uyaki.github.io/post/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/</link>
-      <pubDate>Sat, 08 Feb 2020 20:27:36 +0800</pubDate>
-      
-      <guid>http://uyaki.github.io/post/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/</guid>
-      <description>华夫饼🧇 工具 必须 打蛋器（手动电动均可） 打蛋桶 电饼铛 电子秤 刷子 烘培夹子 非必须 面粉筛 食材 份量：大概6张华夫饼，按实际情况增减 必须 鸡蛋🥚 3个 白砂糖</description>
-    </item>
-    
-  </channel>
+    <description>做饭 - 标签 - uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 28 Feb 2020 00:05:29 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/%E5%81%9A%E9%A5%AD/" rel="self" type="application/rss+xml" /><item>
+  <title>酸辣酱汁</title>
+  <link>http://uyaki.github.io/posts/cook/%E9%85%B8%E8%BE%A3%E9%85%B1%E6%B1%81/</link>
+  <pubDate>Fri, 28 Feb 2020 00:05:29 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E9%85%B8%E8%BE%A3%E9%85%B1%E6%B1%81/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>茄汁虾仁</title>
+  <link>http://uyaki.github.io/posts/cook/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</link>
+  <pubDate>Sun, 23 Feb 2020 20:03:51 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E8%8C%84%E6%B1%81%E8%99%BE%E4%BB%81/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>蒜香蜂蜜烤鸡翅</title>
+  <link>http://uyaki.github.io/posts/cook/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</link>
+  <pubDate>Sun, 23 Feb 2020 16:26:44 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E8%92%9C%E9%A6%99%E8%9C%82%E8%9C%9C%E7%83%A4%E9%B8%A1%E7%BF%85/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>焦糖奶茶</title>
+  <link>http://uyaki.github.io/posts/cook/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</link>
+  <pubDate>Sun, 23 Feb 2020 16:16:29 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E7%84%A6%E7%B3%96%E5%A5%B6%E8%8C%B6/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>烤箱版鸡米花</title>
+  <link>http://uyaki.github.io/posts/cook/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</link>
+  <pubDate>Sun, 23 Feb 2020 15:57:22 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E7%83%A4%E7%AE%B1%E7%89%88%E9%B8%A1%E7%B1%B3%E8%8A%B1/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>腊肠炒荷兰豆</title>
+  <link>http://uyaki.github.io/posts/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/</link>
+  <pubDate>Sun, 16 Feb 2020 18:58:37 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E8%85%8A%E8%82%A0%E7%82%92%E8%8D%B7%E5%85%B0%E8%B1%86/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>香煎脆皮鸡排</title>
+  <link>http://uyaki.github.io/posts/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/</link>
+  <pubDate>Thu, 13 Feb 2020 14:14:53 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E9%A6%99%E7%85%8E%E8%84%86%E7%9A%AE%E9%B8%A1%E6%8E%92/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>华夫饼</title>
+  <link>http://uyaki.github.io/posts/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/</link>
+  <pubDate>Sat, 08 Feb 2020 20:27:36 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/posts/cook/%E5%8D%8E%E5%A4%AB%E9%A5%BC/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
