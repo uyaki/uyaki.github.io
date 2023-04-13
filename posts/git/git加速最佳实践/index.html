@@ -10,7 +10,7 @@
 <meta name="description" content="uyaki的博客" /><meta name="keywords" content='git, 加速' /><meta itemprop="name" content="Git加速最佳实践">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-02-11T09:25:55+08:00" />
 <meta itemprop="dateModified" content="2020-02-11T09:25:55+08:00" />
-<meta itemprop="wordCount" content="416"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="wordCount" content="444"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
 <meta itemprop="keywords" content="git,加速," /><meta property="og:title" content="Git加速最佳实践" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/uyaki.github.io\/posts\/git\/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5\/"
-    },"genre": "posts","keywords": "git, 加速","wordcount":  416 ,
+    },"genre": "posts","keywords": "git, 加速","wordcount":  444 ,
     "url": "http:\/\/uyaki.github.io\/posts\/git\/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5\/","datePublished": "2020-02-11T09:25:55+08:00","dateModified": "2020-02-11T09:25:55+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -139,7 +139,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
           <span class="post-category">收录于 <a href="/categories/git/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> git</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2020-02-11 09:25:55"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-11">2020-02-11</time></span>&nbsp;<span title="更新于 2020-02-11 09:25:55"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-11">2020-02-11</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 416 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+      <div class="post-meta-line"><span title="发布于 2020-02-11 09:25:55"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-11">2020-02-11</time></span>&nbsp;<span title="更新于 2020-02-11 09:25:55"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-02-11">2020-02-11</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 444 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -175,57 +175,145 @@
 <ul>
 <li>针对所有git服务器设置代理（这里演示使用socks5端口）</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global http.proxy<span style="color:#f92672">=</span>socks5://127.0.0.1:1086
-</span></span><span style="display:flex;"><span>$ git config --global https.proxy<span style="color:#f92672">=</span>socks5://127.0.0.1:1086
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.proxy<span class="o">=</span>socks5://127.0.0.1:1086
+</span></span><span class="line"><span class="cl">$ git config --global https.proxy<span class="o">=</span>socks5://127.0.0.1:1086
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>只针对github.com设置代理（这里演示使用http端口）</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global http.https://github.com.proxy http://127.0.0.1:1087
-</span></span></code></pre></div><ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.https://github.com.proxy http://127.0.0.1:1087
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>如果代理需要账号密码</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
-</span></span></code></pre></div><h3 id="通过编辑git配置文件的方式">通过编辑git配置文件的方式</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ vim ~/.gitconfig
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>http<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>	proxy <span style="color:#f92672">=</span> socks5://127.0.0.1:1086
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>https<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>	proxy <span style="color:#f92672">=</span> socks5://127.0.0.1:1086
-</span></span></code></pre></div><h2 id="针对ssh协议配置代理">针对ssh协议配置代理</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="通过编辑git配置文件的方式">通过编辑git配置文件的方式</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ vim ~/.gitconfig
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>http<span class="o">]</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">proxy</span> <span class="o">=</span> socks5://127.0.0.1:1086
+</span></span><span class="line"><span class="cl"><span class="o">[</span>https<span class="o">]</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">proxy</span> <span class="o">=</span> socks5://127.0.0.1:1086
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="针对ssh协议配置代理">针对ssh协议配置代理</h2>
 <ol>
 <li>安装<a href="https://bitbucket.org/gotoh/connect"target="_blank" rel="external nofollow noopener noreferrer">connect<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>，connect是一个工具，用户代理的转换。</li>
 </ol>
 <p><strong>macOS安装方式</strong>：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ brew install connect
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ brew install connect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
 <li><code>ProxyCommand</code>命令设置</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ vim ~/.ssh/config
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Host github.com .github.com
-</span></span><span style="display:flex;"><span>    ProxyCommand connect -H 127.0.0.1:1087 %h %p <span style="color:#75715e">#设置http代理</span>
-</span></span><span style="display:flex;"><span>    HostName %h
-</span></span><span style="display:flex;"><span>    Port <span style="color:#ae81ff">22</span>
-</span></span><span style="display:flex;"><span>    User git
-</span></span><span style="display:flex;"><span>    IdentityFile  ~/.ssh/id_rsa <span style="color:#75715e"># 这里是私钥，不要放成公钥啦</span>
-</span></span><span style="display:flex;"><span>    IdentitiesOnly yes
-</span></span></code></pre></div><ol start="3">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ vim ~/.ssh/config
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Host github.com .github.com
+</span></span><span class="line"><span class="cl">    ProxyCommand connect -H 127.0.0.1:1087 %h %p <span class="c1">#设置http代理</span>
+</span></span><span class="line"><span class="cl">    HostName %h
+</span></span><span class="line"><span class="cl">    Port <span class="m">22</span>
+</span></span><span class="line"><span class="cl">    User git
+</span></span><span class="line"><span class="cl">    IdentityFile  ~/.ssh/id_rsa <span class="c1"># 这里是私钥，不要放成公钥啦</span>
+</span></span><span class="line"><span class="cl">    IdentitiesOnly yes
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
 <li>测试</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ssh -T git@github.com
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Hi username! You ve successfully authenticated, but GitHub does not provide shell access.
-</span></span></code></pre></div><h2 id="tips">tips📌</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ ssh -T git@github.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Hi username! You ve successfully authenticated, but GitHub does not provide shell access.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="tips">tips📌</h2>
 <h3 id="取消代理">取消代理</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global --unset http.proxy 
-</span></span><span style="display:flex;"><span>$ git config --global --unset https.proxy
-</span></span></code></pre></div><h3 id="查看当前代理">查看当前代理</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global --get http.proxy
-</span></span><span style="display:flex;"><span>$ git config --global --get https.proxy
-</span></span></code></pre></div><h3 id="查看所有git全局配置">查看所有git全局配置</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ git config --global -l
-</span></span></code></pre></div><h2 id="巨人的肩膀">巨人的肩膀</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global --unset http.proxy 
+</span></span><span class="line"><span class="cl">$ git config --global --unset https.proxy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="查看当前代理">查看当前代理</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global --get http.proxy
+</span></span><span class="line"><span class="cl">$ git config --global --get https.proxy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="查看所有git全局配置">查看所有git全局配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global -l
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="巨人的肩膀">巨人的肩膀</h2>
 <p><a href="https://www.hi-linux.com/posts/11850.html"target="_blank" rel="external nofollow noopener noreferrer">https://www.hi-linux.com/posts/11850.html<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
@@ -270,5 +358,5 @@
         </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/uyaki" title="在github上关注我吧"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><noscript>
     <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"enable":true,"expired":false,"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"写下你的评论...","lightTheme":"github-light","repo":"uyaki/uyaki.github.io"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"写下你的评论...","lightTheme":"github-light","repo":"uyaki/uyaki.github.io"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-subtitle-desktop":"好记性不如烂笔头","typeit-header-subtitle-mobile":"好记性不如烂笔头"},"enablePWA":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-subtitle-desktop":["typeit-header-subtitle-desktop"],"typeit-header-subtitle-mobile":["typeit-header-subtitle-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
 </html>
