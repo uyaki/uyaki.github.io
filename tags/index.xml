@@ -3,7 +3,15 @@
     <title>Tags - 标签 - uyaki的博客</title>
     <link>http://uyaki.github.io/tags/</link>
     <description>Tags - 标签 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 14 Apr 2023 05:06:17 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>blog</title>
+  <link>http://uyaki.github.io/tags/blog/</link>
+  <pubDate>Fri, 14 Apr 2023 05:06:17 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/tags/blog/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>algorithm</title>
   <link>http://uyaki.github.io/tags/algorithm/</link>
   <pubDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</pubDate>
@@ -17,14 +25,6 @@
   <pubDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</pubDate>
   <author>作者</author>
   <guid>http://uyaki.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>blog</title>
-  <link>http://uyaki.github.io/tags/blog/</link>
-  <pubDate>Sun, 09 Apr 2023 19:56:03 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/tags/blog/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
