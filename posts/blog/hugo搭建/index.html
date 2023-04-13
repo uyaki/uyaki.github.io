@@ -174,7 +174,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ brew install hugo
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ brew install hugo
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="github仓库准备">github仓库准备</h2>
@@ -191,7 +191,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ hugo new site /path/to/site
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hugo new site /path/to/site
 </span></span><span class="line"><span class="cl"><span class="c1">## 如我的项目名叫blog</span>
 </span></span><span class="line"><span class="cl">$ hugo new site blog 
 </span></span></code></pre></td></tr></table>
@@ -211,7 +211,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> blog
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> blog
 </span></span><span class="line"><span class="cl">$ tree -d -L <span class="m">1</span>
 </span></span><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── archetypes
@@ -243,7 +243,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">## 初始化</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 初始化</span>
 </span></span><span class="line"><span class="cl">$ git init
 </span></span><span class="line"><span class="cl"><span class="c1">## 关联远程 blog 仓库</span>
 </span></span><span class="line"><span class="cl">$ git remote add origin git@github.com:uyaki/blog.git
@@ -257,7 +257,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ hugo server -D
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hugo server -D
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="创建-public-子模块">创建 public 子模块</h2>
@@ -266,7 +266,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git submodule add -f git@github.com:uyaki/uyaki.github.io.git public
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git submodule add -f git@github.com:uyaki/uyaki.github.io.git public
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="生成最终发布的网站内容">生成最终发布的网站内容</h2>
@@ -275,7 +275,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ hugo
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hugo
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="推送到远程usernamegithubio">推送到远程<!-- raw HTML omitted -->.github.io</h2>
@@ -288,7 +288,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> public
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> public
 </span></span><span class="line"><span class="cl">$ git status
 </span></span><span class="line"><span class="cl">$ git add .
 </span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;first commit&#34;</span>
@@ -302,7 +302,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> ..
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> ..
 </span></span><span class="line"><span class="cl">$ vim .gitignore
 </span></span></code></pre></td></tr></table>
 </div>
@@ -375,7 +375,7 @@ hugo.linux
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 </span></span><span class="line"><span class="cl">

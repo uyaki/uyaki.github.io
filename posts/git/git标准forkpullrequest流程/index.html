@@ -175,7 +175,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Clone your fork to your local machine</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Clone your fork to your local machine</span>
 </span></span><span class="line"><span class="cl">$ git clone git@github.com:USERNAME/FORKED-PROJECT.git
 </span></span></code></pre></td></tr></table>
 </div>
@@ -189,7 +189,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Add &#39;upstream&#39; repo to list of remotes</span>
 </span></span><span class="line"><span class="cl">$ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Verify the new remote named &#39;upstream&#39;</span>
@@ -206,7 +206,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Fetch from upstream remote</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Fetch from upstream remote</span>
 </span></span><span class="line"><span class="cl">$ git fetch upstream
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># View all branches, including those from upstream</span>
@@ -221,7 +221,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Checkout your master branch and merge upstream</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Checkout your master branch and merge upstream</span>
 </span></span><span class="line"><span class="cl">git checkout master
 </span></span><span class="line"><span class="cl">git merge upstream/master
 </span></span></code></pre></td></tr></table>
@@ -241,7 +241,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Checkout the master branch - you want your new branch to come from master</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Checkout the master branch - you want your new branch to come from master</span>
 </span></span><span class="line"><span class="cl">$ git checkout master
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Create a new branch named newfeature (give your branch its own simple informative name),Switch to your new branch</span>
@@ -267,7 +267,7 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Fetch upstream master and merge with your repo&#39;s master branch</span>
 </span></span><span class="line"><span class="cl">$ git fetch upstream
 </span></span><span class="line"><span class="cl">$ git checkout master
 </span></span><span class="line"><span class="cl">$ git merge upstream/master
@@ -285,7 +285,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Rebase all commits on your development branch</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Rebase all commits on your development branch</span>
 </span></span><span class="line"><span class="cl">$ git checkout 
 </span></span><span class="line"><span class="cl">$ git rebase -i master
 </span></span></code></pre></td></tr></table>
@@ -302,7 +302,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nv">fetch</span> <span class="o">=</span> +refs/pull/*/head:refs/pull/origin/*
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">fetch</span> <span class="o">=</span> +refs/pull/*/head:refs/pull/origin/*
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在，您可以获取和检出任何拉请求，以便您可以测试它们:</p>
@@ -315,7 +315,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Fetch all pull request branches</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Fetch all pull request branches</span>
 </span></span><span class="line"><span class="cl">$ git fetch origin
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Checkout out a given pull request branch based on its number</span>
@@ -342,7 +342,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Checkout the branch you&#39;re merging to in the target repo</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Checkout the branch you&#39;re merging to in the target repo</span>
 </span></span><span class="line"><span class="cl">$ git checkout master
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Pull the development branch from the fork repo where the pull request development was done.</span>
@@ -361,7 +361,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git branch -d newfeature
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git branch -d newfeature
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="巨人的肩膀">巨人的肩膀</h2>

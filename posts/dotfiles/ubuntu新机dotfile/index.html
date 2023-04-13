@@ -180,7 +180,7 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">## 连接服务器</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 连接服务器</span>
 </span></span><span class="line"><span class="cl">$ ssh -o <span class="nv">ServerAliveInterval</span><span class="o">=</span><span class="m">180</span> -o <span class="nv">ServerAliveCountMax</span><span class="o">=</span><span class="m">3</span> -o <span class="nv">KeepAlive</span><span class="o">=</span>yes <span class="o">[</span>user<span class="o">]</span>@<span class="o">[</span>ip<span class="o">]</span>
 </span></span><span class="line"><span class="cl"><span class="c1">## 如果你是重装服务器可能还需要重置下ssh</span>
 </span></span><span class="line"><span class="cl">$ ssh-keygen -R <span class="o">[</span>ip<span class="o">]</span>
@@ -196,7 +196,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ cat ~/.ssh/id_rsa.pub
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat ~/.ssh/id_rsa.pub
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -207,7 +207,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s1">&#39;&lt;id_rsa.pub&gt;&#39;</span> &gt;&gt; ~/.ssh/authorized_keys
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s1">&#39;&lt;id_rsa.pub&gt;&#39;</span> &gt;&gt; ~/.ssh/authorized_keys
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -223,7 +223,7 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">## 切换到root下</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 切换到root下</span>
 </span></span><span class="line"><span class="cl">$ sudo su
 </span></span><span class="line"><span class="cl"><span class="c1">## `~` =&gt; `/root`</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> ~
@@ -236,7 +236,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git clone https://github.com/uyaki/dotfiles.git ~/dotfiles
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git clone https://github.com/uyaki/dotfiles.git ~/dotfiles
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -249,7 +249,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> dotfiles
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> dotfiles
 </span></span><span class="line"><span class="cl">$ sudo chmod <span class="m">777</span> ./linux/*-install.sh
 </span></span><span class="line"><span class="cl">$ ./linux/ubuntu-install.sh
 </span></span></code></pre></td></tr></table>
@@ -272,7 +272,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ p10k configure
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ p10k configure
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>

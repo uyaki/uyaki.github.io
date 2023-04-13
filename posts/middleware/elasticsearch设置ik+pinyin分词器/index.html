@@ -10,7 +10,7 @@
 <meta name="description" content="uyaki的博客" /><meta name="keywords" content='中间件' /><meta itemprop="name" content="ELasticSearch设置ik&#43;pinyin分词器">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-03-05T19:28:53+08:00" />
 <meta itemprop="dateModified" content="2020-03-05T19:28:53+08:00" />
-<meta itemprop="wordCount" content="720"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="wordCount" content="721"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
 <meta itemprop="keywords" content="中间件," /><meta property="og:title" content="ELasticSearch设置ik&#43;pinyin分词器" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/uyaki.github.io\/posts\/middleware\/elasticsearch%E8%AE%BE%E7%BD%AEik\u002bpinyin%E5%88%86%E8%AF%8D%E5%99%A8\/"
-    },"genre": "posts","keywords": "中间件","wordcount":  720 ,
+    },"genre": "posts","keywords": "中间件","wordcount":  721 ,
     "url": "http:\/\/uyaki.github.io\/posts\/middleware\/elasticsearch%E8%AE%BE%E7%BD%AEik\u002bpinyin%E5%88%86%E8%AF%8D%E5%99%A8\/","datePublished": "2020-03-05T19:28:53+08:00","dateModified": "2020-03-05T19:28:53+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -139,7 +139,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
           <span class="post-category">收录于 <a href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 中间件</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2020-03-05 19:28:53"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span title="更新于 2020-03-05 19:28:53"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 720 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;</div>
+      <div class="post-meta-line"><span title="发布于 2020-03-05 19:28:53"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span title="更新于 2020-03-05 19:28:53"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 721 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 2 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -170,7 +170,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> <span class="si">${</span><span class="nv">docker</span><span class="p">-compose-file-dir</span><span class="si">}</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> <span class="si">${</span><span class="nv">docker</span><span class="p">-compose-file-dir</span><span class="si">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
@@ -181,7 +181,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.0/elasticsearch-analysis-ik-7.6.0.zip
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
@@ -192,7 +192,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v7.6.0/elasticsearch-analysis-pinyin-7.6.0.zip
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
@@ -203,7 +203,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker-compose restart
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker-compose restart
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="使用">使用</h2>
@@ -276,71 +276,71 @@
 </span><span class="lnt">64
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">PUT</span> <span class="err">/my_index</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;settings&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;index&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;number_of_shards&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;analysis&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;analyzer&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;default&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;tokenizer&#34;</span><span class="p">:</span> <span class="s2">&#34;ik_max_word&#34;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;pinyin_analyzer&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;custom&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;tokenizer&#34;</span><span class="p">:</span> <span class="s2">&#34;my_pinyin&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;filter&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">                            <span class="s2">&#34;word_delimiter&#34;</span>
-</span></span><span class="line"><span class="cl">                        <span class="p">]</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">},</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;tokenizer&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;my_pinyin&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;pinyin&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;keep_first_letter&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;keep_separate_first_letter&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;keep_full_pinyin&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;keep_original&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;limit_first_letter_length&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;lowercase&#34;</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">},</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;number_of_replicas&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;mappings&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;properties&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;keyword&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;fields&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;keyword&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;keyword&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;ignore_above&#34;</span><span class="p">:</span> <span class="mi">256</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">},</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;text&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;analyzer&#34;</span><span class="p">:</span> <span class="s2">&#34;ik_max_word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;copy_to&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;fields&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;pinyin&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;text&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;term_vector&#34;</span><span class="p">:</span> <span class="s2">&#34;with_positions_offsets&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;analyzer&#34;</span><span class="p">:</span> <span class="s2">&#34;pinyin_analyzer&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;boost&#34;</span><span class="p">:</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;keyword&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;keyword&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                        <span class="nt">&#34;ignore_above&#34;</span><span class="p">:</span> <span class="mi">256</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">PUT /my_index
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;settings&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">        &#34;index&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">            &#34;number_of_shards&#34;: &#34;1&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">            &#34;analysis&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;analyzer&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;default&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;tokenizer&#34;: &#34;ik_max_word&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">                    },
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;pinyin_analyzer&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;type&#34;: &#34;custom&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;tokenizer&#34;: &#34;my_pinyin&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;filter&#34;: [
+</span></span></span><span class="line"><span class="cl"><span class="err">                            &#34;word_delimiter&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">                        ]
+</span></span></span><span class="line"><span class="cl"><span class="err">                    }
+</span></span></span><span class="line"><span class="cl"><span class="err">                },
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;tokenizer&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;my_pinyin&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;type&#34;: &#34;pinyin&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;keep_first_letter&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;keep_separate_first_letter&#34;: false,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;keep_full_pinyin&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;keep_original&#34;: false,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;limit_first_letter_length&#34;: 16,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;lowercase&#34;: true
+</span></span></span><span class="line"><span class="cl"><span class="err">                    }
+</span></span></span><span class="line"><span class="cl"><span class="err">                },
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;number_of_replicas&#34;: &#34;1&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">            }
+</span></span></span><span class="line"><span class="cl"><span class="err">        }
+</span></span></span><span class="line"><span class="cl"><span class="err">    },
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;mappings&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">        &#34;properties&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">            &#34;id&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;type&#34;: &#34;keyword&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;fields&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;keyword&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;type&#34;: &#34;keyword&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;ignore_above&#34;: 256
+</span></span></span><span class="line"><span class="cl"><span class="err">                    }
+</span></span></span><span class="line"><span class="cl"><span class="err">                }
+</span></span></span><span class="line"><span class="cl"><span class="err">            },
+</span></span></span><span class="line"><span class="cl"><span class="err">            &#34;name&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;type&#34;: &#34;text&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;analyzer&#34;: &#34;ik_max_word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;copy_to&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="err">                &#34;fields&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;pinyin&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;type&#34;: &#34;text&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;term_vector&#34;: &#34;with_positions_offsets&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;analyzer&#34;: &#34;pinyin_analyzer&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;boost&#34;: 10
+</span></span></span><span class="line"><span class="cl"><span class="err">                    },
+</span></span></span><span class="line"><span class="cl"><span class="err">                    &#34;keyword&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;type&#34;: &#34;keyword&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">                        &#34;ignore_above&#34;: 256
+</span></span></span><span class="line"><span class="cl"><span class="err">                    }
+</span></span></span><span class="line"><span class="cl"><span class="err">                }
+</span></span></span><span class="line"><span class="cl"><span class="err">            }
+</span></span></span><span class="line"><span class="cl"><span class="err">        }
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="检查自定义的词语分析器是否生效">检查自定义的词语分析器是否生效</h3>
 <div class="highlight"><div class="chroma">
@@ -393,60 +393,67 @@
 </span><span class="lnt">46
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">##</span> <span class="err">请求</span>
-</span></span><span class="line"><span class="cl"><span class="err">POST</span> <span class="err">/my_index/_analyze</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;text&#34;</span><span class="p">:</span><span class="s2">&#34;sao的一逼&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;analyzer&#34;</span><span class="p">:</span><span class="s2">&#34;pinyin_analyzer&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="err">##</span> <span class="err">结果</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;tokens&#34;</span> <span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;token&#34;</span> <span class="p">:</span> <span class="s2">&#34;sao&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;start_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;end_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span> <span class="p">:</span> <span class="s2">&#34;word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;position&#34;</span> <span class="p">:</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;token&#34;</span> <span class="p">:</span> <span class="s2">&#34;saodyb&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;start_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;end_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span> <span class="p">:</span> <span class="s2">&#34;word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;position&#34;</span> <span class="p">:</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;token&#34;</span> <span class="p">:</span> <span class="s2">&#34;de&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;start_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;end_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span> <span class="p">:</span> <span class="s2">&#34;word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;position&#34;</span> <span class="p">:</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;token&#34;</span> <span class="p">:</span> <span class="s2">&#34;yi&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;start_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;end_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span> <span class="p">:</span> <span class="s2">&#34;word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;position&#34;</span> <span class="p">:</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;token&#34;</span> <span class="p">:</span> <span class="s2">&#34;bi&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;start_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;end_offset&#34;</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span> <span class="p">:</span> <span class="s2">&#34;word&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;position&#34;</span> <span class="p">:</span> <span class="mi">3</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">## 请求
+</span></span></span><span class="line"><span class="cl"><span class="err">POST /my_index/_analyze
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;text&#34;:&#34;sao的一逼&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;analyzer&#34;:&#34;pinyin_analyzer&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span><span class="line"><span class="cl"><span class="err">## 结果
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;tokens&#34; : [
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;token&#34; : &#34;sao&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;start_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;end_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34; : &#34;word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;position&#34; : 0
+</span></span></span><span class="line"><span class="cl"><span class="err">    },
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;token&#34; : &#34;saodyb&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;start_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;end_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34; : &#34;word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;position&#34; : 0
+</span></span></span><span class="line"><span class="cl"><span class="err">    },
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;token&#34; : &#34;de&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;start_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;end_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34; : &#34;word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;position&#34; : 1
+</span></span></span><span class="line"><span class="cl"><span class="err">    },
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;token&#34; : &#34;yi&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;start_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;end_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34; : &#34;word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;position&#34; : 2
+</span></span></span><span class="line"><span class="cl"><span class="err">    },
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;token&#34; : &#34;bi&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;start_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;end_offset&#34; : 0,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34; : &#34;word&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;position&#34; : 3
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">  ]
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="新增数据">新增数据</h3>
 <blockquote>
 <p>可以使用<a href="https://github.com/alibaba/DataX"target="_blank" rel="external nofollow noopener noreferrer">datax<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>批量导入数据，后面再开一坑</p>
 </blockquote>
-<pre tabindex="0"><code>略
-</code></pre><h3 id="按拼音搜索">按「拼音」搜索</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">略
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="按拼音搜索">按「拼音」搜索</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -459,15 +466,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">POST</span> <span class="err">/my_index/_search</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;query&#34;</span><span class="p">:{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;match&#34;</span><span class="p">:{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;name.pinyin&#34;</span><span class="p">:</span><span class="s2">&#34;liudehua&#34;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">POST /my_index/_search
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;query&#34;:{
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;match&#34;:{
+</span></span></span><span class="line"><span class="cl"><span class="err">        &#34;name.pinyin&#34;:&#34;liudehua&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">      }
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="按中文名搜索">按「中文名」搜索</h3>
 <div class="highlight"><div class="chroma">
@@ -482,15 +489,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">POST</span> <span class="err">/my_index/_search</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;query&#34;</span><span class="p">:{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;match&#34;</span><span class="p">:{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;靖哥哥&#34;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">POST /my_index/_search
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;query&#34;:{
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;match&#34;:{
+</span></span></span><span class="line"><span class="cl"><span class="err">        &#34;name&#34;:&#34;靖哥哥&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">      }
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="按中文名--拼音搜索">按「中文名 + 拼音」搜索</h3>
 <div class="highlight"><div class="chroma">
@@ -507,17 +514,17 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">POST</span> <span class="err">/my_index/_search</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nt">&#34;query&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;multi_match&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;most_fields&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;query&#34;</span><span class="p">:</span><span class="s2">&#34;jing&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;fields&#34;</span><span class="p">:[</span><span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="s2">&#34;name.pinyin&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">POST /my_index/_search
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">	&#34;query&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;multi_match&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34;:&#34;most_fields&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;query&#34;:&#34;jing&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;fields&#34;:[&#34;name&#34;, &#34;name.pinyin&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">  }
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="分析执行结果">分析执行结果</h3>
 <div class="highlight"><div class="chroma">
@@ -550,33 +557,33 @@
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">GET</span> <span class="err">my_index/_validate/query?explain</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;query&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;multi_match&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;most_fields&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;query&#34;</span><span class="p">:</span><span class="s2">&#34;靖g哥&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;fields&#34;</span><span class="p">:[</span><span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="s2">&#34;name.pinyin&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="err">##</span> <span class="err">结果</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;_shards&#34;</span> <span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;total&#34;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;successful&#34;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;failed&#34;</span> <span class="p">:</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;valid&#34;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;explanations&#34;</span> <span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;index&#34;</span> <span class="p">:</span> <span class="s2">&#34;my_index&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;valid&#34;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;explanation&#34;</span> <span class="p">:</span> <span class="s2">&#34;((Synonym(name.pinyin:jgg name.pinyin:jing) (name.pinyin:g)^10.0 (name.pinyin:ge)^10.0) | (name:靖 name:g name:哥))~1.0&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">GET my_index/_validate/query?explain
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;query&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;multi_match&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;type&#34;:&#34;most_fields&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;query&#34;:&#34;靖g哥&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;fields&#34;:[&#34;name&#34;, &#34;name.pinyin&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">  }
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span><span class="line"><span class="cl"><span class="err">## 结果
+</span></span></span><span class="line"><span class="cl"><span class="err">{
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;_shards&#34; : {
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;total&#34; : 1,
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;successful&#34; : 1,
+</span></span></span><span class="line"><span class="cl"><span class="err">    &#34;failed&#34; : 0
+</span></span></span><span class="line"><span class="cl"><span class="err">  },
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;valid&#34; : true,
+</span></span></span><span class="line"><span class="cl"><span class="err">  &#34;explanations&#34; : [
+</span></span></span><span class="line"><span class="cl"><span class="err">    {
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;index&#34; : &#34;my_index&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;valid&#34; : true,
+</span></span></span><span class="line"><span class="cl"><span class="err">      &#34;explanation&#34; : &#34;((Synonym(name.pinyin:jgg name.pinyin:jing) (name.pinyin:g)^10.0 (name.pinyin:ge)^10.0) | (name:靖 name:g name:哥))~1.0&#34;
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">  ]
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
   <div class="post-info">

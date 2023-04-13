@@ -171,7 +171,7 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#创建数据/日志目录 这里我们部署3个节点</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#创建数据/日志目录 这里我们部署3个节点</span>
 </span></span><span class="line"><span class="cl">$ mkdir /opt/elasticsearch/data/<span class="o">{</span>es01,es02,es03<span class="o">}</span> -p
 </span></span><span class="line"><span class="cl">mkdir /opt/elasticsearch/logs/<span class="o">{</span>es01,es02,es03<span class="o">}</span> -p
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> /opt/elasticsearch
@@ -294,7 +294,7 @@
 </span><span class="lnt">106
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;2.2&#39;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;2.2&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">es01</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">docker.elastic.co/elasticsearch/elasticsearch:7.5.1</span><span class="w">
@@ -408,7 +408,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">docker-compose up -d
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker-compose up -d
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4-安装ik分词插件">4. 安装ik分词插件</h2>
@@ -427,7 +427,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">// 集群
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">// 集群
 </span></span><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.5.1/elasticsearch-analysis-ik-7.5.1.zip
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es02 elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.5.1/elasticsearch-analysis-ik-7.5.1.zip
@@ -564,7 +564,7 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">## 查看已安装插件</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## 查看已安装插件</span>
 </span></span><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin list
 </span></span><span class="line"><span class="cl"><span class="c1">## 移除转一半到插件</span>
 </span></span><span class="line"><span class="cl">$ docker-compose <span class="nb">exec</span> es01 elasticsearch-plugin remove .installing-xxxx

@@ -181,7 +181,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.proxy<span class="o">=</span>socks5://127.0.0.1:1086
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global http.proxy<span class="o">=</span>socks5://127.0.0.1:1086
 </span></span><span class="line"><span class="cl">$ git config --global https.proxy<span class="o">=</span>socks5://127.0.0.1:1086
 </span></span></code></pre></td></tr></table>
 </div>
@@ -193,7 +193,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.https://github.com.proxy http://127.0.0.1:1087
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global http.https://github.com.proxy http://127.0.0.1:1087
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -204,7 +204,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="通过编辑git配置文件的方式">通过编辑git配置文件的方式</h3>
@@ -218,7 +218,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ vim ~/.gitconfig
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim ~/.gitconfig
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>http<span class="o">]</span>
 </span></span><span class="line"><span class="cl">	<span class="nv">proxy</span> <span class="o">=</span> socks5://127.0.0.1:1086
@@ -236,7 +236,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ brew install connect
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ brew install connect
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
@@ -255,7 +255,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ vim ~/.ssh/config
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim ~/.ssh/config
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Host github.com .github.com
 </span></span><span class="line"><span class="cl">    ProxyCommand connect -H 127.0.0.1:1087 %h %p <span class="c1">#设置http代理</span>
@@ -276,7 +276,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ ssh -T git@github.com
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh -T git@github.com
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Hi username! You ve successfully authenticated, but GitHub does not provide shell access.
 </span></span></code></pre></td></tr></table>
@@ -289,7 +289,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global --unset http.proxy 
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global --unset http.proxy 
 </span></span><span class="line"><span class="cl">$ git config --global --unset https.proxy
 </span></span></code></pre></td></tr></table>
 </div>
@@ -300,7 +300,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global --get http.proxy
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global --get http.proxy
 </span></span><span class="line"><span class="cl">$ git config --global --get https.proxy
 </span></span></code></pre></td></tr></table>
 </div>
@@ -310,7 +310,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git config --global -l
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global -l
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="巨人的肩膀">巨人的肩膀</h2>

@@ -10,7 +10,7 @@
 <meta name="description" content="uyaki的博客" /><meta name="keywords" content='server' /><meta itemprop="name" content="SSH免密登录CentOS7">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2020-04-19T14:21:48+08:00" />
 <meta itemprop="dateModified" content="2020-04-19T14:21:48+08:00" />
-<meta itemprop="wordCount" content="153"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="wordCount" content="161"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
 <meta itemprop="keywords" content="server," /><meta property="og:title" content="SSH免密登录CentOS7" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/uyaki.github.io\/posts\/server\/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7\/"
-    },"genre": "posts","keywords": "server","wordcount":  153 ,
+    },"genre": "posts","keywords": "server","wordcount":  161 ,
     "url": "http:\/\/uyaki.github.io\/posts\/server\/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95centos7\/","datePublished": "2020-04-19T14:21:48+08:00","dateModified": "2020-04-19T14:21:48+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -139,7 +139,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
           <span class="post-category">收录于 <a href="/categories/server/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> server</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2020-04-19 14:21:48"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span title="更新于 2020-04-19 14:21:48"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 153 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+      <div class="post-meta-line"><span title="发布于 2020-04-19 14:21:48"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span title="更新于 2020-04-19 14:21:48"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 161 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -193,10 +193,19 @@
 </div><blockquote>
 <p>如下配置，7.4及更高版本不需要</p>
 </blockquote>
-<pre tabindex="0"><code>RSAAuthentication yes
-PubkeyAuthentication yes
-AuthorizedKeysFile .ssh/authorized_keys
-</code></pre><h2 id="重启服务">重启服务</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">RSAAuthentication yes
+</span></span><span class="line"><span class="cl">PubkeyAuthentication yes
+</span></span><span class="line"><span class="cl">AuthorizedKeysFile .ssh/authorized_keys
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="重启服务">重启服务</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -217,12 +226,23 @@ AuthorizedKeysFile .ssh/authorized_keys
 </div>
 </div><h3 id="方式二别名">方式二：别名</h3>
 <p>配置<code>.ssh/config</code></p>
-<pre tabindex="0"><code>Host xxx # 别名
-Hostname xxx.xxx.xxx.xxx # ip
-Port 22
-User xxx # 用户名
-IdentityFile ~/.ssh/id_rsa
-</code></pre><div class="highlight"><div class="chroma">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Host xxx # 别名
+</span></span><span class="line"><span class="cl">Hostname xxx.xxx.xxx.xxx # ip
+</span></span><span class="line"><span class="cl">Port 22
+</span></span><span class="line"><span class="cl">User xxx # 用户名
+</span></span><span class="line"><span class="cl">IdentityFile ~/.ssh/id_rsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>

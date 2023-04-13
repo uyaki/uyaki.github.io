@@ -10,7 +10,7 @@
 <meta name="description" content="uyaki的博客" /><meta name="keywords" content='' /><meta itemprop="name" content="Hugo&#43;FixIt">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-04-09T19:56:03+08:00" />
 <meta itemprop="dateModified" content="2023-04-09T19:56:03+08:00" />
-<meta itemprop="wordCount" content="265"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
+<meta itemprop="wordCount" content="274"><meta itemprop="image" content="http://uyaki.github.io/images/logo.png"/>
 <meta itemprop="keywords" content="blog,hugo," /><meta property="og:title" content="Hugo&#43;FixIt" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/uyaki.github.io\/posts\/blog\/hugo\u002bfixit\/"
-    },"genre": "posts","keywords": "blog, hugo","wordcount":  265 ,
+    },"genre": "posts","keywords": "blog, hugo","wordcount":  274 ,
     "url": "http:\/\/uyaki.github.io\/posts\/blog\/hugo\u002bfixit\/","datePublished": "2023-04-09T19:56:03+08:00","dateModified": "2023-04-09T19:56:03+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -139,7 +139,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/uyaki" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/images/avatar.png" srcset="/images/avatar.png, /images/avatar.png 1.5x, /images/avatar.png 2x" sizes="auto" data-title="uyaki" data-alt="uyaki" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;uyaki</a></span>
           <span class="post-category">收录于 <a href="/categories/blog/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> blog</a>&ensp;<a href="/categories/hugo/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> hugo</a></span></div>
-      <div class="post-meta-line"><span title="发布于 2023-04-09 19:56:03"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span title="更新于 2023-04-09 19:56:03"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 265 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+      <div class="post-meta-line"><span title="发布于 2023-04-09 19:56:03"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span title="更新于 2023-04-09 19:56:03"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2023-04-09">2023-04-09</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 274 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -209,15 +209,31 @@
 </div>
 </div><h2 id="修改-configtoml">修改 config.toml</h2>
 <p>最前面添加</p>
-<pre tabindex="0"><code>title = &#34;&#34;
-baseURL = &#34;&#34;
-languageCode = &#34;zh-cn&#34;
-defaultContentLanguage = &#34;zh-cn&#34;                             # en / zh-cn / ... (This field determines which i18n file to use)
-# 是否包括中日韩文字
-hasCJKLanguage = true
-
-theme = &#34;FixIt&#34;
-</code></pre><h2 id="configtoml-完整配置">config.toml 完整配置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># en / zh-cn / ... (This field determines which i18n file to use)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span> 
+</span></span><span class="line"><span class="cl"><span class="c"># 是否包括中日韩文字</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;FixIt&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="configtoml-完整配置">config.toml 完整配置</h2>
 <p><a href="https://fixit.lruihao.cn/zh-cn/documentation/basics/"target="_blank" rel="external nofollow noopener noreferrer">FixIt中文站<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
