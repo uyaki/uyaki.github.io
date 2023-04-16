@@ -1882,6 +1882,46 @@
         }
     },
     {
+        "title": "Npm安装好的模块无法在vscode中使用",
+        "uri": "posts/npm/npm安装好的模块无法在vscode中使用",
+        "content": "VSCODE_PATH  Code exe",
+        "objectID": "posts/npm/npm安装好的模块无法在vscode中使用",
+        "subtitle": null,
+        "date": "2023-04-16T11:53:41.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            "npm",
+            "vscode",
+            "win10"
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "npm"
+        ],
+        "categories": [
+            "npm"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
         "title": "读书笔记 《沉默的大多数》",
         "uri": "posts/read/读书笔记-《沉默的大多数》",
         "content": "",
