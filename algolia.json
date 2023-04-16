@@ -1104,6 +1104,44 @@
         }
     },
     {
+        "title": "使用bfg Repo Cleaner清理git仓库",
+        "uri": "posts/git/使用bfg-repo-cleaner清理git仓库",
+        "content": "gitignore                                             bfg repo cleaner        scoop     bash scoop install bfg scoop bucket add java scoop install java openjdk           jar     mirror    bash git clone   mirror git   example com your repo git               bash bfg   strip blobs bigger than 100M   replace text banned txt your repo git         bash      bfg   delete files xxx xx your repo git      bfg   delete files  aaa bbb  xx your repo git          bash bfg   delete folders your folders         bash bfg   replace text expression file txt your repo git        expression file txt                                                            regex                       glob                                                          REMOVED    txt    123456        REMOVED    123456    123456                  123456                    regex     d                           git gc             git                 bash cd your repo git git reflog expire   expire now   all    git gc   prune now   aggressive       bash git push",
+        "objectID": "posts/git/使用bfg-repo-cleaner清理git仓库",
+        "subtitle": null,
+        "date": "2023-04-16T10:51:28.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            "bfg"
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "git"
+        ],
+        "categories": [
+            "git"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
         "title": "Goland在go_modules模式下无法识别本地依赖包",
         "uri": "posts/go/goland在go_modules模式下无法识别本地依赖包",
         "content": "go    Go Modules      Enable Go modules integration    Environment     GOPROXY https   goproxy cn direct",
