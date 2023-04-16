@@ -51,6 +51,18 @@ theme = "FixIt"
 
 [FixIt中文站](https://fixit.lruihao.cn/zh-cn/documentation/basics/)
 
+## 项目发起人shortcode（非必须）
+```bash
+git submodule add https://github.com/Lruihao/hugo-shortcode-sponsor-log.git themes/shortcode-sponsor-log
+```
+配置
+```toml
+theme = ["your-main-theme", "shortcode-sponsor-log"]
+```
+```bash
+cp themes/shortcode-sponsor-log/sponsor_log.yml.example data/sponsor_log.yml
+```
+
 ---
 
 > 作者: [uyaki](https://www.github.com/uyaki)  
