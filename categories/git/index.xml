@@ -4,7 +4,15 @@
     <link>http://uyaki.github.io/categories/git/</link>
     <description>git - 分类 - uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 23 Feb 2020 22:53:46 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
+  <title>使用bfg Repo Cleaner清理git仓库</title>
+  <link>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</link>
+  <pubDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Git标准Fork &amp; Pull Request流程</title>
   <link>http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
   <pubDate>Sun, 23 Feb 2020 22:53:46 &#43;0800</pubDate>

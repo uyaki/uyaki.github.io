@@ -4,9 +4,17 @@
     <link>http://uyaki.github.io/</link>
     <description>uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 16 Apr 2023 16:06:24 &#43;0800</lastBuildDate>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</lastBuildDate>
       <atom:link href="http://uyaki.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>使用bfg Repo Cleaner清理git仓库</title>
+  <link>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</link>
+  <pubDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Hugo配置algolia搜索</title>
   <link>http://uyaki.github.io/posts/blog/hugo%E9%85%8D%E7%BD%AEalgolia%E6%90%9C%E7%B4%A2/</link>
   <pubDate>Sun, 16 Apr 2023 16:06:24 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
   <pubDate>Mon, 12 Dec 2022 20:04:46 &#43;0800</pubDate>
   <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/go/mac%E4%B8%8Bpermission_denied/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Windows资源管理器优化神器QTTabBar</title>
-  <link>http://uyaki.github.io/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</link>
-  <pubDate>Thu, 15 Sep 2022 01:01:51 &#43;0800</pubDate>
-  <author>uyaki</author>
-  <guid>http://uyaki.github.io/posts/windows/windows%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8qttabbar/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

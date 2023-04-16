@@ -1,3 +1,4 @@
+http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/
 http://uyaki.github.io/about/
 http://uyaki.github.io/posts/blog/hugo%E9%85%8D%E7%BD%AEalgolia%E6%90%9C%E7%B4%A2/
 http://uyaki.github.io/posts/blog/hugo%E4%BD%BF%E7%94%A8admonition%E7%BE%8E%E5%8C%96%E6%96%87%E7%AB%A0/
