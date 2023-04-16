@@ -1,5 +1,17 @@
 [
     {
+        "title": "关于",
+        "uri": "about",
+        "content": "Star                         blog                                             Blog    MIT                 LICENSE",
+        "objectID": "about",
+        "date": "2023-04-16T09:21:49.000Z",
+        "draft": false,
+        "comment": false,
+        "pageStyle": "wide",
+        "lightgallery": true,
+        "math": true
+    },
+    {
         "title": "KMP算法总结",
         "uri": "posts/algorithm/KMP算法总结",
         "content": "O m n  KMP                                      S         W              O m n        O m       markdown text  abcxabcdabxabcdabcdabcy pattern  abcdabcy   KMP      p_start          next                                                                               pattern                step4   p_index   7  pattern 7    j  text 18                next p_index   1    3     3       text    t_index   18   3    pattern   3                   dindex   18           pindex   3        step5             next   pattern abcdabcyab        index   0   1   2   3   4   5   6   7   8   9                                                         pattern     b   c   d     b   c   y     b     next   0   0   0   0   1   2   3   0   1   2    java int   getNext String pattern    int   next  new int pattern length     int j  0   int   1  0    pattern charAt j     pattern charAt i     j  next j  1                           pattern charAt j     pattern charAt i     j      next i    j    return next      pattern abcxabcabcxabcxb        index   0   1   2   3   4   5   6   7   8   9   10   11   12   13   14   15                                                                                       pattern     b   c   x     b   c     b   c   x     b   c   x   b     next   0   0   0   0   1   2   3   1   2   3   4   5   6   7   4   0   index   14         7  j   7 p 14     x                             c             x                                      x             KMP       java class Soultion         text        pattern             List search String text  String pattern    List positions   new ArrayList    int   next  getNext pattern   int count   0   int   0  0    pattern charAt count     text charAt i        count    count   next count   1      pattern charAt count     text charAt i     count       count    pattern length      positions add i   pattern length     1             count   next count   1       return positions    int   getNext String pattern    int   next  new int pattern length     int j  0   int   1  0    pattern charAt j     pattern charAt i     j  next j  1      pattern charAt j     pattern charAt i     j      next i    j    return next",
@@ -79,7 +91,7 @@
     {
         "title": "Hugo+FixIt",
         "uri": "posts/blog/hugo+FixIt",
-        "content": "hugo    bash go   go install github com gohugoio hugo latest       Sass SCSS 1    go  CGO_ENABLED 1 2      tags extended go install  tags extended github com gohugoio hugo latest        FixIt   Sass     go install  tags extended github com gohugoio hugo latest              hugo                    FixIt          bash hugo new site blog cd blog git init git submodule add https   github com hugo fixit FixIt git themes FixIt git submodule update        mv config toml config old toml cp themes FixIt config toml config toml      config toml        toml title      baseURL      languageCode    zh cn  en   zh cn        This field determines i18n file use  defaultContentLanguage    zh cn            hasCJKLanguage   true theme    FixIt    config toml      FixIt",
+        "content": "hugo    bash go   go install github com gohugoio hugo latest       Sass SCSS 1    go  CGO_ENABLED 1 2      tags extended go install  tags extended github com gohugoio hugo latest        FixIt   Sass     go install  tags extended github com gohugoio hugo latest              hugo                    FixIt          bash hugo new site blog cd blog git init git submodule add https   github com hugo fixit FixIt git themes FixIt git submodule update        mv config toml config old toml cp themes FixIt config toml config toml      config toml        toml title      baseURL      languageCode    zh cn  en   zh cn        This field determines i18n file use  defaultContentLanguage    zh cn            hasCJKLanguage   true theme    FixIt    config toml      FixIt         shortcode       bash git submodule add https   github com Lruihao hugo shortcode sponsor log git themes shortcode sponsor log       toml theme     your main theme    shortcode sponsor log                  bash cp themes shortcode sponsor log sponsorlog yml example data sponsorlog yml",
         "objectID": "posts/blog/hugo+FixIt",
         "subtitle": null,
         "date": "2023-04-09T11:56:03.000Z",
@@ -193,6 +205,45 @@
         ],
         "toc": true,
         "math": false,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
+        "title": "Hugo配置algolia搜索",
+        "uri": "posts/blog/hugo配置algolia搜索",
+        "content": "Usage   algolia   algolia         application Settings       General  Applications  Create Application     Free     Index  xxx blog   Settings       Team Access  API Keys  Your API Keys           appID     Application ID key     Admin API Key               config toml  toml  params   params search  enable   true           lunr    algolia    fuse   type search engine   lunr    algolia    fuse   type    algolia   params search algolia  index    uyaki_blog  appID            Application ID searchKey            Admin API Key           FixIt                           hugo algolia  bash npm install hugo algolia  g              config yaml  yaml algolia     hugo algolia  s   baseurl      DefaultContentLanguage   zh cn  hasCJKLanguage  true languageCode   zh cn  title   uyaki github io  theme   FixIt  metaDataFormat   yaml  algolia  index   uyaki_blog  appID           Application ID key           Admin API Key     hugo algolia    bash hugo algolia  s          hugo algolia  s JSON index file created public algolia json   updatedAt   2023 04 16T07 59 07 752Z   taskID  1918050002                 public        algolia json           dashboard     Indices",
+        "objectID": "posts/blog/hugo配置algolia搜索",
+        "subtitle": null,
+        "date": "2023-04-16T08:06:24.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            "hugo",
+            "algolia"
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "blog"
+        ],
+        "categories": [
+            "blog"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
         "lightgallery": false,
         "password": null,
         "message": null,
