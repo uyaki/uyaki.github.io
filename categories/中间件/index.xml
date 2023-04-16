@@ -3,11 +3,12 @@
     <title>中间件 - 分类 - uyaki的博客</title>
     <link>http://uyaki.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
     <description>中间件 - 分类 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 19 Mar 2020 09:46:31 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Thu, 19 Mar 2020 09:46:31 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" rel="self" type="application/rss+xml" /><item>
   <title>DataX教程</title>
   <link>http://uyaki.github.io/posts/middleware/datax%E6%95%99%E7%A8%8B/</link>
   <pubDate>Thu, 19 Mar 2020 09:46:31 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/middleware/datax%E6%95%99%E7%A8%8B/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -15,7 +16,7 @@
   <title>ELasticSearch设置ik&#43;pinyin分词器</title>
   <link>http://uyaki.github.io/posts/middleware/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</link>
   <pubDate>Thu, 05 Mar 2020 19:28:53 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/middleware/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -23,7 +24,7 @@
   <title>ElasticSearch修改已经存在的index的settings</title>
   <link>http://uyaki.github.io/posts/middleware/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</link>
   <pubDate>Thu, 05 Mar 2020 16:44:08 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/middleware/elasticsearch%E4%BF%AE%E6%94%B9%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8%E7%9A%84index%E7%9A%84settings/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -31,7 +32,7 @@
   <title>Spacemacs清华源镜像加速</title>
   <link>http://uyaki.github.io/posts/middleware/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</link>
   <pubDate>Tue, 11 Feb 2020 13:48:32 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/middleware/spacemacs%E6%B8%85%E5%8D%8E%E6%BA%90%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid>
   <description><![CDATA[]]></description>
 </item>
