@@ -3,11 +3,52 @@
     <title>Categories - 分类 - uyaki的博客</title>
     <link>http://uyaki.github.io/categories/</link>
     <description>Categories - 分类 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 16 Apr 2023 16:06:24 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>clash</title>
+  <link>http://uyaki.github.io/categories/clash/</link>
+  <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/categories/clash/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>ubuntu</title>
+  <link>http://uyaki.github.io/categories/ubuntu/</link>
+  <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/categories/ubuntu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>command_line_tools</title>
+  <link>http://uyaki.github.io/categories/command_line_tools/</link>
+  <pubDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/categories/command_line_tools/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>npm</title>
+  <link>http://uyaki.github.io/categories/npm/</link>
+  <pubDate>Sun, 16 Apr 2023 19:53:41 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/categories/npm/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>git</title>
+  <link>http://uyaki.github.io/categories/git/</link>
+  <pubDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/categories/git/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>blog</title>
   <link>http://uyaki.github.io/categories/blog/</link>
   <pubDate>Sun, 16 Apr 2023 16:06:24 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/categories/blog/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -15,23 +56,15 @@
   <title>algorithm</title>
   <link>http://uyaki.github.io/categories/algorithm/</link>
   <pubDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/categories/algorithm/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>hugo</title>
-  <link>http://uyaki.github.io/categories/hugo/</link>
-  <pubDate>Sun, 09 Apr 2023 19:56:03 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/categories/hugo/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>dotfiles</title>
   <link>http://uyaki.github.io/categories/dotfiles/</link>
   <pubDate>Thu, 09 Feb 2023 17:40:06 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/categories/dotfiles/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -39,7 +72,7 @@
   <title>go</title>
   <link>http://uyaki.github.io/categories/go/</link>
   <pubDate>Mon, 12 Dec 2022 20:47:16 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/categories/go/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -47,40 +80,8 @@
   <title>window</title>
   <link>http://uyaki.github.io/categories/window/</link>
   <pubDate>Thu, 15 Sep 2022 01:01:51 &#43;0800</pubDate>
-  <author>作者</author>
+  <author>uyaki</author>
   <guid>http://uyaki.github.io/categories/window/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>macOS</title>
-  <link>http://uyaki.github.io/categories/macos/</link>
-  <pubDate>Fri, 01 Apr 2022 15:25:29 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/categories/macos/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>server</title>
-  <link>http://uyaki.github.io/categories/server/</link>
-  <pubDate>Wed, 22 Apr 2020 10:54:52 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/categories/server/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>中间件</title>
-  <link>http://uyaki.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
-  <pubDate>Thu, 19 Mar 2020 09:46:31 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>java</title>
-  <link>http://uyaki.github.io/categories/java/</link>
-  <pubDate>Wed, 04 Mar 2020 11:29:31 &#43;0800</pubDate>
-  <author>作者</author>
-  <guid>http://uyaki.github.io/categories/java/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

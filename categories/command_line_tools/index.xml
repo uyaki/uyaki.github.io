@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>command_line_tools - 分类 - uyaki的博客</title>
+    <link>http://uyaki.github.io/categories/command_line_tools/</link>
+    <description>command_line_tools - 分类 - uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/command_line_tools/" rel="self" type="application/rss+xml" /><item>
+  <title>Tmux</title>
+  <link>http://uyaki.github.io/posts/command_line_tools/tmux/</link>
+  <pubDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/posts/command_line_tools/tmux/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

@@ -29,7 +29,7 @@ $ brew install hugo
 ```bash
 $ hugo new site /path/to/site
 ## 如我的项目名叫blog
-$ hugo new site blog 
+$ hugo new site blog
 ```
 
 cd 到 站点文件夹

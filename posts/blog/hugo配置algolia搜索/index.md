@@ -70,9 +70,9 @@ hugo-algolia -s
 ```
 
 {{< admonition success >}}
-$ hugo-algolia -s 
+$ hugo-algolia -s
 
-JSON index file was created in public/algolia.json 
+JSON index file was created in public/algolia.json
 
 { updatedAt: '2023-04-16T07:59:07.752Z', taskID: 1918050002 }
 {{< /admonition >}}

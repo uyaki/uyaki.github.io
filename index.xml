@@ -4,9 +4,25 @@
     <link>http://uyaki.github.io/</link>
     <description>uyaki的博客</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 16 Apr 2023 19:53:41 &#43;0800</lastBuildDate>
+      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</lastBuildDate>
       <atom:link href="http://uyaki.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>在 Linux 中使用 Clash</title>
+  <link>http://uyaki.github.io/posts/proxy/%E5%9C%A8linux%E4%B8%AD%E4%BD%BF%E7%94%A8clash/</link>
+  <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/posts/proxy/%E5%9C%A8linux%E4%B8%AD%E4%BD%BF%E7%94%A8clash/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Tmux</title>
+  <link>http://uyaki.github.io/posts/command_line_tools/tmux/</link>
+  <pubDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</pubDate>
+  <author>uyaki</author>
+  <guid>http://uyaki.github.io/posts/command_line_tools/tmux/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Npm安装好的模块无法在vscode中使用</title>
   <link>http://uyaki.github.io/posts/npm/npm%E5%AE%89%E8%A3%85%E5%A5%BD%E7%9A%84%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E5%9C%A8vscode%E4%B8%AD%E4%BD%BF%E7%94%A8/</link>
   <pubDate>Sun, 16 Apr 2023 19:53:41 &#43;0800</pubDate>
@@ -68,22 +84,6 @@
   <pubDate>Thu, 09 Feb 2023 17:40:06 &#43;0800</pubDate>
   <author>uyaki</author>
   <guid>http://uyaki.github.io/posts/dotfiles/ubuntu%E6%96%B0%E6%9C%BAdotfile/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Window新机dotfile</title>
-  <link>http://uyaki.github.io/posts/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</link>
-  <pubDate>Thu, 09 Feb 2023 17:36:46 &#43;0800</pubDate>
-  <author>uyaki</author>
-  <guid>http://uyaki.github.io/posts/dotfiles/window%E6%96%B0%E6%9C%BAdotfile/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Goland在go_modules模式下无法识别本地依赖包</title>
-  <link>http://uyaki.github.io/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/</link>
-  <pubDate>Mon, 12 Dec 2022 20:47:16 &#43;0800</pubDate>
-  <author>uyaki</author>
-  <guid>http://uyaki.github.io/posts/go/goland%E5%9C%A8go_modules%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB%E6%9C%AC%E5%9C%B0%E4%BE%9D%E8%B5%96%E5%8C%85/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

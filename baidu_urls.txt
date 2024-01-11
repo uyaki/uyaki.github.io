@@ -1,3 +1,5 @@
+http://uyaki.github.io/posts/proxy/%E5%9C%A8linux%E4%B8%AD%E4%BD%BF%E7%94%A8clash/
+http://uyaki.github.io/posts/command_line_tools/tmux/
 http://uyaki.github.io/posts/npm/npm%E5%AE%89%E8%A3%85%E5%A5%BD%E7%9A%84%E6%A8%A1%E5%9D%97%E6%97%A0%E6%B3%95%E5%9C%A8vscode%E4%B8%AD%E4%BD%BF%E7%94%A8/
 http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/
 http://uyaki.github.io/about/

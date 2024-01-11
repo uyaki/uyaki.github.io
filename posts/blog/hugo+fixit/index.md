@@ -8,9 +8,9 @@
 ```bash
 # go安装
 go install github.com/gohugoio/hugo@latest
-# 如果需要支持Sass/SCSS 
+# 如果需要支持Sass/SCSS
 # 1. 设置go变量CGO_ENABLED=1
-# 2. 执行 -tags extended 
+# 2. 执行 -tags extended
 go install -tags extended github.com/gohugoio/hugo@latest
 ```
 {{< admonition warning >}}
@@ -24,7 +24,7 @@ go install -tags extended github.com/gohugoio/hugo@latest
 ```bash
 hugo new site blog
 cd blog
-git init 
+git init
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 git submodule update
 ## 复制配置文件
@@ -40,7 +40,7 @@ title = ""
 baseURL = ""
 languageCode = "zh-cn"
 # en / zh-cn / ... (This field determines which i18n file to use)
-defaultContentLanguage = "zh-cn" 
+defaultContentLanguage = "zh-cn"
 # 是否包括中日韩文字
 hasCJKLanguage = true
 

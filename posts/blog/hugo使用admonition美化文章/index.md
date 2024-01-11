@@ -65,7 +65,7 @@ hugo的LoveIt，FixIt主题都集成了admonition shorcode功能，可以比较�
 一个 **成功** 横幅
 {{< /admonition >}}
 
-## 问题 
+## 问题
 
 ```markdown
 {{</* admonition question */>}}
