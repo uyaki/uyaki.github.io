@@ -1956,6 +1956,46 @@
         }
     },
     {
+        "title": "Alist整合Aria2Pro+AriaNg",
+        "uri": "posts/opensource/Alist整合Aria2Pro+AriaNg",
+        "content": "Alist  Aria2Pro AriaNg   Alist                                       Docker Docker Compose      docker compose yml  bash mkdir  p   your docker script path  alist cd   your docker script path  alist vim docker compose yml    yaml version   3 8  services  Alist          https   alist doc nn ci en docs install docker  docker run  d   restart always  v  etc alist  opt alist data  p 5244 5244   name  alist  xhofe alist latest alist  image  xhofe alist latest container_name  alist ports   5244 5244  restart  always volumes    PWD  alist  opt alist data Aria2 Pro          https   github com P3TERX Aria2 Pro Docker blob master docker compose yml Aria2 Pro  container_name  aria2 pro image  p3terx aria2 pro environment  PUID 65534 PGID 65534 UMASK_SET 022         RPCSECRET YOURSECRET RPC_PORT 6800 LISTEN_PORT 6888 DISK_CACHE 64M IPV6_MODE false UPDATE_TRACKERS true CUSTOMTRACKERURL  TZ Asia Shanghai volumes    PWD  aria2 config  config   PWD  aria2 downloads  downloads network_mode  bridge ports   6800 6800   6888 6888   6888 6888 udp  restart  unless stopped logging  driver  json file options  max size  1m AriaNg  container_name  ariang image  p3terx ariang command    port 6880   ipv6 network_mode  bridge ports   6880 6880  restart  unless stopped logging  driver  json file options  max size  1m       bash docker compose  d     Alist       alist web          admin  bash docker exec  it alist   alist admin set             http     IP  5244        IP                 localhost 127 0 0 1                            IP                           IP     docker   IP      APP   URL                                         Alist   http     IP  5244     Aria2 RPC   http     IP  6800     AriaNg   http     IP  6880   Alist      Aria2 Pro        Alist                                                                                                                          Aria2 RPC      http     IP  6800 jsonrpc     Aria2 RPC      docker compose yaml  Aria2 Pro environment RPC_SECRET   Alist      Aria2 Pro  Alist                                                                                                               Aria2      http     IP  6800 jsonrpc     Aria2      docker compose yaml  Aria2 Pro environment RPC_SECRET          Aria2               AriaNg       Aria2 Pro       AriaNg   Aria2 Pro   Web UI      Aria2 Pro   RPC     RPC                   http     IP  6880    settings ariang  Aria2 RPC Secret     RPCSECRET  docker compose yaml  Aria2 Pro environment RPCSECRET",
+        "objectID": "posts/opensource/Alist整合Aria2Pro+AriaNg",
+        "subtitle": null,
+        "date": "2024-01-11T19:24:47.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            "Alist",
+            "Aria2 Pro",
+            "AriaNg"
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "opensource"
+        ],
+        "categories": [
+            "opensource"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
         "title": "在 Linux 中使用 Clash",
         "uri": "posts/proxy/在Linux中使用Clash",
         "content": "bash mkdir  p    config clash cd    config clash   Country mmdb           Clash        clash                 HOME  config clash                          Dreamacro maxmind geoip         HOME  config clash          Country mmdb      GeoIP2                                 config yaml               Clash                          config yaml                             Clash                                            Clash                                                                   bash curl  o config yaml  longURL       suo yt                             bash curl  L  o config yaml  shortURL    docker compose  clash docker compose    yaml version   3  services  clash  image  dreamacro clash latest container_name  clash volumes     config clash  root  config clash ports   7890 7890 tcp   7890 7890 udp     clash dashboard    9090      9090 9090  restart  always    clash dashboard      clash dashboard  image  centralx clash dashboard container_name  clash dashboard ports     7880 80  restart  always        clash         9090       dashboard            external controller ip      dashboard        7880           http                       dashboard   config yaml  bash vim    config clash config yaml    yaml    127 0 0 1   0 0 0 0 external controller   0 0 0 0 9090   external controller      secret   Dashboard       secret   your secret    dashboard        bash docker compose  d       clash          Ubuntu      clash linux amd64      clash  bash wget latest_url             wget                     SFTP SCP        Linux                2024 01 11 clash  github  Dreamacro clash                              github                                      clash  bash    gunzip clash linux amd64 latest 0 gz     mv clash linux amd64 latest clash           clash      usr bin                 mv clash linux amd64 latest  usr bin clash            bash sudo chmod  x  usr bin clash     clash        bash clash  v   Clash daemon   Clash              Clash                     systemd       lib systemd system        clash  service     bash sudo vim  lib systemd system clash  service                     code  Unit  Description A rule based proxy Go  i  After network target  Service  Type simple User  i Restart on abort ExecStart  usr bin clash  Install  WantedBy multi user target        systemd     bash systemctl daemon reload      clash     bash systemctl start clash uyaki           bash systemctl enable clash uyaki         Export        Clash                   config          Clash               7890              bash export https_proxy http   127 0 0 1 7890 export http_proxy http   127 0 0 1 7890 export all_proxy socks5   127 0 0 1 7890                bashrc      zshrc                          bash unset httpproxy httpsproxy all_proxy                        bash zsh vim    bashrc vim    zshrc  bash proxy      export http_proxy  http   127 0 0 1 7890  export https_proxy  http   127 0 0 1 7890  export all_proxy  socks5   127 0 0 1 7890  echo  Clash Proxy ON    noproxy      unset http_proxy unset https_proxy unset all_proxy echo  Clash Proxy OFF         source    bashrc   source    zshrc    fish  bash vim    config fish functions proxy fish    fish function proxy set  xg all_proxy socks5   127 0 0 1 7890 set  xg http_proxy http   127 0 0 1 7890 set  xg https_proxy http   127 0 0 1 7890 echo  Clash Proxy ON  end    bash vim    config fish functions noproxy fish    fish function noproxy set  e all_proxy set  e http_proxy set  e https_proxy echo  Clash Proxy OFF  end               bash proxy       bash noproxy",
