@@ -1,7 +1,7 @@
-# Hugo+FixIt
+# Hugo&#43;FixIt
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## hugo安装
 
@@ -13,11 +13,11 @@ go install github.com/gohugoio/hugo@latest
 # 2. 执行 -tags extended
 go install -tags extended github.com/gohugoio/hugo@latest
 ```
-{{< admonition warning >}}
+{{&lt; admonition warning &gt;}}
 
 1. FixIt使用了Sass必须执行 `go install -tags extended github.com/gohugoio/hugo@latest`，否则会报错
 2. 如果已经安装了hugo，一定要升级到新版本，旧版本有很多不兼容FixIt
-{{</ admonition >}}
+{{&lt;/ admonition &gt;}}
 
 ## 建站
 
@@ -36,15 +36,15 @@ cp themes/FixIt/config.toml config.toml
 
 最前面添加
 ```toml
-title = ""
-baseURL = ""
-languageCode = "zh-cn"
+title = &#34;&#34;
+baseURL = &#34;&#34;
+languageCode = &#34;zh-cn&#34;
 # en / zh-cn / ... (This field determines which i18n file to use)
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage = &#34;zh-cn&#34;
 # 是否包括中日韩文字
 hasCJKLanguage = true
 
-theme = "FixIt"
+theme = &#34;FixIt&#34;
 ```
 
 ## config.toml 完整配置
@@ -59,7 +59,7 @@ git submodule add https://github.com/Lruihao/hugo-shortcode-sponsor-log.git them
 
 配置
 ```toml
-theme = ["your-main-theme", "shortcode-sponsor-log"]
+theme = [&#34;your-main-theme&#34;, &#34;shortcode-sponsor-log&#34;]
 ```
 
 复制数据文件，自行修改
@@ -70,5 +70,5 @@ cp themes/shortcode-sponsor-log/sponsor_log.yml.example data/sponsor_log.yml
 ---
 
 > 作者: [uyaki](https://www.github.com/uyaki)  
-> URL: http://uyaki.github.io/posts/blog/hugo+fixit/  
+> URL: http://uyaki.github.io/posts/blog/hugo&#43;fixit/  
 

@@ -1,10 +1,10 @@
 # Git空提交
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ```bash
-$ git commit --allow-empty -m "chore: touch ops build"
+$ git commit --allow-empty -m &#34;chore: touch ops build&#34;
 ```
 
 

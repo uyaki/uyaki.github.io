@@ -1,11 +1,11 @@
 # Mysql修改Auto_increment
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 查看 
 
 ```sql
-select auto_increment from information_schema.tables where table_schema='xxx_db' and table_name='xxx'; 
+select auto_increment from information_schema.tables where table_schema=&#39;xxx_db&#39; and table_name=&#39;xxx&#39;; 
 ```
 
 ## 修改
@@ -14,7 +14,7 @@ select auto_increment from information_schema.tables where table_schema='xxx_db'
 alter table xxx_db.xxx auto_increment=1000;
 ```
 
-> 坑：假设表中有ID大于你设置的值如1000，修改将不会生效
+&gt; 坑：假设表中有ID大于你设置的值如1000，修改将不会生效
 
 
 

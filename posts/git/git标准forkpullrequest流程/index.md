@@ -1,7 +1,7 @@
-# Git标准Fork & Pull Request流程
+# Git标准Fork &amp; Pull Request流程
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## fork项目
 
 直接进入 GitHub 页面，点击`Fork`按钮。 就是这么简单。
@@ -16,10 +16,10 @@ $ git clone git@github.com:USERNAME/FORKED-PROJECT.git
 ## 让你的fork保持最新
 
 ```bash
-# Add 'upstream' repo to list of remotes
+# Add &#39;upstream&#39; repo to list of remotes
 $ git remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git
 
-# Verify the new remote named 'upstream'
+# Verify the new remote named &#39;upstream&#39;
 $ git remote -v
 ```
 
@@ -42,7 +42,7 @@ git merge upstream/master
 ```
 现在，您的本地主分支是最新的一切修改上游。
 
-> 如果在本地 master 分支上没有唯一的提交，git 将简单地执行快进操作。 然而，如果您一直在 master 上进行更改(在绝大多数情况下，您可能不应该这样做——请参阅下一部分，您可能必须处理冲突。 在这样做的时候，要注意尊重上游所做的更改。
+&gt; 如果在本地 master 分支上没有唯一的提交，git 将简单地执行快进操作。 然而，如果您一直在 master 上进行更改(在绝大多数情况下，您可能不应该这样做——请参阅下一部分，您可能必须处理冲突。 在这样做的时候，要注意尊重上游所做的更改。
 
 ## 开发
 
@@ -56,7 +56,7 @@ $ git checkout master
 $ git branch -b newfeature
 ```
 
-> 开始折腾吧
+&gt; 开始折腾吧
 
 ## 提交一个Pull Request
 
@@ -67,7 +67,7 @@ $ git branch -b newfeature
 如果已经向上游主分支提交了任何提交，那么您应该重新设置开发分支的基础，以便合并它将是一个简单的快进操作，不需要任何冲突解决工作。
 
 ```bash
-# Fetch upstream master and merge with your repo's master branch
+# Fetch upstream master and merge with your repo&#39;s master branch
 $ git fetch upstream
 $ git checkout master
 $ git merge upstream/master
@@ -96,10 +96,10 @@ $ git rebase -i master
 
 ### 检查和测试拉请求
 
-打开。 `.git/config` 文件，并在`[ remote "origin"]`下添加一个新行:
+打开。 `.git/config` 文件，并在`[ remote &#34;origin&#34;]`下添加一个新行:
 
 ```bash
-fetch = +refs/pull/*/head:refs/pull/origin/*
+fetch = &#43;refs/pull/*/head:refs/pull/origin/*
 ```
 现在，您可以获取和检出任何拉请求，以便您可以测试它们:
 
@@ -121,7 +121,7 @@ $ git checkout -b 999 pull/origin/999
 要手动执行合并，您需要在源代码报告中签出目标分支，直接从分支中拉出，然后合并并推出。
 
 ```bash
-# Checkout the branch you're merging to in the target repo
+# Checkout the branch you&#39;re merging to in the target repo
 $ git checkout master
 
 # Pull the development branch from the fork repo where the pull request development was done.

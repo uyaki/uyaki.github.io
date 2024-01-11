@@ -1,7 +1,7 @@
 # Hugo搭建
 
 
-<!--more-->
+&lt;!--more--&gt;
 # 使用 Hugo 搭建博客
 
 ## hugo 安装
@@ -19,8 +19,8 @@ $ brew install hugo
 
 ## github仓库准备
 
-1. create new repositories => `blog` ，用来存放网站内容和源文件；
-2. create new repositories => `<username>.github.io` ，用于存放最终发布的网站内容；
+1. create new repositories =&gt; `blog` ，用来存放网站内容和源文件；
+2. create new repositories =&gt; `&lt;username&gt;.github.io` ，用于存放最终发布的网站内容；
 
 ## 生成站点
 
@@ -85,12 +85,12 @@ $ git submodule add -f git@github.com:uyaki/uyaki.github.io.git public
 $ hugo
 ```
 
-## 推送到远程<username>.github.io
+## 推送到远程&lt;username&gt;.github.io
 ```bash
 $ cd public
 $ git status
 $ git add .
-$ git commit -m "first commit"
+$ git commit -m &#34;first commit&#34;
 $ git push -u orgin master
 ```
 
@@ -151,10 +151,10 @@ hugo.linux
 ```bash
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;
 
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
 
 # Go To Public folder
 cd public
@@ -162,11 +162,11 @@ cd public
 git add .
 
 # Commit changes.
-msg="rebuilding site `date`"
+msg=&#34;rebuilding site `date`&#34;
 if [ $# -eq 1 ]
-  then msg="$1"
+  then msg=&#34;$1&#34;
 fi
-git commit -m "$msg"
+git commit -m &#34;$msg&#34;
 
 # Push source and build repos.
 git push origin master
@@ -177,7 +177,7 @@ cd ..
 
 ## 支持评论
 
-Hugo 支持 Disqus 评论，只需要在配置文件 config.toml 中设置 disqusShortname = "disqusShortname"，如果没有 disqusShortname，需要到 [Disqus 官网](https://disqus.com/)注册一个账号，注册后添加一个网站，添加时会让填一个 shortname，Disqus 会生成一个 shortname.disqus.com 的网址，另外还需要把 config.toml 中的 baseURL 地址，也就是公网访问地址添加到 Diqus 的信任网址中，类似于互相添加信任
+Hugo 支持 Disqus 评论，只需要在配置文件 config.toml 中设置 disqusShortname = &#34;disqusShortname&#34;，如果没有 disqusShortname，需要到 [Disqus 官网](https://disqus.com/)注册一个账号，注册后添加一个网站，添加时会让填一个 shortname，Disqus 会生成一个 shortname.disqus.com 的网址，另外还需要把 config.toml 中的 baseURL 地址，也就是公网访问地址添加到 Diqus 的信任网址中，类似于互相添加信任
 
 
 ---

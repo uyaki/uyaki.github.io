@@ -1,7 +1,7 @@
 # Git加速最佳实践
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## Git支持的协议
 
 - https协议，`https://`协议需要配置`git`的`http.proxy`参数
@@ -27,7 +27,7 @@ $ git config --global http.https://github.com.proxy http://127.0.0.1:1087
 - 如果代理需要账号密码
 
 ```bash
-$ git config --global http.proxy http://<proxyuser>:<proxypwd>@<proxy.server.com>:<proxy.server.port>
+$ git config --global http.proxy http://&lt;proxyuser&gt;:&lt;proxypwd&gt;@&lt;proxy.server.com&gt;:&lt;proxy.server.port&gt;
 ```
 
 ### 通过编辑git配置文件的方式

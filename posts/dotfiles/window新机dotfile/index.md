@@ -1,7 +1,7 @@
 # Window新机dotfile
 
 
-<!--more-->
+&lt;!--more--&gt;
 # windows 安装说明
 
 - [windows 安装说明](#windows-安装说明)
@@ -38,12 +38,12 @@ $ winget -v
 
 ## chocolatey 安装
 
-> chocolatey [官网](https://chocolatey.org/install#individual)
+&gt; chocolatey [官网](https://chocolatey.org/install#individual)
 
 管理员身份运行powershell
 
 ```bash
-$ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+$ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://community.chocolatey.org/install.ps1&#39;))
 ```
 
 ---
@@ -54,14 +54,14 @@ $ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointMana
 
 - 方式一：使用命令行（推荐）
   
-以管理员身份打开 PowerShell（`“开始”菜单` -> `PowerShell` -> `单击右键` -> `以管理员身份运行`）并运行：
+以管理员身份打开 PowerShell（`“开始”菜单` -&gt; `PowerShell` -&gt; `单击右键` -&gt; `以管理员身份运行`）并运行：
 ```bash
 $ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
 - 方式二：使用图形界面
 
-具体操作路径：`控制面板` -> `所有控制面板项` -> `程序和功能` -> `启用或关闭Windows功能` -> 勾选✔️`适用于Linux的Windows子系统。`
+具体操作路径：`控制面板` -&gt; `所有控制面板项` -&gt; `程序和功能` -&gt; `启用或关闭Windows功能` -&gt; 勾选✔️`适用于Linux的Windows子系统。`
 
 ![](img/wsl.png)
 
@@ -81,14 +81,14 @@ $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nor
 
 ### 步骤3 下载 Linux 内核更新包
 
-> 步骤2后**重新启动计算机**后才可以设置wsl2
+&gt; 步骤2后**重新启动计算机**后才可以设置wsl2
 
 - 下载
   
 ```bash
 ## 使用PowerShell的WebClient下载
 $ $client = new-object System.Net.WebClient
-$ $client.DownloadFile('https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi',$HOME+'\Downloads\wsl_update_x64.msi')
+$ $client.DownloadFile(&#39;https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi&#39;,$HOME&#43;&#39;\Downloads\wsl_update_x64.msi&#39;)
 
 ## curl下载
 $ curl.exe -L -o $HOME/Downloads/wsl_update_x64.msi https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
@@ -106,7 +106,7 @@ $ wsl --set-default-version 2
 
 ### 步骤4 选择并安装linux
 
-> [wsl官方文档](https://docs.microsoft.com/zh-cn/windows/wsl/install)
+&gt; [wsl官方文档](https://docs.microsoft.com/zh-cn/windows/wsl/install)
 
 ```bash
 # 查看可安装版本 wsl --list --online

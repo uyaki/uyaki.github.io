@@ -2,13 +2,20 @@
   <channel>
     <title>Tags - 标签 - uyaki的博客</title>
     <link>http://uyaki.github.io/tags/</link>
-    <description>Tags - 标签 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <description>Tags - 标签 | uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 12 Jan 2024 03:24:47 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>opensource</title>
+  <link>http://uyaki.github.io/tags/opensource/</link>
+  <pubDate>Fri, 12 Jan 2024 03:24:47 &#43;0800</pubDate>
+  <author>作者</author>
+  <guid>http://uyaki.github.io/tags/opensource/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>clash</title>
   <link>http://uyaki.github.io/tags/clash/</link>
   <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/clash/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -16,7 +23,7 @@
   <title>proxy</title>
   <link>http://uyaki.github.io/tags/proxy/</link>
   <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/proxy/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -24,7 +31,7 @@
   <title>ubuntu</title>
   <link>http://uyaki.github.io/tags/ubuntu/</link>
   <pubDate>Thu, 11 Jan 2024 15:06:07 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/ubuntu/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -32,7 +39,7 @@
   <title>command_line_tools</title>
   <link>http://uyaki.github.io/tags/command_line_tools/</link>
   <pubDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/command_line_tools/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -40,7 +47,7 @@
   <title>tmux</title>
   <link>http://uyaki.github.io/tags/tmux/</link>
   <pubDate>Sun, 07 Jan 2024 16:05:56 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/tmux/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -48,7 +55,7 @@
   <title>npm</title>
   <link>http://uyaki.github.io/tags/npm/</link>
   <pubDate>Sun, 16 Apr 2023 19:53:41 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/npm/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -56,7 +63,7 @@
   <title>git</title>
   <link>http://uyaki.github.io/tags/git/</link>
   <pubDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/git/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -64,7 +71,7 @@
   <title>blog</title>
   <link>http://uyaki.github.io/tags/blog/</link>
   <pubDate>Sun, 16 Apr 2023 16:06:24 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/blog/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -72,16 +79,8 @@
   <title>algorithm</title>
   <link>http://uyaki.github.io/tags/algorithm/</link>
   <pubDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/tags/algorithm/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>动态规划</title>
-  <link>http://uyaki.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
-  <pubDate>Fri, 14 Apr 2023 02:59:46 &#43;0800</pubDate>
-  <author>uyaki</author>
-  <guid>http://uyaki.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -1,7 +1,7 @@
 # CentOS7开发环境
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## 基础配置
 ### 修改主机名
@@ -43,17 +43,17 @@ $ vim /etc/docker/daemon.json
 ```
 ```json
 {
-  "insecure-registries" : ["docker.server:80"],
-  "debug" : true,
-  "experimental" : true,
-  "registry-mirrors": ["http://hub-mirror.c.163.com"]
+  &#34;insecure-registries&#34; : [&#34;docker.server:80&#34;],
+  &#34;debug&#34; : true,
+  &#34;experimental&#34; : true,
+  &#34;registry-mirrors&#34;: [&#34;http://hub-mirror.c.163.com&#34;]
 }
 ```
 ### 安装docker-compose
 参照[官网教程](https://docs.docker.com/compose/install/)
 ```bash
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-$ sudo chmod +x /usr/local/bin/docker-compose
+$ sudo curl -L &#34;https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)&#34; -o /usr/local/bin/docker-compose
+$ sudo chmod &#43;x /usr/local/bin/docker-compose
 ```
 
 

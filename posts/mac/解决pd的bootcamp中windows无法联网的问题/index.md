@@ -1,7 +1,7 @@
 # 解决PD的bootcamp中windows无法联网的问题
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 解决无法联网的问题:
 
 ```bash
@@ -9,8 +9,8 @@ vim /Library/Preferences/Parallels/network.desktop.xml
 ```
 
 ```xml
-<!-- <UseKextless>-1</UseKextless>改为 1-->
-<UseKextless>0</UseKextless>
+&lt;!-- &lt;UseKextless&gt;-1&lt;/UseKextless&gt;改为 1--&gt;
+&lt;UseKextless&gt;0&lt;/UseKextless&gt;
 ```
 
 
@@ -19,8 +19,8 @@ vim /Library/Preferences/Parallels/network.desktop.xml
 vim /Library/Preferences/Parallels/dispatcher.desktop.xml
 ```
 ```xml
-<!-- 找到 <Usb>0</Usb> ，修改为 1 -->
-<Usb>1</Usb>
+&lt;!-- 找到 &lt;Usb&gt;0&lt;/Usb&gt; ，修改为 1 --&gt;
+&lt;Usb&gt;1&lt;/Usb&gt;
 ```
 
 修改后，重启 Parallels Desktop以及windows，即完美解决以上问题。

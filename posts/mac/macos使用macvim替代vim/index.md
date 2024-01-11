@@ -1,7 +1,7 @@
 # MacOS使用MacVim替代vim
 
 
-<!--more-->
+&lt;!--more--&gt;
 ```bash
 ## 安装macvim
 brew install macvim
@@ -12,7 +12,7 @@ vim ~/.zshrc
 ## 添加
 alias vi=vim
 alias vim=mvim
-alias mvim='/usr/local/bin/mvim -v'
+alias mvim=&#39;/usr/local/bin/mvim -v&#39;
 
 ## 生效
 source ~/.zshrc

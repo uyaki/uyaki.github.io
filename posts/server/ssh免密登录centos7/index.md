@@ -1,7 +1,7 @@
 # SSH免密登录CentOS7
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ## 本机传送id_rsa.pub
@@ -13,7 +13,7 @@ $ scp .ssh/id_rsa.pub user@ip:/root/id_rsa.pub
 ## 服务器
 
 ```bash
-$ cat id_rsa.pub >> .ssh/authorized_keys
+$ cat id_rsa.pub &gt;&gt; .ssh/authorized_keys
 $ chmod 700 .ssh
 $ chmod 600 .ssh/authorized_keys
 
@@ -25,7 +25,7 @@ $ chmod 600 .ssh/authorized_keys
 $ vim /etc/ssh/sshd_config
 ```
 
-> 如下配置，7.4及更高版本不需要
+&gt; 如下配置，7.4及更高版本不需要
 
 ```markdown
 RSAAuthentication yes

@@ -1,7 +1,7 @@
 # Git利用orphan分支功能清空所有历史记录
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 目的
 
 清空git项目，获得一个没有历史记录的空项目
@@ -17,7 +17,7 @@ $ git rm -rf .
 $ ... 
 ## 提交
 $ git add .
-$ git commit -am "commit message"
+$ git commit -am &#34;commit message&#34;
 ## 删除master分支
 $ git branch -D master
 ## 重命名当前分支为master
@@ -31,9 +31,9 @@ $ git push -f origin master
 ### git push -f无权限问题
 可能会出现无法强制推送的BUG：
 
-{{< admonition bug >}}
+{{&lt; admonition bug &gt;}}
 You are not allowed to force push code to a protected branch on this project
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 配置下Git远程（在 Settings 的 Repository 设置项的 Protected Branches)
 

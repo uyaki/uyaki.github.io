@@ -1,10 +1,10 @@
-# ELasticSearch设置ik+pinyin分词器
+# ELasticSearch设置ik&#43;pinyin分词器
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 安装
 
-> 假设你已经使用docker安装了es集群
+&gt; 假设你已经使用docker安装了es集群
 ```bash
 $ cd ${docker-compose-file-dir}
 ```
@@ -29,62 +29,62 @@ $ docker-compose restart
 ```http
 PUT /my_index
 {
-    "settings": {
-        "index": {
-            "number_of_shards": "1",
-            "analysis": {
-                "analyzer": {
-                    "default": {
-                        "tokenizer": "ik_max_word"
+    &#34;settings&#34;: {
+        &#34;index&#34;: {
+            &#34;number_of_shards&#34;: &#34;1&#34;,
+            &#34;analysis&#34;: {
+                &#34;analyzer&#34;: {
+                    &#34;default&#34;: {
+                        &#34;tokenizer&#34;: &#34;ik_max_word&#34;
                     },
-                    "pinyin_analyzer": {
-                        "type": "custom",
-                        "tokenizer": "my_pinyin",
-                        "filter": [
-                            "word_delimiter"
+                    &#34;pinyin_analyzer&#34;: {
+                        &#34;type&#34;: &#34;custom&#34;,
+                        &#34;tokenizer&#34;: &#34;my_pinyin&#34;,
+                        &#34;filter&#34;: [
+                            &#34;word_delimiter&#34;
                         ]
                     }
                 },
-                "tokenizer": {
-                    "my_pinyin": {
-                        "type": "pinyin",
-                        "keep_first_letter": true,
-                        "keep_separate_first_letter": false,
-                        "keep_full_pinyin": true,
-                        "keep_original": false,
-                        "limit_first_letter_length": 16,
-                        "lowercase": true
+                &#34;tokenizer&#34;: {
+                    &#34;my_pinyin&#34;: {
+                        &#34;type&#34;: &#34;pinyin&#34;,
+                        &#34;keep_first_letter&#34;: true,
+                        &#34;keep_separate_first_letter&#34;: false,
+                        &#34;keep_full_pinyin&#34;: true,
+                        &#34;keep_original&#34;: false,
+                        &#34;limit_first_letter_length&#34;: 16,
+                        &#34;lowercase&#34;: true
                     }
                 },
-                "number_of_replicas": "1"
+                &#34;number_of_replicas&#34;: &#34;1&#34;
             }
         }
     },
-    "mappings": {
-        "properties": {
-            "id": {
-                "type": "keyword",
-                "fields": {
-                    "keyword": {
-                        "type": "keyword",
-                        "ignore_above": 256
+    &#34;mappings&#34;: {
+        &#34;properties&#34;: {
+            &#34;id&#34;: {
+                &#34;type&#34;: &#34;keyword&#34;,
+                &#34;fields&#34;: {
+                    &#34;keyword&#34;: {
+                        &#34;type&#34;: &#34;keyword&#34;,
+                        &#34;ignore_above&#34;: 256
                     }
                 }
             },
-            "name": {
-                "type": "text",
-                "analyzer": "ik_max_word",
-                "copy_to": true,
-                "fields": {
-                    "pinyin": {
-                        "type": "text",
-                        "term_vector": "with_positions_offsets",
-                        "analyzer": "pinyin_analyzer",
-                        "boost": 10
+            &#34;name&#34;: {
+                &#34;type&#34;: &#34;text&#34;,
+                &#34;analyzer&#34;: &#34;ik_max_word&#34;,
+                &#34;copy_to&#34;: true,
+                &#34;fields&#34;: {
+                    &#34;pinyin&#34;: {
+                        &#34;type&#34;: &#34;text&#34;,
+                        &#34;term_vector&#34;: &#34;with_positions_offsets&#34;,
+                        &#34;analyzer&#34;: &#34;pinyin_analyzer&#34;,
+                        &#34;boost&#34;: 10
                     },
-                    "keyword": {
-                        "type": "keyword",
-                        "ignore_above": 256
+                    &#34;keyword&#34;: {
+                        &#34;type&#34;: &#34;keyword&#34;,
+                        &#34;ignore_above&#34;: 256
                     }
                 }
             }
@@ -99,53 +99,53 @@ PUT /my_index
 ## 请求
 POST /my_index/_analyze
 {
-  "text":"sao的一逼",
-  "analyzer":"pinyin_analyzer"
+  &#34;text&#34;:&#34;sao的一逼&#34;,
+  &#34;analyzer&#34;:&#34;pinyin_analyzer&#34;
 }
 ## 结果
 {
-  "tokens" : [
+  &#34;tokens&#34; : [
     {
-      "token" : "sao",
-      "start_offset" : 0,
-      "end_offset" : 0,
-      "type" : "word",
-      "position" : 0
+      &#34;token&#34; : &#34;sao&#34;,
+      &#34;start_offset&#34; : 0,
+      &#34;end_offset&#34; : 0,
+      &#34;type&#34; : &#34;word&#34;,
+      &#34;position&#34; : 0
     },
     {
-      "token" : "saodyb",
-      "start_offset" : 0,
-      "end_offset" : 0,
-      "type" : "word",
-      "position" : 0
+      &#34;token&#34; : &#34;saodyb&#34;,
+      &#34;start_offset&#34; : 0,
+      &#34;end_offset&#34; : 0,
+      &#34;type&#34; : &#34;word&#34;,
+      &#34;position&#34; : 0
     },
     {
-      "token" : "de",
-      "start_offset" : 0,
-      "end_offset" : 0,
-      "type" : "word",
-      "position" : 1
+      &#34;token&#34; : &#34;de&#34;,
+      &#34;start_offset&#34; : 0,
+      &#34;end_offset&#34; : 0,
+      &#34;type&#34; : &#34;word&#34;,
+      &#34;position&#34; : 1
     },
     {
-      "token" : "yi",
-      "start_offset" : 0,
-      "end_offset" : 0,
-      "type" : "word",
-      "position" : 2
+      &#34;token&#34; : &#34;yi&#34;,
+      &#34;start_offset&#34; : 0,
+      &#34;end_offset&#34; : 0,
+      &#34;type&#34; : &#34;word&#34;,
+      &#34;position&#34; : 2
     },
     {
-      "token" : "bi",
-      "start_offset" : 0,
-      "end_offset" : 0,
-      "type" : "word",
-      "position" : 3
+      &#34;token&#34; : &#34;bi&#34;,
+      &#34;start_offset&#34; : 0,
+      &#34;end_offset&#34; : 0,
+      &#34;type&#34; : &#34;word&#34;,
+      &#34;position&#34; : 3
     }
   ]
 }
 ```
 
 ### 新增数据
-> 可以使用[datax](https://github.com/alibaba/DataX)批量导入数据，后面再开一坑
+&gt; 可以使用[datax](https://github.com/alibaba/DataX)批量导入数据，后面再开一坑
 ```markdown
 略
 ```
@@ -155,9 +155,9 @@ POST /my_index/_analyze
 ```http
 POST /my_index/_search
 {
-    "query":{
-      "match":{
-        "name.pinyin":"liudehua"
+    &#34;query&#34;:{
+      &#34;match&#34;:{
+        &#34;name.pinyin&#34;:&#34;liudehua&#34;
       }
     }
 }
@@ -168,24 +168,24 @@ POST /my_index/_search
 ```http
 POST /my_index/_search
 {
-    "query":{
-      "match":{
-        "name":"靖哥哥"
+    &#34;query&#34;:{
+      &#34;match&#34;:{
+        &#34;name&#34;:&#34;靖哥哥&#34;
       }
     }
 }
 ```
 
-### 按「中文名 + 拼音」搜索
+### 按「中文名 &#43; 拼音」搜索
 
 ```http
 POST /my_index/_search
 {
-	"query": {
-    "multi_match": {
-      "type":"most_fields",
-      "query":"jing",
-      "fields":["name", "name.pinyin"]
+	&#34;query&#34;: {
+    &#34;multi_match&#34;: {
+      &#34;type&#34;:&#34;most_fields&#34;,
+      &#34;query&#34;:&#34;jing&#34;,
+      &#34;fields&#34;:[&#34;name&#34;, &#34;name.pinyin&#34;]
     }
   }
 }
@@ -196,27 +196,27 @@ POST /my_index/_search
 ```http
 GET my_index/_validate/query?explain
 {
-  "query": {
-    "multi_match": {
-      "type":"most_fields",
-      "query":"靖g哥",
-      "fields":["name", "name.pinyin"]
+  &#34;query&#34;: {
+    &#34;multi_match&#34;: {
+      &#34;type&#34;:&#34;most_fields&#34;,
+      &#34;query&#34;:&#34;靖g哥&#34;,
+      &#34;fields&#34;:[&#34;name&#34;, &#34;name.pinyin&#34;]
     }
   }
 }
 ## 结果
 {
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
+  &#34;_shards&#34; : {
+    &#34;total&#34; : 1,
+    &#34;successful&#34; : 1,
+    &#34;failed&#34; : 0
   },
-  "valid" : true,
-  "explanations" : [
+  &#34;valid&#34; : true,
+  &#34;explanations&#34; : [
     {
-      "index" : "my_index",
-      "valid" : true,
-      "explanation" : "((Synonym(name.pinyin:jgg name.pinyin:jing) (name.pinyin:g)^10.0 (name.pinyin:ge)^10.0) | (name:靖 name:g name:哥))~1.0"
+      &#34;index&#34; : &#34;my_index&#34;,
+      &#34;valid&#34; : true,
+      &#34;explanation&#34; : &#34;((Synonym(name.pinyin:jgg name.pinyin:jing) (name.pinyin:g)^10.0 (name.pinyin:ge)^10.0) | (name:靖 name:g name:哥))~1.0&#34;
     }
   ]
 }
@@ -225,5 +225,5 @@ GET my_index/_validate/query?explain
 ---
 
 > 作者: [uyaki](https://www.github.com/uyaki)  
-> URL: http://uyaki.github.io/posts/middleware/elasticsearch%E8%AE%BE%E7%BD%AEik+pinyin%E5%88%86%E8%AF%8D%E5%99%A8/  
+> URL: http://uyaki.github.io/posts/middleware/elasticsearch%E8%AE%BE%E7%BD%AEik&#43;pinyin%E5%88%86%E8%AF%8D%E5%99%A8/  
 

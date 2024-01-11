@@ -1,153 +1,153 @@
 # Hugo使用admonition美化文章
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 hugo的LoveIt，FixIt主题都集成了admonition shorcode功能，可以比较方便的进行使用，语法和样式效果如下。
 
 ## 注意
 
 ```markdown
-{{</* admonition note */>}}
+{{&lt;/* admonition note */&gt;}}
 一个 **注意** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition note>}}
+{{&lt; admonition note&gt;}}
 一个 **注意** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 技巧
 
 ```markdown
-{{</* admonition tip */>}}
+{{&lt;/* admonition tip */&gt;}}
 一个 **技巧** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition tip>}}
+{{&lt; admonition tip&gt;}}
 一个 **提示** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 摘要
 
 ```markdown
-{{</* admonition abstract */>}}
+{{&lt;/* admonition abstract */&gt;}}
 一个 **摘要** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition abstract>}}
+{{&lt; admonition abstract&gt;}}
 一个 **摘要** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 信息
 
 ```markdown
-{{</* admonition info */>}}
+{{&lt;/* admonition info */&gt;}}
 一个 **信息** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition info>}}
+{{&lt; admonition info&gt;}}
 一个 **信息** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 成功
 
 ```markdown
-{{</* admonition success */>}}
+{{&lt;/* admonition success */&gt;}}
 一个 **成功** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition success>}}
+{{&lt; admonition success&gt;}}
 一个 **成功** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 问题
 
 ```markdown
-{{</* admonition question */>}}
+{{&lt;/* admonition question */&gt;}}
 一个 **问题** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition question>}}
+{{&lt; admonition question&gt;}}
 一个 **问题** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 警告
 
 ```markdown
-{{</* admonition warning */>}}
+{{&lt;/* admonition warning */&gt;}}
 一个 **警告** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition warning>}}
+{{&lt; admonition warning&gt;}}
 一个 **警告** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 失败
 
 ```markdown
-{{</* admonition failure */>}}
+{{&lt;/* admonition failure */&gt;}}
 一个 **失败** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition failure>}}
+{{&lt; admonition failure&gt;}}
 一个 **失败** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 危险
 
 ```markdown
-{{</* admonition danger */>}}
+{{&lt;/* admonition danger */&gt;}}
 一个 **危险** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition danger>}}
+{{&lt; admonition danger&gt;}}
 一个 **危险** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## bug
 
 ```markdown
-{{</* admonition bug */>}}
+{{&lt;/* admonition bug */&gt;}}
 一个 **bug** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition bug>}}
+{{&lt; admonition bug&gt;}}
 一个 **bug** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 示例
 
 ```markdown
-{{</* admonition example */>}}
+{{&lt;/* admonition example */&gt;}}
 一个 **示例** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition example>}}
+{{&lt; admonition example&gt;}}
 一个 **示例** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ## 引用
 
 ```markdown
-{{</* admonition quote */>}}
+{{&lt;/* admonition quote */&gt;}}
 一个 **引用** 横幅
-{{</* /admonition */>}}
+{{&lt;/* /admonition */&gt;}}
 ```
 
-{{< admonition quote>}}
+{{&lt; admonition quote&gt;}}
 一个 **引用** 横幅
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ---
 

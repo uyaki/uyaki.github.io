@@ -1,7 +1,7 @@
 # Mac下go访问时出现permission_denied
 
 
-<!--more-->
+&lt;!--more--&gt;
 # 解决 open /usr/local/go/pkg/darwin_amd64/runtime/cgo.a: permission denied
 
 ```bash

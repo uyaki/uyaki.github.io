@@ -2,13 +2,12 @@
   <channel>
     <title>java - 分类 - uyaki的博客</title>
     <link>http://uyaki.github.io/categories/java/</link>
-    <description>java - 分类 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Wed, 04 Mar 2020 11:29:31 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/java/" rel="self" type="application/rss+xml" /><item>
+    <description>java - 分类 | uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 04 Mar 2020 11:29:31 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/java/" rel="self" type="application/rss+xml" /><item>
   <title>Swagger出现Could not resolve pointer</title>
   <link>http://uyaki.github.io/posts/java/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</link>
   <pubDate>Wed, 04 Mar 2020 11:29:31 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/swagger%E5%87%BA%E7%8E%B0could_not_resolve_pointer/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>Mysql修改Auto_increment</title>
   <link>http://uyaki.github.io/posts/java/mysql%E4%BF%AE%E6%94%B9auto_increment/</link>
   <pubDate>Wed, 26 Feb 2020 10:25:52 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/mysql%E4%BF%AE%E6%94%B9auto_increment/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -24,7 +23,7 @@
   <title>SpringBoot设置项目热启动</title>
   <link>http://uyaki.github.io/posts/java/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</link>
   <pubDate>Sun, 23 Feb 2020 00:04:23 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/springboot%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%83%AD%E5%90%AF%E5%8A%A8/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -32,7 +31,7 @@
   <title>Java配置允许跨域访问</title>
   <link>http://uyaki.github.io/posts/java/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</link>
   <pubDate>Sat, 22 Feb 2020 23:57:53 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/java%E9%85%8D%E7%BD%AE%E5%85%81%E8%AE%B8%E8%B7%A8%E5%9F%9F%E8%AE%BF%E9%97%AE/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -40,7 +39,7 @@
   <title>Jpa Id自增策略</title>
   <link>http://uyaki.github.io/posts/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</link>
   <pubDate>Mon, 17 Feb 2020 15:03:09 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/jpa-id%E8%87%AA%E5%A2%9E%E7%AD%96%E7%95%A5/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -48,7 +47,7 @@
   <title>使用ResponseBodyAdvice的beforeBodyWrite处理String导致cast问题</title>
   <link>http://uyaki.github.io/posts/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</link>
   <pubDate>Mon, 17 Feb 2020 15:02:02 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/%E4%BD%BF%E7%94%A8responsebodyadvice%E7%9A%84beforebodywrite%E5%A4%84%E7%90%86string%E5%AF%BC%E8%87%B4cast%E9%97%AE%E9%A2%98/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -56,7 +55,7 @@
   <title>IDEA破解</title>
   <link>http://uyaki.github.io/posts/java/idea%E7%A0%B4%E8%A7%A3/</link>
   <pubDate>Mon, 17 Feb 2020 15:00:39 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/idea%E7%A0%B4%E8%A7%A3/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -64,7 +63,7 @@
   <title>Java8的18个时间处理实践</title>
   <link>http://uyaki.github.io/posts/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</link>
   <pubDate>Sat, 15 Feb 2020 15:58:54 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/java/java8%E7%9A%8418%E4%B8%AA%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5/</guid>
   <description><![CDATA[]]></description>
 </item>

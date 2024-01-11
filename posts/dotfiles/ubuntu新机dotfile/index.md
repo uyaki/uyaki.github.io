@@ -1,7 +1,7 @@
 # Ubuntu新机dotfile
 
 
-<!--more-->
+&lt;!--more--&gt;
 # ubuntu-install
 
 - [ubuntu-install](#ubuntu-install)
@@ -35,10 +35,10 @@ $ cat ~/.ssh/id_rsa.pub
 
 - 服务器操作
 ```bash
-$ echo '<id_rsa.pub>' >> ~/.ssh/authorized_keys
+$ echo &#39;&lt;id_rsa.pub&gt;&#39; &gt;&gt; ~/.ssh/authorized_keys
 ```
 
-> 注意，此时的ssh信息是在 `ubuntu` 用户下完成，如果需要 `root` 权限，需要切换到 `root` 执行
+&gt; 注意，此时的ssh信息是在 `ubuntu` 用户下完成，如果需要 `root` 权限，需要切换到 `root` 执行
 
 ---
 
@@ -47,7 +47,7 @@ $ echo '<id_rsa.pub>' >> ~/.ssh/authorized_keys
 ```bash
 ## 切换到root下
 $ sudo su
-## `~` => `/root`
+## `~` =&gt; `/root`
 $ cd ~
 ```
 
@@ -59,7 +59,7 @@ $ cd ~
 $ git clone https://github.com/uyaki/dotfiles.git ~/dotfiles
 ```
 
-> 文件默认操作路径 `/root/dotfiles`
+&gt; 文件默认操作路径 `/root/dotfiles`
 
 ```bash
 $ cd dotfiles
@@ -67,15 +67,15 @@ $ sudo chmod 777 ./linux/*-install.sh
 $ ./linux/ubuntu-install.sh
 ```
 
-> 其实**不建议执行脚本**，因为执行过程过长，不利于问题及时解决。
+&gt; 其实**不建议执行脚本**，因为执行过程过长，不利于问题及时解决。
 
-> **建议手动安需复制执行语句执行**
+&gt; **建议手动安需复制执行语句执行**
 
 ---
 
 ## 在本地安装字体（非必须）
 
-> 使用zsh主题[powerlevel10k](https://github.com/romkatv/powerlevel10k)，需要在客户端下载字体 [hack-nerd-font](https://github.com/ryanoasis/nerd-fonts)
+&gt; 使用zsh主题[powerlevel10k](https://github.com/romkatv/powerlevel10k)，需要在客户端下载字体 [hack-nerd-font](https://github.com/ryanoasis/nerd-fonts)
 
 具体查看：[字体字体安装教程](./../font/font.md)
 

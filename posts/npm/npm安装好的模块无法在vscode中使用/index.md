@@ -1,9 +1,9 @@
 # Npm安装好的模块无法在vscode中使用
 
 
-<!--more-->
+&lt;!--more--&gt;
 
-右键 `%VSCODE_PATH%/Code.exe` -> `属性` -> `兼容性` -> `以管理员身份运行此程序`
+右键 `%VSCODE_PATH%/Code.exe` -&gt; `属性` -&gt; `兼容性` -&gt; `以管理员身份运行此程序`
 
 ---
 

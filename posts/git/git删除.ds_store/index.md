@@ -1,7 +1,7 @@
 # Git删除 .DS_Store
 
 
-<!--more-->
+&lt;!--more--&gt;
 1. cd 到项目路径
 2. 执行
    ```bash
@@ -9,7 +9,7 @@
    ```
 3. 插入到.gitignore
    ```bash
-   $ echo .DS_Store >> .gitignore
+   $ echo .DS_Store &gt;&gt; .gitignore
    ``` 
 4. git push
 

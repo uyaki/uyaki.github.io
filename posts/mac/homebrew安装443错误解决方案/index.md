@@ -1,10 +1,10 @@
 # Homebrew安装443错误解决方案
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 问题
 
-> 安装 homebrew 报错 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation
+&gt; 安装 homebrew 报错 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation
 
 ## 方案
 

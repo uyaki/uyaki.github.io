@@ -1,7 +1,7 @@
 # Java配置允许跨域访问
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## 方案
 H5中的新特性：Cross-Origin Resource Sharing（跨域资源共享）。通过它，我们的开发者（主要指后端开发者）可以决定资源是否能被跨域访问。
@@ -26,15 +26,15 @@ import org.springframework.web.filter.CorsFilter;
 public class CorsConfig {
     private CorsConfiguration buildConfig(){
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.addAllowedHeader("*");
-        corsConfiguration.addAllowedOrigin("*");
-        corsConfiguration.addAllowedMethod("*");
+        corsConfiguration.addAllowedHeader(&#34;*&#34;);
+        corsConfiguration.addAllowedOrigin(&#34;*&#34;);
+        corsConfiguration.addAllowedMethod(&#34;*&#34;);
         return corsConfiguration;
     }
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source =new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**",buildConfig());
+        source.registerCorsConfiguration(&#34;/**&#34;,buildConfig());
         return new CorsFilter(source);
     }
 }

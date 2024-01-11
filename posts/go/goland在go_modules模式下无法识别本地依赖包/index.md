@@ -1,8 +1,8 @@
 # Goland在go_modules模式下无法识别本地依赖包
 
 
-<!--more-->
-如下图所示，设置 go -> Go Modules -> ✅ Enable Go modules integration -> Environment: 输入 `GOPROXY=https://goproxy.cn,direct`
+&lt;!--more--&gt;
+如下图所示，设置 go -&gt; Go Modules -&gt; ✅ Enable Go modules integration -&gt; Environment: 输入 `GOPROXY=https://goproxy.cn,direct`
 ![](https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20221212205112.png)
 
 ---

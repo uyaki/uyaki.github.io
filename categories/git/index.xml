@@ -2,13 +2,12 @@
   <channel>
     <title>git - 分类 - uyaki的博客</title>
     <link>http://uyaki.github.io/categories/git/</link>
-    <description>git - 分类 - uyaki的博客</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>737376326@qq.com (uyaki)</managingEditor>
-      <webMaster>737376326@qq.com (uyaki)</webMaster><lastBuildDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
+    <description>git - 分类 | uyaki的博客</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</lastBuildDate><atom:link href="http://uyaki.github.io/categories/git/" rel="self" type="application/rss+xml" /><item>
   <title>使用bfg Repo Cleaner清理git仓库</title>
   <link>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</link>
   <pubDate>Sun, 16 Apr 2023 18:51:28 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/%E4%BD%BF%E7%94%A8bfg-repo-cleaner%E6%B8%85%E7%90%86git%E4%BB%93%E5%BA%93/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>Git标准Fork &amp; Pull Request流程</title>
   <link>http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</link>
   <pubDate>Sun, 23 Feb 2020 22:53:46 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E6%A0%87%E5%87%86forkpullrequest%E6%B5%81%E7%A8%8B/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -24,7 +23,7 @@
   <title>Git中文乱码解决</title>
   <link>http://uyaki.github.io/posts/git/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</link>
   <pubDate>Sun, 23 Feb 2020 22:05:37 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -32,7 +31,7 @@
   <title>Git利用orphan分支功能清空所有历史记录</title>
   <link>http://uyaki.github.io/posts/git/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/</link>
   <pubDate>Wed, 19 Feb 2020 09:44:59 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E5%88%A9%E7%94%A8orphan%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E6%B8%85%E7%A9%BA%E6%89%80%E6%9C%89%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -40,7 +39,7 @@
   <title>Git使用子模块功能搭建多模块无关联IDEA项目</title>
   <link>http://uyaki.github.io/posts/git/git%E4%BD%BF%E7%94%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E5%8A%9F%E8%83%BD%E6%90%AD%E5%BB%BA%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E5%85%B3%E8%81%94idea%E9%A1%B9%E7%9B%AE/</link>
   <pubDate>Wed, 19 Feb 2020 09:00:55 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E4%BD%BF%E7%94%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E5%8A%9F%E8%83%BD%E6%90%AD%E5%BB%BA%E5%A4%9A%E6%A8%A1%E5%9D%97%E6%97%A0%E5%85%B3%E8%81%94idea%E9%A1%B9%E7%9B%AE/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -48,7 +47,7 @@
   <title>Git中HEAD游离的原因与解决方法</title>
   <link>http://uyaki.github.io/posts/git/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
   <pubDate>Mon, 17 Feb 2020 14:48:59 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E4%B8%ADhead%E6%B8%B8%E7%A6%BB%E7%9A%84%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -56,7 +55,7 @@
   <title>Git删除 .DS_Store</title>
   <link>http://uyaki.github.io/posts/git/git%E5%88%A0%E9%99%A4.ds_store/</link>
   <pubDate>Tue, 11 Feb 2020 11:16:29 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E5%88%A0%E9%99%A4.ds_store/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -64,7 +63,7 @@
   <title>Git空提交</title>
   <link>http://uyaki.github.io/posts/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/</link>
   <pubDate>Tue, 11 Feb 2020 11:12:37 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E7%A9%BA%E6%8F%90%E4%BA%A4/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -72,7 +71,7 @@
   <title>Git加速最佳实践</title>
   <link>http://uyaki.github.io/posts/git/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
   <pubDate>Tue, 11 Feb 2020 09:25:55 &#43;0800</pubDate>
-  <author>uyaki</author>
+  <author>作者</author>
   <guid>http://uyaki.github.io/posts/git/git%E5%8A%A0%E9%80%9F%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</guid>
   <description><![CDATA[]]></description>
 </item>

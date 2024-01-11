@@ -1,18 +1,18 @@
 # Docker切换镜像源
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ```bash
 $ sudo mkdir -p /etc/docker
 ```
 
 ```bash
-$ sudo tee /etc/docker/daemon.json <<-'EOF'
+$ sudo tee /etc/docker/daemon.json &lt;&lt;-&#39;EOF&#39;
 
 {
 
- "registry-mirrors": ["https://28ffkr6d.mirror.aliyuncs.com"]
+ &#34;registry-mirrors&#34;: [&#34;https://28ffkr6d.mirror.aliyuncs.com&#34;]
 
 }
 

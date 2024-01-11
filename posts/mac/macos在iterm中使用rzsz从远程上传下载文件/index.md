@@ -1,7 +1,7 @@
 # MacOS在iTerm中使用rz、sz从远程上传下载文件
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 安装
 ### 下载安装lrzsz，创建软连接（mac）
 
@@ -33,7 +33,7 @@ sudo chmod 777 /usr/local/bin/iterm2-*
 
 ### 添加iTerm2 trigger
 
-> iTerm2 --> Profiles --> Open Profiles --> Edit Profiles --> Advanced --> Edit Trigger
+&gt; iTerm2 --&gt; Profiles --&gt; Open Profiles --&gt; Edit Profiles --&gt; Advanced --&gt; Edit Trigger
 
 配置项：
 

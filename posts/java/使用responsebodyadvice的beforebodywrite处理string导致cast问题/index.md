@@ -1,7 +1,7 @@
 # 使用ResponseBodyAdvice的beforeBodyWrite处理String导致cast问题
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 问题
 
 配置全局返回时
@@ -9,15 +9,15 @@
 ```java
 @Configuration
 public class GlobalReturnConfig {
-    @RestControllerAdvice(basePackages = "com.benyuan")
-    static class ResultResponseAdvice implements ResponseBodyAdvice<Object> {
+    @RestControllerAdvice(basePackages = &#34;com.benyuan&#34;)
+    static class ResultResponseAdvice implements ResponseBodyAdvice&lt;Object&gt; {
         @Override
-        public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
+        public boolean supports(MethodParameter methodParameter, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass) {
             return true;
         }
 
         @Override
-        public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
+        public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
             if (body instanceof ResponseDTO) {
                 return body;
             }
@@ -40,7 +40,7 @@ beforeBodyWrite方法在处理String类型返回值的时候，会造成Response
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
     @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+    public void configureMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters) {
         // 0-1可配，2-8是默认加载的
         converters.add(0, new MappingJackson2HttpMessageConverter());
     }

@@ -1,7 +1,7 @@
 # Git中文乱码解决
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## git add 显示中文乱码
 
 使用 git add 添加要提交的文件的时候，如果文件名是中文，会显示形如`\347\204\246\347\263\226\345\245\266\350\214\266.md`的乱码
@@ -24,7 +24,7 @@ export LESSCHARSET=utf-8
 
 ## 自带的 bash 中，使用 ls 命令查看中文文件名乱码
 使用 `ls --show-control-chars` 命令来强制使用控制台字符编码显示文件名，即可查看中文文件名。
-为了方便使用，可以编辑 `/etc/git-completion.bash` ，新增一行 `alias ls="ls –show-control-chars"`
+为了方便使用，可以编辑 `/etc/git-completion.bash` ，新增一行 `alias ls=&#34;ls –show-control-chars&#34;`
 
 
 ---

@@ -1,7 +1,7 @@
 # 在 Linux 中使用 Clash
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 
 ## 配置文件
@@ -17,9 +17,9 @@ cd ~/.config/clash
 
 当第一次启动 Clash 时（使用 `./clash` 命令） 会自动下载（会下载至 `$HOME/.config/clash` 文件夹下）。自动下载可能会因网络原因较慢，可以访问[Dreamacro/maxmind-geoip](https://github.com/Dreamacro/maxmind-geoip/releases)手动下载，上传到`$HOME/.config/clash`文件夹下
 
-{{< admonition info >}}
+{{&lt; admonition info &gt;}}
  `Country.mmdb` 文件利用 GeoIP2 服务能识别互联网用户的地点位置，以供规则分流时使用。
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ### `config.yaml` 获取
 
@@ -28,13 +28,13 @@ cd ~/.config/clash
 如果使用订阅转换服务，对于转换后的订阅链接，可以使用以下命令来下载配置文件：
 
 ```bash
-curl -o config.yaml 'longURL'
+curl -o config.yaml &#39;longURL&#39;
 ```
 
 对于 suo.yt 短链接，需要重定向，因此使用以下命令来下载配置文件：
 
 ```bash
-curl -L -o config.yaml 'shortURL'
+curl -L -o config.yaml &#39;shortURL&#39;
 ```
 
 ## docker-compose安装clash
@@ -42,7 +42,7 @@ curl -L -o config.yaml 'shortURL'
 ### docker-compose文件
 
 ```yaml
-version: '3'
+version: &#39;3&#39;
 services:
   clash:
     image: dreamacro/clash:latest
@@ -50,25 +50,25 @@ services:
     volumes:
       - ~/.config/clash:/root/.config/clash
     ports:
-      - "7890:7890/tcp"
-      - "7890:7890/udp"
+      - &#34;7890:7890/tcp&#34;
+      - &#34;7890:7890/udp&#34;
       # 如开启clash-dashboard 需暴露9090端口
-#      - "9090:9090"
+#      - &#34;9090:9090&#34;
     restart: always
 #  如开启clash-dashboard 取消注释
 #  clash-dashboard:
 #    image: centralx/clash-dashboard
 #    container_name: clash-dashboard
 #    ports:
-#      - "7880:80"
+#      - &#34;7880:80&#34;
 #    restart: always
 ```
 
-{{< admonition info >}}
+{{&lt; admonition info &gt;}}
 - clash的控制接口映射在 9090 端口上
 - 使用dashboard 需要修改配置文件，修改`external-controller`的ip，设置密码
 - dashboard 映射在了宿主 7880 端口，默认只能通过 http 访问，可根据需要再做反向代理
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ### 开启dashboard需修改`config.yaml`
 
@@ -78,9 +78,9 @@ vim ~/.config/clash/config.yaml
 
 ```yaml
 # 原本为127.0.0.1，改为0.0.0.0
-external-controller: '0.0.0.0:9090'
+external-controller: &#39;0.0.0.0:9090&#39;
 # 在external-controller下一行，这个secret就是你Dashboard要使用的密钥
-secret: 'your secret'
+secret: &#39;your secret&#39;
 ```
 
 ### dashboard 示例
@@ -103,13 +103,13 @@ docker-compose up -d
 wget latest_url
 ```
 
-{{< admonition tip >}}
+{{&lt; admonition tip &gt;}}
 如果直接 wget 速度较慢的话，可以本地下载完成后，使用 SFTP、SCP等方式 上传到 Linux 服务器。
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
-{{< admonition failure >}}
+{{&lt; admonition failure &gt;}}
 2024/01/11 clash 的github项目[Dreamacro/clash](https://github.com/Dreamacro/clash/releases)为了紧急避险，目前已经删库跑路，之后是否会恢复有待观察。虽然github没了，但是网上还是有很多交流学习自用的，懂的都懂。
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 
 2. 解压 重命名为`clash`
@@ -127,7 +127,7 @@ mv clash-linux-amd64-latest /usr/bin/clash
 3. 赋予可执行权限
 
 ```bash
-sudo chmod +x /usr/bin/clash
+sudo chmod &#43;x /usr/bin/clash
 ```
 
 4. 检查clash是否安装成功
@@ -207,17 +207,17 @@ unset  http_proxy  https_proxy  all_proxy
 
 ```bash
 proxy () {
-  export http_proxy="http://127.0.0.1:7890"
-  export https_proxy="http://127.0.0.1:7890"
-  export all_proxy="socks5://127.0.0.1:7890"
-  echo "Clash Proxy:ON"
+  export http_proxy=&#34;http://127.0.0.1:7890&#34;
+  export https_proxy=&#34;http://127.0.0.1:7890&#34;
+  export all_proxy=&#34;socks5://127.0.0.1:7890&#34;
+  echo &#34;Clash Proxy:ON&#34;
 }
 
 noproxy () {
   unset http_proxy
   unset https_proxy
   unset all_proxy
-  echo "Clash Proxy:OFF"
+  echo &#34;Clash Proxy:OFF&#34;
 }
 ```
 
@@ -234,7 +234,7 @@ function proxy
   set -xg all_proxy socks5://127.0.0.1:7890
   set -xg http_proxy http://127.0.0.1:7890
   set -xg https_proxy http://127.0.0.1:7890
-  echo "Clash Proxy:ON"
+  echo &#34;Clash Proxy:ON&#34;
 end
 ```
 
@@ -247,11 +247,11 @@ function noproxy
   set -e all_proxy
   set -e http_proxy
   set -e https_proxy
-  echo "Clash Proxy:OFF"
+  echo &#34;Clash Proxy:OFF&#34;
 end
 ```
 
-### 开启 & 关闭
+### 开启 &amp; 关闭
 
 - 开启
 

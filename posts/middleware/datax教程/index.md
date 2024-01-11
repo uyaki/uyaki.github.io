@@ -1,7 +1,7 @@
 # DataX教程
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 安装
 
 ```bash
@@ -13,7 +13,7 @@ $ cd DataX
 $ vim pom.xml
 ```
 
-> 注释掉不需要的reader、writer`<module>`标签
+&gt; 注释掉不需要的reader、writer`&lt;module&gt;`标签
 
 ```bash
 mvn -U clean package assembly:assembly -Dmaven.test.skip=true

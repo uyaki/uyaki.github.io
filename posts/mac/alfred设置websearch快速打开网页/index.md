@@ -1,8 +1,8 @@
 # Alfred设置WebSearch快速打开网页
 
 
-<!--more-->
-Alfred -> feature -> Web Search -> Add Custom Search 
+&lt;!--more--&gt;
+Alfred -&gt; feature -&gt; Web Search -&gt; Add Custom Search 
 ![](https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20200304144324.png)
 
 Search Url：输入网址

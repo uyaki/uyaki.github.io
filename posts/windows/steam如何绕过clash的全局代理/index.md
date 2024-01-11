@@ -1,10 +1,10 @@
 # Steam如何绕过clash的全局代理
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 设置bypass
 
-`Clash` -> `Settings` -> `System Proxy` -> `Bypass Domain/IPNet`
+`Clash` -&gt; `Settings` -&gt; `System Proxy` -&gt; `Bypass Domain/IPNet`
 
 ```yml
 bypass:
@@ -28,30 +28,30 @@ bypass:
   - 172.30.*
   - 172.31.*
   - 192.168.*
-  - <local>
-  - "*.bing.com"
-  - "*.microsoft.com"
-  - "*.bing.com"
-  - "*.microsoft.com"
+  - &lt;local&gt;
+  - &#34;*.bing.com&#34;
+  - &#34;*.microsoft.com&#34;
+  - &#34;*.bing.com&#34;
+  - &#34;*.microsoft.com&#34;
 # Steam中国大陆地区游戏下载
-  - "steampipe.steamcontent.tnkjmec.com" #华为云
-  - "st.dl.eccdnx.com" #白山云
-  - "st.dl.bscstorage.net"
-  - "st.dl.pinyuncloud.com"
-  - "dl.steam.clngaa.com" #金山云
-  - "cdn.mileweb.cs.steampowered.com.8686c.com" #网宿云
-  - "cdn-ws.content.steamchina.com"
-  - "cdn-qc.content.steamchina.com" #腾讯云
-  - "cdn-ali.content.steamchina.com" #阿里云
+  - &#34;steampipe.steamcontent.tnkjmec.com&#34; #华为云
+  - &#34;st.dl.eccdnx.com&#34; #白山云
+  - &#34;st.dl.bscstorage.net&#34;
+  - &#34;st.dl.pinyuncloud.com&#34;
+  - &#34;dl.steam.clngaa.com&#34; #金山云
+  - &#34;cdn.mileweb.cs.steampowered.com.8686c.com&#34; #网宿云
+  - &#34;cdn-ws.content.steamchina.com&#34;
+  - &#34;cdn-qc.content.steamchina.com&#34; #腾讯云
+  - &#34;cdn-ali.content.steamchina.com&#34; #阿里云
 # Steam非中国大陆地区游戏下载/社区实况直播
-  - "*.steamcontent.com"
+  - &#34;*.steamcontent.com&#34;
 # Battle.net战网中国大陆地区游戏下载
-  - "client05.pdl.wow.battlenet.com.cn" #华为云
-  - "client02.pdl.wow.battlenet.com.cn" #网宿云
+  - &#34;client05.pdl.wow.battlenet.com.cn&#34; #华为云
+  - &#34;client02.pdl.wow.battlenet.com.cn&#34; #网宿云
 # Epic Games中国大陆地区游戏下载
-  - "epicgames-download1-1251447533.file.myqcloud.com"
+  - &#34;epicgames-download1-1251447533.file.myqcloud.com&#34;
 # Rockstar Launcher客户端更新/游戏更新/游戏下载
-  - "gamedownloads-rockstargames-com.akamaized.net"
+  - &#34;gamedownloads-rockstargames-com.akamaized.net&#34;
 ```
 
 ---

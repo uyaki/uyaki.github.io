@@ -1,7 +1,7 @@
 # 使用sftp从服务器下载文件
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## sftp
 交互式的文件传输程序，命令的运行和使用方式与 ftp 命令相似，但是，sftp 命令对传输的所有信息使用 ssh 加密，它还支持公钥认证和压缩等功能。
@@ -32,13 +32,13 @@ $ sftp -Pport user@ip
 
 ```bash
 # cd到服务器指定目录
-sftp> cd xxx
-# 本地cd到要下载的目标位置，所有命令+l是操作本机
-sftp> lcd ~/Downloads
+sftp&gt; cd xxx
+# 本地cd到要下载的目标位置，所有命令&#43;l是操作本机
+sftp&gt; lcd ~/Downloads
 # 下载(获取 远程 本地)
-sftp> get -r ./* ./
+sftp&gt; get -r ./* ./
 # 上传（推送 本地 远程）
-sftp> put /local/path/file.pdf /xxx/xxx/xxx/
+sftp&gt; put /local/path/file.pdf /xxx/xxx/xxx/
 ```
 
 

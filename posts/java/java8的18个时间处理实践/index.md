@@ -1,7 +1,7 @@
 # Java8的18个时间处理实践
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## java8 关于时间、日期处理
 
 Java 8 推出了全新的日期时间 API。
@@ -19,7 +19,7 @@ Java 处理日期、日历和时间的方式一直为社区所诟病，将 java.
 |    4 | LocalTime                          | 只包含时间，比如：23:12:10                |
 |    5 | LocalDateTime                      | 包含日期和时间，比如：2018-02-05 23:14:21 |
 |    6 | Period                             | 时间段                                    |
-|    7 | ZoneOffset                         | 时区偏移量，比如：+8:00                   |
+|    7 | ZoneOffset                         | 时区偏移量，比如：&#43;8:00                   |
 |    8 | ZonedDateTime                      | 带时区的时间                              |
 |    9 | Clock                              | 时钟，比如获取目前美国纽约的时间          |
 |   10 | java.time.format.DateTimeFormatter | 时间格式化                                |
@@ -32,7 +32,7 @@ Java 8 中的 LocalDate 用于表示当天日期。和 java.util.Date 不同，�
 
 ```java
 LocalDate today = LocalDate.now();
-System.out.println("今天的日期:"+today);
+System.out.println(&#34;今天的日期:&#34;&#43;today);
 ```
 
 ### 2.获取年、月、日信息
@@ -43,9 +43,9 @@ int year = today.getYear();
 int month = today.getMonthValue();
 int day = today.getDayOfMonth();
 
-System.out.println("year:"+year);
-System.out.println("month:"+month);
-System.out.println("day:"+day);
+System.out.println(&#34;year:&#34;&#43;year);
+System.out.println(&#34;month:&#34;&#43;month);
+System.out.println(&#34;day:&#34;&#43;day);
 ```
 
 ### 3.处理特定日期
@@ -54,33 +54,33 @@ System.out.println("day:"+day);
 
 ```java
 LocalDate date = LocalDate.of(2018,2,6);
-System.out.println("自定义日期:"+date);
+System.out.println(&#34;自定义日期:&#34;&#43;date);
 ```
 
 ### 4.判断两个日期是否相等
 
-> 使用 `equals`
+&gt; 使用 `equals`
 
 ```java
 LocalDate date1 = LocalDate.now();
 LocalDate date2 = LocalDate.of(2020,2,15);
 
 if(date1.equals(date2)){
-    System.out.println("时间相等");
+    System.out.println(&#34;时间相等&#34;);
 }else{
-     System.out.println("时间不等");
+     System.out.println(&#34;时间不等&#34;);
 }
 ```
 
 ### 5.计算一周后的日期（周计算）
  
-> LocalDate 日期不包含时间信息，它的 plus () 方法用来增加天、周、月，ChronoUnit 类声明了这些时间单位。由于 LocalDate 也是不变类型，返回后一定要用变量赋值。
+&gt; LocalDate 日期不包含时间信息，它的 plus () 方法用来增加天、周、月，ChronoUnit 类声明了这些时间单位。由于 LocalDate 也是不变类型，返回后一定要用变量赋值。
 
 ```java
 Local Date today = LocalDate.now();
-System.out.println("今天的日期为:"+today);
+System.out.println(&#34;今天的日期为:&#34;&#43;today);
 LocalDate nextWeek = today.plus(1, ChronoUnit.WEEKS);
-System.out.println("一周后的日期为:"+nextWeek);
+System.out.println(&#34;一周后的日期为:&#34;&#43;nextWeek);
 ```
 ### 6.计算一年前或一年后的日期
 
@@ -88,40 +88,40 @@ System.out.println("一周后的日期为:"+nextWeek);
 LocalDate today = LocalDate.now();
    
 LocalDate previousYear = today.minus(1, ChronoUnit.YEARS);
-System.out.println("一年前的日期 : " + previousYear);
+System.out.println(&#34;一年前的日期 : &#34; &#43; previousYear);
 
 LocalDate nextYear = today.plus(1, ChronoUnit.YEARS);
-System.out.println("一年后的日期:"+nextYear);
+System.out.println(&#34;一年后的日期:&#34;&#43;nextYear);
 ```
 
 ### 7.判断日期是早于还是晚于另一个日期
 
-> 在 Java 8 中，LocalDate 类有两类方法 isBefore () 和 isAfter () 用于比较日期。调用 isBefore () 方法时，如果给定日期小于当前日期则返回 true。
+&gt; 在 Java 8 中，LocalDate 类有两类方法 isBefore () 和 isAfter () 用于比较日期。调用 isBefore () 方法时，如果给定日期小于当前日期则返回 true。
 
 ```java
 LocalDate today = LocalDate.now();
 
 LocalDate tomorrow = LocalDate.of(2020,2,16);
  if(tomorrow.isAfter(today)){
-    System.out.println("之后的日期:"+tomorrow);
+    System.out.println(&#34;之后的日期:&#34;&#43;tomorrow);
      }
 
 LocalDate yesterday = today.minus(1, ChronoUnit.DAYS);
 if(yesterday.isBefore(today)){
-    System.out.println("之前的日期:"+yesterday);
+    System.out.println(&#34;之前的日期:&#34;&#43;yesterday);
 }
 ```
 
 ### 8.检查闰年
 
->  在 Java 8 中，LocalDate 类有isLeapYear()方法
+&gt;  在 Java 8 中，LocalDate 类有isLeapYear()方法
 
 ```java
 LocalDate today = LocalDate.now();
  if(today.isLeapYear()){
-    System.out.println("This year is Leap year");
+    System.out.println(&#34;This year is Leap year&#34;);
 }else {
-    System.out.println("2018 is not a Leap year");
+    System.out.println(&#34;2018 is not a Leap year&#34;);
 }
 ```
 
@@ -131,49 +131,49 @@ LocalDate today = LocalDate.now();
 
 ```java
 LocalTime time = LocalTime.now();
-System.out.println("获取当前的时间,不含有日期:"+time);
+System.out.println(&#34;获取当前的时间,不含有日期:&#34;&#43;time);
 ```
 
 ### 10. 时间计算（小时计算）
 
-> 通过增加小时、分、秒来计算将来的时间很常见。Java 8 除了不变类型和线程安全的好处之外，还提供了更好的 plusHours () 方法替换 add ()，并且是兼容的。注意，这些方法返回一个全新的 LocalTime 实例，由于其不可变性，返回后一定要用变量赋值。
+&gt; 通过增加小时、分、秒来计算将来的时间很常见。Java 8 除了不变类型和线程安全的好处之外，还提供了更好的 plusHours () 方法替换 add ()，并且是兼容的。注意，这些方法返回一个全新的 LocalTime 实例，由于其不可变性，返回后一定要用变量赋值。
 
 ```java
 LocalTime time = LocalTime.now();
 LocalTime newTime = time.plusHours(3);
-System.out.println("三个小时后的时间为:"+newTime);
+System.out.println(&#34;三个小时后的时间为:&#34;&#43;newTime);
 ```
 
 ## Clock 
 
 ### 11. Clock 时钟类
 
-> Java 8 增加了一个 Clock 时钟类用于获取当时的时间戳，或当前时区下的日期时间信息。以前用到 System.currentTimeInMillis () 和 TimeZone.getDefault () 的地方都可用 Clock 替换。
+&gt; Java 8 增加了一个 Clock 时钟类用于获取当时的时间戳，或当前时区下的日期时间信息。以前用到 System.currentTimeInMillis () 和 TimeZone.getDefault () 的地方都可用 Clock 替换。
 
 ```java
 // Returns the current time based on your system clock and set to UTC.
 Clock clock = Clock.systemUTC();
-System.out.println("Clock : " + clock.millis());
+System.out.println(&#34;Clock : &#34; &#43; clock.millis());
 
 // Returns time based on system clock zone
  Clock defaultClock = Clock.systemDefaultZone();
-System.out.println("Clock : " + defaultClock.millis());
+System.out.println(&#34;Clock : &#34; &#43; defaultClock.millis());
 ```
 
 ## ZonedDateTime 
 
-> ZoneId 来处理特定时区，ZoneDateTime 类来表示某时区下的时间
+&gt; ZoneId 来处理特定时区，ZoneDateTime 类来表示某时区下的时间
 
 ### 12.Java 8 中处理时区
 
-> 这在 Java 8 以前都是 GregorianCalendar 类来做的。
+&gt; 这在 Java 8 以前都是 GregorianCalendar 类来做的。
 
 ```java
 // Date and time with timezone in Java 8
-ZoneId america = ZoneId.of("America/New_York");
+ZoneId america = ZoneId.of(&#34;America/New_York&#34;);
 LocalDateTime localtDateAndTime = LocalDateTime.now();
 ZonedDateTime dateAndTimeInNewYork  = ZonedDateTime.of(localtDateAndTime, america );
-System.out.println("Current date and time in a particular timezone : " + dateAndTimeInNewYork);
+System.out.println(&#34;Current date and time in a particular timezone : &#34; &#43; dateAndTimeInNewYork);
 ```
 
 ## YearMonth、MonthDay
@@ -188,31 +188,31 @@ MonthDay birthday = MonthDay.of(date2.getMonth(),date2.getDayOfMonth());
 MonthDay currentMonthDay = MonthDay.from(date1);
 
 if(currentMonthDay.equals(birthday)){
-   System.out.println("是你的生日");
+   System.out.println(&#34;是你的生日&#34;);
 }else{
-     System.out.println("你的生日还没有到");
+     System.out.println(&#34;你的生日还没有到&#34;);
   }
 ```
 
-> 只要当天的日期和生日匹配，无论是哪一年都会打印出祝贺信息。你可以把程序整合进系统时钟，看看生日时是否会受到提醒，或者写一个单元测试来检测代码是否运行正确。
+&gt; 只要当天的日期和生日匹配，无论是哪一年都会打印出祝贺信息。你可以把程序整合进系统时钟，看看生日时是否会受到提醒，或者写一个单元测试来检测代码是否运行正确。
 
 ### 14.如何表示信用卡到期这类固定日期
 
-> YearMonth 用于表示信用卡到期日、FD 到期日、期货期权到期日等
-> 得到 当月共有多少天，YearMonth 实例的 lengthOfMonth () 方法可以返回当月的天数，在判断 2 月有 28 天还是 29 天时非常有用
+&gt; YearMonth 用于表示信用卡到期日、FD 到期日、期货期权到期日等
+&gt; 得到 当月共有多少天，YearMonth 实例的 lengthOfMonth () 方法可以返回当月的天数，在判断 2 月有 28 天还是 29 天时非常有用
 
 ```java
 YearMonth currentYearMonth = YearMonth.now();
-System.out.printf("Days in month year %s: %d%n", currentYearMonth, currentYearMonth.lengthOfMonth());
+System.out.printf(&#34;Days in month year %s: %d%n&#34;, currentYearMonth, currentYearMonth.lengthOfMonth());
 YearMonth creditCardExpiry = YearMonth.of(2019, Month.FEBRUARY);
-System.out.printf("Your credit card expires on %s %n", creditCardExpiry);
+System.out.printf(&#34;Your credit card expires on %s %n&#34;, creditCardExpiry);
 ```
 
 ## 其他
 
 ### 15.计算两个日期之间的天数和月数
 
-> 在 Java 8 中可以用 java.time.Period 类来做计算
+&gt; 在 Java 8 中可以用 java.time.Period 类来做计算
 
 
 ```java
@@ -221,23 +221,23 @@ LocalDate today = LocalDate.now();
 LocalDate java8Release = LocalDate.of(2018, 12, 14);
 
 Period periodToNextJavaRelease = Period.between(today, java8Release);
-System.out.println("Months left between today and Java 8 release : " + periodToNextJavaRelease.getMonths() );
+System.out.println(&#34;Months left between today and Java 8 release : &#34; &#43; periodToNextJavaRelease.getMonths() );
 ```
 
 ### 16.获取当前的时间戳
 
 ```java
 Instant timestamp = Instant.now();
-System.out.println("What is value of this instant " + timestamp.toEpochMilli());
+System.out.println(&#34;What is value of this instant &#34; &#43; timestamp.toEpochMilli());
 ```
-> 时间戳信息里同时包含了日期和时间，这和 java.util.Date 很像。实际上 Instant 类确实等同于 Java 8 之前的 Date 类，你可以使用 Date 类和 Instant 类各自的转换方法互相转换，例如：Date.from (Instant) 将 Instant 转换成 java.util.Date，Date.toInstant () 则是将 Date 类转换成 Instant 类。
+&gt; 时间戳信息里同时包含了日期和时间，这和 java.util.Date 很像。实际上 Instant 类确实等同于 Java 8 之前的 Date 类，你可以使用 Date 类和 Instant 类各自的转换方法互相转换，例如：Date.from (Instant) 将 Instant 转换成 java.util.Date，Date.toInstant () 则是将 Date 类转换成 Instant 类。
 
 ### 17.使用预定义的格式化工具去解析或格式化日期
 
 ```java
-String dayAfterTommorrow = "20180205";
+String dayAfterTommorrow = &#34;20180205&#34;;
 LocalDate formatted = LocalDate.parse(dayAfterTommorrow,DateTimeFormatter.BASIC_ISO_DATE);
-System.out.println(dayAfterTommorrow+"  格式化后的日期为:  "+formatted);
+System.out.println(dayAfterTommorrow&#43;&#34;  格式化后的日期为:  &#34;&#43;formatted);
 ```
 
 ### 18.字符串互转日期类型
@@ -247,16 +247,16 @@ System.out.println(dayAfterTommorrow+"  格式化后的日期为:  "+formatted);
 
 LocalDateTime date = LocalDateTime.now();
 
-DateTimeFormatter format1 = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+DateTimeFormatter format1 = DateTimeFormatter.ofPattern(&#34;yyyy/MM/dd HH:mm:ss&#34;);
 //日期转字符串
 String str = date.format(format1);
 
-System.out.println("日期转换为字符串:"+str);
+System.out.println(&#34;日期转换为字符串:&#34;&#43;str);
 
-DateTimeFormatter format2 = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+DateTimeFormatter format2 = DateTimeFormatter.ofPattern(&#34;yyyy/MM/dd HH:mm:ss&#34;);
 //字符串转日期
 LocalDate date2 = LocalDate.parse(str,format2);
-System.out.println("日期类型:"+date2);
+System.out.println(&#34;日期类型:&#34;&#43;date2);
 ```
 
 ## 巨人肩膀

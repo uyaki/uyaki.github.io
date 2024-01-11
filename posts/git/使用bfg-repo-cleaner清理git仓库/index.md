@@ -1,7 +1,7 @@
 # 使用bfg Repo Cleaner清理git仓库
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## 用途
 1. 上传了一些敏感文件(例如密码)
@@ -48,7 +48,7 @@ bfg --delete-folders your-folders
 ```bash
 bfg --replace-text expression-file.txt  your-repo.git
 ```
-{{< admonition tip >}}
+{{&lt; admonition tip &gt;}}
 
 expression-file.txt 为密码替换模板文件
 
@@ -56,27 +56,27 @@ expression-file.txt 为密码替换模板文件
 1. 通过指定 regex: 前缀来说明此表达式是一个正则表达式
 2. 指定 glob: 前缀。
 
-每一个表达式的后面可以加上 `==>` 来指定匹配的文件应该被替换成什么（如果没有指定，就会被替换成默认值 `***REMOVED***` ）
+每一个表达式的后面可以加上 `==&gt;` 来指定匹配的文件应该被替换成什么（如果没有指定，就会被替换成默认值 `***REMOVED***` ）
 
 ```txt
 # 密码：123456 字符串替换成 ***REMOVED***
 密码：123456
 
 # 密码：123456 字符串替换成 密码：******：
-密码：123456 ==> 密码：******
+密码：123456 ==&gt; 密码：******
 
 # 使用正则表达式：
-regex:密码：\d+ ==> 密码：******
+regex:密码：\d&#43; ==&gt; 密码：******
 ```
 
-{{< /admonition >}}
+{{&lt; /admonition &gt;}}
 
 ### 提交
 
 1. 使用标准的`git gc`命令去除不需要的脏数据， git现在将这些脏数据视为多余的需求
 ```bash
 cd your-repo.git
-git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git reflog expire --expire=now --all &amp;&amp; git gc --prune=now --aggressive
 ```
 
 2. 提交

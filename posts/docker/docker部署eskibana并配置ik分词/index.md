@@ -1,7 +1,7 @@
 # Docker部署ES、kibana并配置ik分词
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## 1. 创建数据目录
 
@@ -11,17 +11,17 @@ $ mkdir /opt/elasticsearch/data/{es01,es02,es03} -p
 mkdir /opt/elasticsearch/logs/{es01,es02,es03} -p
 cd /opt/elasticsearch
 #权限
-chmod 0777 data/* -R && chmod 0777 logs/* -R
+chmod 0777 data/* -R &amp;&amp; chmod 0777 logs/* -R
 
 #防止JVM报错
-echo vm.max_map_count=262144 >> /etc/sysctl.conf
+echo vm.max_map_count=262144 &gt;&gt; /etc/sysctl.conf
 sysctl -p
 ```
 
 ## 2. ES集群安装
 
 ```yaml
-version: '2.2'
+version: &#39;2.2&#39;
 services:
   es01:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.5.1
@@ -40,7 +40,7 @@ services:
       - http.cors.enabled=true
       - http.cors.allow-origin=*
       # Jvm内存大小配置
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - &#34;ES_JAVA_OPTS=-Xms512m -Xmx512m&#34;
     ulimits:
       memlock:
         soft: -1
@@ -70,7 +70,7 @@ services:
       - http.cors.enabled=true
       - http.cors.allow-origin=*
       # Jvm内存大小配置
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - &#34;ES_JAVA_OPTS=-Xms512m -Xmx512m&#34;
     ulimits:
       memlock:
         soft: -1
@@ -101,7 +101,7 @@ services:
       - http.cors.enabled=true
       - http.cors.allow-origin=*
       # Jvm内存大小配置
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - &#34;ES_JAVA_OPTS=-Xms512m -Xmx512m&#34;
     ulimits:
       memlock:
         soft: -1
@@ -162,27 +162,27 @@ $ docker-compose restart es03
 FROM node:10.15.0-alpine
 
 #作者
-MAINTAINER BolingCavalry <zq2599@gmail.com>
+MAINTAINER BolingCavalry &lt;zq2599@gmail.com&gt;
 
 #定义下载源文件的路径
 ENV SRC_DOWN_PATH /usr/src/app
 
 #创建文件夹用于保存下载的源码
-RUN mkdir -p $SRC_DOWN_PATH && \
+RUN mkdir -p $SRC_DOWN_PATH &amp;&amp; \
 #进入该文件夹
-cd $SRC_DOWN_PATH && \
+cd $SRC_DOWN_PATH &amp;&amp; \
 #下载源码
-wget https://codeload.github.com/mobz/elasticsearch-head/zip/master && \
+wget https://codeload.github.com/mobz/elasticsearch-head/zip/master &amp;&amp; \
 #解压
-unzip master && \
+unzip master &amp;&amp; \
 #解压后，压缩文件可以删除了
-rm master && \
+rm master &amp;&amp; \
 #进入解压后的文件夹
-cd elasticsearch-head-master && \
+cd elasticsearch-head-master &amp;&amp; \
 #设置为taobao，加速npm安装速度
-npm config set registry http://registry.npm.taobao.org && \
+npm config set registry http://registry.npm.taobao.org &amp;&amp; \
 #安装grunt
-npm install -g grunt-cli && \
+npm install -g grunt-cli &amp;&amp; \
 #安装head
 npm install
 
@@ -193,13 +193,13 @@ WORKDIR $SRC_DOWN_PATH/elasticsearch-head-master
 EXPOSE 9100
 
 #启动时即启动head服务
-CMD [ "grunt", "server" ]
+CMD [ &#34;grunt&#34;, &#34;server&#34; ]
 ```
 
 ## 6. kibana
 
 ```yaml
-version: '2.2'
+version: &#39;2.2&#39;
 services:
   kibana:
     image: docker.elastic.co/kibana/kibana:6.0.0

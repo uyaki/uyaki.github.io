@@ -1,7 +1,7 @@
 # Mac系统下修改docker的vm参数
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 1. screen
 
@@ -24,7 +24,7 @@ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 sysctl -w vm.max_map_count=262144
 ```
 
-4. 按`control+a`，再按`control+\` ，左下角出现退出提示后，按y确认退出
+4. 按`control&#43;a`，再按`control&#43;\` ，左下角出现退出提示后，按y确认退出
 
 ![](https://cdn.jsdelivr.net/gh/uyaki/pic-cloud/img/20200217144803.png)
 

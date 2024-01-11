@@ -1,7 +1,7 @@
 # Windows资源管理器优化神器QTTabBar
 
 
-<!--more-->
+&lt;!--more--&gt;
 
 ## 官网
 

@@ -1,16 +1,16 @@
 # Spacemacs清华源镜像加速
 
 
-<!--more-->
+&lt;!--more--&gt;
 ## 核心配置
 
 添加下面的代码到`.spacemacs`或`~/.spacemacs/init.el` 的`dotspacemacs/user-init()`下
 
 ```elpa
 (setq configuration-layer-elpa-archives
-    '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-      ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-      ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
+    &#39;((&#34;melpa-cn&#34; . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&#34;)
+      (&#34;org-cn&#34;   . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&#34;)
+      (&#34;gnu-cn&#34;   . &#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/&#34;)))
 ```
 
 ## 巨人肩膀

@@ -107,12 +107,10 @@
         "comment": true,
         "weight": 0,
         "tags": [
-            "blog",
-            "hugo"
+            "blog"
         ],
         "categories": [
-            "blog",
-            "hugo"
+            "blog"
         ],
         "hiddenFromHomePage": false,
         "hiddenFromSearch": false,
@@ -183,11 +181,9 @@
         "comment": true,
         "weight": 0,
         "tags": [
-            "hugo",
             "blog"
         ],
         "categories": [
-            "hugo",
             "blog"
         ],
         "hiddenFromHomePage": false,
@@ -227,7 +223,6 @@
         },
         "description": null,
         "keywords": [
-            "hugo",
             "algolia"
         ],
         "comment": true,
@@ -284,6 +279,45 @@
         "summary": null,
         "toc": true,
         "math": false,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
+        "title": "Tmux",
+        "uri": "posts/command_line_tools/tmux",
+        "content": "Tmux         Tmux                        tmux conf                             Tmux         Server   Session   Window   Pane                           Server    tmux                     tmux kill server   tmux  Session     tmux              session                       session      Window                               Window      Window     window  Pane      Window                          Tmux                                   XDGCONFIGHOME                  config tmux tmux conf          bash macOS brew install tmux ubuntu sudo apt get install tmux   Tmux                         tmux  new  s      n         session   tmux   t        session   tmux ls     sessions   tmux kill session  t       session   tmux kill server     tmux     Tmux                   Tmux                   Ctrl b  Session                                         d          D            Ctrl z          r            s                                  ls                q                                  Window                           c                   0   9           p           n           w                                                      f                       Pane                                                                       x              y n      z                      v1 8                                                             q                                                           Ctrl o                                  o                              Alt      5                  Ctrl      1                Mac     t                  config tmux tmux conf     bash git clone git github com uyaki config git cp config tmux tmux conf    config tmux tmux conf    3            tmux source    config tmux tmux conf   tmux         Ctrl b                           source file    config tmux tmux conf          tmux  restart tm          Github   tpm          git clone https   github com tmux plugins tpm    config tmux plugins tpm                   config tmux tmux conf  tmux setenv  g TMUXPLUGINMANAGER_PATH     config tmux plugins  List plugins set  g  plugin  tmux plugins tpm                                     set  g  plugin  seebi tmux colors solarized      TPM                   run     config tmux plugins tpm tpm         TMUX         TPM   bash tmux source    config tmux tmux conf                                     1 prefix   I                 config tmux tmux conf    2 prefix   U                 config tmux tmux conf    3 prefix   alt   u                    tmux powerline    erikw tmux powerline         config tmux tmux conf      fish set  g  plugin  erikw tmux powerline                 bash    config tmux plugins tmux powerline generate_rc sh              bash mv    config tmux powerline config sh default    config tmux powerline config sh",
+        "objectID": "posts/command_line_tools/tmux",
+        "subtitle": null,
+        "date": "2024-01-07T08:05:56.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            null
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "tmux",
+            "command_line_tools"
+        ],
+        "categories": [
+            "command_line_tools"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
         "lightgallery": false,
         "password": null,
         "message": null,
@@ -1906,6 +1940,47 @@
         ],
         "categories": [
             "npm"
+        ],
+        "hiddenFromHomePage": false,
+        "hiddenFromSearch": false,
+        "linkToMarkdown": true,
+        "summary": null,
+        "toc": true,
+        "math": null,
+        "lightgallery": false,
+        "password": null,
+        "message": null,
+        "repost": {
+            "enable": false,
+            "url": null
+        }
+    },
+    {
+        "title": "在 Linux 中使用 Clash",
+        "uri": "posts/proxy/在Linux中使用Clash",
+        "content": "bash mkdir  p    config clash cd    config clash   Country mmdb           Clash        clash                 HOME  config clash                          Dreamacro maxmind geoip         HOME  config clash          Country mmdb      GeoIP2                                 config yaml               Clash                          config yaml                             Clash                                            Clash                                                                   bash curl  o config yaml  longURL       suo yt                             bash curl  L  o config yaml  shortURL    docker compose  clash docker compose    yaml version   3  services  clash  image  dreamacro clash latest container_name  clash volumes     config clash  root  config clash ports   7890 7890 tcp   7890 7890 udp     clash dashboard    9090      9090 9090  restart  always    clash dashboard      clash dashboard  image  centralx clash dashboard container_name  clash dashboard ports     7880 80  restart  always        clash         9090       dashboard            external controller ip      dashboard        7880           http                       dashboard   config yaml  bash vim    config clash config yaml    yaml    127 0 0 1   0 0 0 0 external controller   0 0 0 0 9090   external controller      secret   Dashboard       secret   your secret    dashboard        bash docker compose  d       clash          Ubuntu      clash linux amd64      clash  bash wget latest_url             wget                     SFTP SCP        Linux                2024 01 11 clash  github  Dreamacro clash                              github                                      clash  bash    gunzip clash linux amd64 latest 0 gz     mv clash linux amd64 latest clash           clash      usr bin                 mv clash linux amd64 latest  usr bin clash            bash sudo chmod  x  usr bin clash     clash        bash clash  v   Clash daemon   Clash              Clash                     systemd       lib systemd system        clash  service     bash sudo vim  lib systemd system clash  service                     code  Unit  Description A rule based proxy Go  i  After network target  Service  Type simple User  i Restart on abort ExecStart  usr bin clash  Install  WantedBy multi user target        systemd     bash systemctl daemon reload      clash     bash systemctl start clash uyaki           bash systemctl enable clash uyaki         Export        Clash                   config          Clash               7890              bash export https_proxy http   127 0 0 1 7890 export http_proxy http   127 0 0 1 7890 export all_proxy socks5   127 0 0 1 7890                bashrc      zshrc                          bash unset httpproxy httpsproxy all_proxy                        bash zsh vim    bashrc vim    zshrc  bash proxy      export http_proxy  http   127 0 0 1 7890  export https_proxy  http   127 0 0 1 7890  export all_proxy  socks5   127 0 0 1 7890  echo  Clash Proxy ON    noproxy      unset http_proxy unset https_proxy unset all_proxy echo  Clash Proxy OFF         source    bashrc   source    zshrc    fish  bash vim    config fish functions proxy fish    fish function proxy set  xg all_proxy socks5   127 0 0 1 7890 set  xg http_proxy http   127 0 0 1 7890 set  xg https_proxy http   127 0 0 1 7890 echo  Clash Proxy ON  end    bash vim    config fish functions noproxy fish    fish function noproxy set  e all_proxy set  e http_proxy set  e https_proxy echo  Clash Proxy OFF  end               bash proxy       bash noproxy",
+        "objectID": "posts/proxy/在Linux中使用Clash",
+        "subtitle": null,
+        "date": "2024-01-11T07:06:07.000Z",
+        "author": {
+            "name": "uyaki",
+            "link": "https://www.github.com/uyaki",
+            "avatar": "/images/avatar.png"
+        },
+        "description": null,
+        "keywords": [
+            null
+        ],
+        "comment": true,
+        "weight": 0,
+        "tags": [
+            "clash",
+            "proxy",
+            "ubuntu"
+        ],
+        "categories": [
+            "clash",
+            "ubuntu"
         ],
         "hiddenFromHomePage": false,
         "hiddenFromSearch": false,
